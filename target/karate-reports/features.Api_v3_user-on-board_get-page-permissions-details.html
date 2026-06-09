@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"556ac484-f32b-4b42-881a-1fcd4af45733",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.Api_v3_user-on-board_get-page-permissions-details</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">3</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-06-09 12:29:03 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:16]"><span>[1:16]</span> <span>Positive Flow</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:76]"><span>[2:76]</span> <span>Negative Flow - Unauthorised token.</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:106]"><span>[3:106]</span> <span>Negative Flow - Method not found.</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/Api_v3_user-on-board_get-page-permissions-details.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test API endpoint - POST /v3/user-on-board/get-page-permissions-details</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:16]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:16]</span>
+                <span class="scenario-name">Positive Flow</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2242</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:16]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">12:27:45.783 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...sVxtOuGQ length: 585 
+12:27:48.054 ECDH Session ID: 705eea05-f901-49f3-9f06-e44bed861b6e 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:16]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">12:27:48.054 [print] Using auth_token cookie: eyJhbGciOiJI...sVxtOuGQ length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email = &#39;Vuser_16@veehealthtek.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestTemplate =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.18">{
+  &quot;userEmail&quot;: &quot;Vuser_16@veehealthtek.com&quot;,
+  &quot;workQueueDataRequestModel&quot;: [
+    {
+      &quot;clientId&quot;: 1,
+      &quot;moduleId&quot;: 1,
+      &quot;processId&quot;: 1
+    }
+  ]
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = requestTemplate</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/admin-service/v3/user-on-board/get-page-permissions-details&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2226</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.40">12:27:48.059 request:
+1 &gt; GET https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/admin-service/v3/user-on-board/get-page-permissions-details
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDguMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiIyODk3MjY1My0zY2E2LTRkZDQtODg2Yy1lMDg0NzA3MzdmNTEiLCJuYmYiOjE3ODA5ODgyNTAsImV4cCI6MTc4MDk5MTg1MCwiaWF0IjoxNzgwOTg4MjUwLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.7a_rTzOEje8Fo_-0Vd70H5mC0udVc0e4KAVsVxtOuGQ
+1 &gt; X-ECDH-Session: 705eea05-f901-49f3-9f06-e44bed861b6e
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+AH5vEnXZjSSv_xELGb0dZs7Yl84HhoLoexrqVpeKvOiV8n8K9aQhq9bI-lLoF-EJB_3xSIsUaIsy-2QaImh1N11qeTYX-qwgXz5K3IobsdnvqEcotjDDaFwOUeaK1VQF4yof63OYGkhIIp0-f6aDBjcFgZnDcsnfi3mkdHPKn6hbl0o8nWcdkwZUzkah
+
+12:27:50.276 response time in milliseconds: 2217
+1 &lt; 200
+1 &lt; x-amzn-RequestId: 547331ac-157a-4c06-b0e0-70d88f79f75e
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: ernrpEbhoAMENaw=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; X-JWT-Expires-In: 3585
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Tue, 09 Jun 2026 06:57:45 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 6723
+1 &lt; Connection: close
+1 &lt; Date: Tue, 09 Jun 2026 06:58:05 GMT
+NotVmrusa1k3mKXv2c3jEylvmjmV_chuonXbgD3ArG-njjtHv4Hc9ejPHmYe60NiccLMgAsGx8JvWoJW5w5NiEmVI-cGLX6BczzQ3HF6D0XH-LLTKvzzBcCEsrsh8nq-IaUIWeO7YG5NImy5hYgfMefwWwM45jfGH69M7dspTvd4IWeip3sWoA8X1Eh3He9t-UbnG8ORt3uEdprZoSO9b5omexDvZyzFxeX_n0Mmvi45fXn4eL0DoeGYC_a3rgwqObZZg7OTuuAzTbDqa5C5zK22buX2bW701yJujBxD_WQdcs218ccPhIA9Iw9r3AJY-Q1p1Pk-grJGuSPFR3nBBXUE4IjaS6lpuNxHUmmdN8ijduo6MA9NNz352vjn5-9g3batMyk5iGsJiYbRguAvdgG7erBwlnyiIwaA8F80IebmsQp-lQgeEr9ggHCUVSJCmjOwVFM9p8B5uWgUkuN7k5aqki2vbYdxTGyPJG8lg90fVRbeM6Qw50UG7hnQiWB7tkJxKrwN1VuhAis2SlB_ygXCBWYzKt43kkcUsbECGOd4p9_5_uiH1LnlyQ3ff9feZkDWOsBH8hLk4KDZBphHk3U9zYQF0iPlKYkTmAIQv1Pie4F_fzr2fs6ieyCy_qwMpCjXxhgL7bMVKR0Jlmhys9Lrge7wrQTON5_5YHl8f-9Wm9HAs4jOjM4SIfMAvw0d3ZzlxWvhRpJ-WieNQON1IlIxzk_1VJrXFsIyobmzS9mEWHxQ9MzTCWPdlsbm5jYGUPjFgDx_kXILDNifndJExe5CtBLliaHgc-rQ_wOFkdSg1AzEW3Jic_nYfnTTBFk4iyzSYRoalVd_G3tWUS875z8loCHQWQFJIR_1_SeNR1UqFwzayeBnqJ6nUqwb02khvjq7644kuP_cJR9VNVZQ1hhRRxSV0IHyj9O7ob3l75gKUioiMz446KD--UblRuEQBgFXsVn7F4G9KVeFdWcs7Zqy-1Q4ofJZYuRzYb0aAQEqay3BoxvpGn0h_UjIQTAJAfEamMVStpFEPugzBNFouBCm0BTwlNsSjo3ZHGYafgPGMN2PreTpEI-qWmk4N0rFYqUcdqIBZ_pHWCzj1ijRhotGTTCdZIszXo-I7cHOFzQ1IUlmT_TLMxvuQD7XlKzD15FTxzgZaahMi69j5koPW99P69xqz0qtUe9iHbCtwmz4JTG82jq-SErFQDyiAfgOibA7MJDMCJD3OS4ShXC79IYLoFsk3BFzXWX4KQi6QIB6DI_M9iccIPrLNIAp9wTj8UoRA-cClJn87dOOeb3XqBNqInHVo7EVNdD4iVfhr75fHqnwhmuFEGo_diCcaJX2HJdveYJNUdoDkU_iwAeIamp9eYKLq15DYu--Gtr_k9NpE4uTQtsQZYXgHK1Bc-7tsRQIas6QhoNII6xOaLWapGNxkJltOkAd7k3nribFPOrwdu_CzJA5Myh6SRAOkHBzaXXlyx2LXalyExZL5Bz7p4D34SKXRz0JSWqVcpmgX2SQ2ElCK94hSrrzrZEZxITmF5Ytp7TU8N817AfLKz_zFgdCivE5WhMpQe3R4v4Q8NmDsCFwFGb4lDQ5Dmrk_oWQCqBAVM_gESnsBHzAIJ7FJMJAaQtJOUDXUBqJCInfNxDEg1Yq0SMQYPkwD2BkVCmZH2R_3zW3ZdXBFlqdzEjOONv73QPnksgseti8enSUsLpnnwi1bnXz3871X4_kv8rjScwqyfm96_VL-PKNqyerZyc2rl1KD1gNxdyVB6j_yQu9Hf9MPFOgDbfhNDS229bYZgaM1z9Ep7NKReqET_T2OaCl3UhqP7mQDxquVuhW9qbM2NOjFq4PiNRjVSC09-29YFK61kydN-_AjN0dvBcYRkX4kCvnZWM08kOyOs9a6KpBZ5T4KJPpe-Hh654D2LydLz1N51mFi-mclWhPTRDAM9U-OfBr_ZeFC3c4mvOZub-CLie62A9tpxtVOaNZIMVK4smO5b9mfncD--VfTOwzHBBIaypaPnNlkdSEfJtGvpXNJ0k6sxNZEQ7Tz-gFclhZ1DV3nATLcJSRSc46KxaYZqh2JCblFjIErwHScOZY-jTitQa0hMIzm_6ktLdDfayO8BDAh72R18fYXsocIJv4HhMO1X_jReWjOkbXfLNvg_F8dPs_WA_aAnSs_GSF9onmrUbUB-9oIcOQz4Q3nKClC2D9vrfN09xaEk8Oa7Cb8pupJ7Y3CBNHGG3Ka-qigQxKtuKZ9hMImaHToeR4c89MtXhTWQ7Q_Hj-ElwZTF3IlZ1STbu4Gc7B5JZpLtz8LWHrPlz2Mhpdc1ySaMX_TziSLdv9lfJZ-zfWugoQwTuUGKcinhKsTARFj5qtfCQQpJpPWBOWK9S0SqU7-8M44mQ-1Vds6iur2MWzJRt9fnGcxXozGiJ7QaNov_wGnjQmynZ7JcMSoE_83lQAlR5HYIRWgJWiJtExHj1RFhN6M0ELBZKJ101nhCz5TL-Gx4TUGk6O2Xq5tX_Ct5LR7wFCyeKsK38emcvTJH8XEY_VsTrxgGNDKP1CWiHMgGckt_5KtuXRnfML9GMTve5pkh2twCmKL9ec5Vgu36ctBCmxwGvscYafrhyxLVDAYOTNtGGYd_1ta8tzu1jL8jQ9HKYgmqaTm2lcR3XWDhMV3-PZWv45NDIdLsOwwHutuu45RZEk197vVyElgnYKrE0Nl58jS548F5VreQbl7fk0i-oc15b3tUsYvO0LMGo3oEB4gvGrJl1wjh9ztsDMpFCNlK_n_16PRDbdt55C8YBTrTxES8XFMuxNrK7PfnLdytHO-WFYZTHgoTel7k1IKYh8YsCp8nA_wbwiQxUV29YdQnI08y87phzqGotqNhH0sYubv7Jg0Hdv8Z0X-GGSyxzHuAsZGgiYtyxnhREVHJ8vU41KoCz4XrnsF73HVlzI3QZ5fjhvRki46-ND2sVTMtR9Zl4I6tdzKAjxdJipYFged5JO0Mpihq3KAoG3-8IzLS-cNPwQGQ6XyARSJhOW-RoahGQWW3XZAkg30xWkD_SsMwNimbyotDGQzJZzv5ZeAsjBFKs_jmZjxRPc0pdc2cc-IgTu-g1vmD5w86eZh4ITu85FxzskxC3UaLFgD3z9sEG_-x1Lws8yN1kXeCo_lu9Fn7SK9vbxeOLOrzZY1Zz4ZSvV-EtqF8jtjeukec41DNGaDCFQjhn6JxBC6LN34j2HEXj_DdlWGoLGlUz_IodQgYhnaLxlmKHAvlfRg1Hvkc9GumYvL0cDakltaYz6iQsG_r3bk09Xik-JiC4NvGBzbmvmQWnWw6LIGjOMdnA6vGwFMzn1hTzyqZYqCPPMAfbi_GvvohM7lHFrG3NgMA-vuSicudM-HFf2EwPYO1fHaJLhr2iwJRppeFwO37L7TEBwGL_Hs6Af5mK6seAsbtVerno3MF2-_vmi_DhYIFAS6q-z9Qj-8-bqPc5_4NlOAdibnmi6QcGvyr8Ke-OFoR2Emrvi_4LElSXhWyC5tctaBqBz1ZN-Xb4XCRzfBViPTfBEd8Tb_hlLTfPKXF7o-4rhVi-BJoVGYGbuniEsimyD_zSpjL51r0lIj89l4P0rzupymRUN-VfkJnilJm8HnVWqWR82cTHRwbeV7tKaasaC2Y0gPmZGlm18NcE5uYyAZmSYVC3HXVHtTos8mHZBx6YBHNVk6fCVGyLPQQMZgcEKO0UczpqQMgPemiQrSszmANWZYQqr4CREH84yGt24-jfHK8lwqrPwGFawEAG3MJIOkagpXkLwhzp9t8iY45jsu8ccmLbVMmsXU59rB0BUClLAEtBXu5d6knbhC4rgVToR54J1k5ycZS3o4b3XGJCH9VgdxOrYLmd462dwUgVDfaxbvS57Hp7IQtZYiC1YzEf3Az1rdNfFq23yz3MY44DQ6W5Ev_SUrG593EBTDGI9o-sNq4qGYAywybKkJ86vyk710nnGrYbRTj67fpqJj68OI9SObdek_nw2P8fDZB2-slCtq8l-go7rEecw6ADg9h4NUwdxs3FvDztJJvbAYUpsAbbRYt2jvTb-WrutX4JyAU2gNieZRbGRIDSrtRa53CCJImnQAfIvcgF_xqzAXUpZL63rH4czEVVvQsob5pCHq1iwHZZm8dfcJ4VGjm5KdmOIXb90qHO8ei23bo1ce7iKR4Tuy8S-9-30eds16BO2V8OONGxzc27p2yFXZXnetyQrS8f08qyDPDo55ye-GyzFgDoFNX-2AzbURxL25-IDMFt58m5TkQS6KDQrPFJB5z-EUg3lfN4FhOj7Qkmg2lcnIvtpm1fPjO84UM757_MU9MW0LrmPcBZW8GlqUWY9snTb1aKEGFi2WMR3BqR1SsJ8o3U2Lb0QiYlypDPheWQ0iRAGWX4iHGBAd9jdDn0cRBqTcAM4CiaBRl4T-OEx3u3GMZrUClAT8oDPQdH3-HTey5zbaz83t8Y1_THeeY559QwijXSXGMbXAwJjGjfT03QtkcGRBqK3bzkZIdrcqjY71DYgKPLwcwWOWO7vKGFd0viIQhADhJhGouYDNdFwqU6x42oEVL3EC6Yu_D-Nxi0Bi25hzrIRnv0rgNbwIkVypD56Lnp4BH7VgHJYrr-DFCiWgOR8qrRD_eLvmk0ZxYbKT6GdmBnqIGuGkuTq2QMYHuFiFQAI_aQtd2vxGQfJI2RwIjV_k471kJPB_FeU7mVhm7Xgx-kVzwOB1VXyLbzMgXkj5s1nUWX3JEPA41xgKXrHRzv7YksES8sGP0V18ThWb26hnRtbNqs7jZ6yNvvAPpb45tKrxXNGScm7PRtgt42CN-9iF9Cpwzau0jqwEO9BoSqu4vT0NT5IoTO_okt-p6hAcmBCq0i9_6GYo7qjbBqlJ4BslWG1klHZ8fZN1DwUDO6Pf2a00KLVbKpRj0pUCNA9ahXeRw-L3LJTcwBMlokp741fgSXNoo89ds6Nnq8dquuHiyrQJn_nf_5Z0-iyg5PHS7mZh9qlFrEf-bXFW8-5f7MB5mZZfLiChQIZ5GplL80iMS9NpFxg_dwxDCUMSXVmrakmdBceK8aUYjdyDE3ZJ2LxjHk__mkmEAyHDAbTPpx9Ff45pgEwLhAEhQ5aUmSzpPIuM2I65_a0oOpKXHXDEdeyrcmDDwSIpEEdRl-emjLqn1gxFQECT436i0xpw_jDcXeu3Y3EDGDjeYB8Ms0kBDBf-BlOGbFn9MOhFbVkkVv2hxRJrp1LrX-CDMfWkev3eizvw0UMPpI4xRUhtX1NzGob5S5CgE_6P-wq1LIdcZr0-n9ybtblv1CEWPIFA0ZtdHxW5aaB_KizofrinKljOl8g2ewGTFr_FK5wM6pWaSVjNAB_-1P1bHf91MgSgkz2JnW2sAH1rTIgMx0_aOZcNDuJ_0K-y4ZVE-700a9yc6acNoFZMowUmO0yTT0WSCBh4El0sGMrZX5UYNuf824VK5K3XFJDpdQaHuPt1bmtAhhElctk8GzK38mv53bC_6XXBg--rMr0daWwDiIIGt3C6ZtXcWybnu8UX2utST9hn_Csp3zil3_jBRNFNKgdmmA9bkXamCnIFnrG0kqEFg_eB3FveSul002pR3GV9y-NYmxDjS00hgVNW-7QBmzWWqQVM1F58VmUyuXxQqS3PiWulk1-xwcxUuOCCzn7I4kiZ272USN6m-LXlKaSVBKa-SBKjxCztDYheYKbhFXxshwkhMGhGATE4sPC7_Plihetm3lCAqBWEuBy8EEmkMZ9AeL6udtmT6JWByDTZXXH7RCQRE8uh9Qygv9qCf02e7-UeEss6kjTpvnCfx_a1AVis22PENrvcuNx-mtCqtdc--tBlGrsMRJrtgOY1R12RKJ0nrVQN-6ddkZDusiKteT0CuyMIGNrfyWyBDyfpievPVdsdRsZ5LPj_8D2HGgnoqcL4tBUOHz4yB1GtXHx3TM86seSyaqpSBRaF4Ii1pLVis-6uVea17eXitSY6JR78BfKnGPoBdKRaGqapDVoKAiaZm458VLN3gfCXSgztmoLIGR2solz4KHrqvAAVgUJ7eYfz-PunngtEvGYH9mUOgvKsbiJBNFDLQ8QHqD_kNwmxCeogY6Tn3zCejJFrVnV6_RjZl8v9HYWTKKJqh_V3rQ7j8Ry1bBFWWfwXJe8CINI8jjBrVGsTkcehDR36Ru8EtzazwH5sQmuPMRDSzwqFIkPSZ8c1xOGqyMIhXTs4aPTic2qOWsyN8NNQ6sM4xNOfAKsVn58wbkKEBZTMOzSrxZfPjPnhQVpuZvu2iOMjrvoTiPvj9DCkXeEhppPT_h-XupytqeAT-nNQIaVA17P1FA2o1InDKSDXdR9XdHtNZINgy49P_uN3fWuuP0hP7bcx9Kdc_7i6pubyLT5nyyyYbqh190N-bCi6gPrd6151j94dPrDsSWPL5HJTDVZqXSlSnUNY8G17w_gsI64bQPk0DeFtswltBDvzXMLloCyWXuAnTIinYOlsz7HtMD6Y9iOGnq3nb-_P4seVlQ5ez5zraZ0fVgTCZPrLFV-G995ErBx_C4UOcjyDa0YWZfGqcgscDlnWbefKWkzA5ODh8DCXOOEXgVyHit9v15QNdcpRA6JM430MxmmkQuW37GZR6HrTRn_10D76UPPWDmeRM_rq0P2vneulxHQnq0LoFSXUWarFNqjyK_hylJ9SfZ7nwr13bsoURxNUHnlicd_wVhVbLy5jp2e-72EuITO8tKr8T4
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponseStr = crypto.decrypt(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Decrypted Response:&#39;, decryptedResponseStr</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">12:27:50.288 [print] Decrypted Response: {&quot;userPermissions&quot;:[{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:2,&quot;permission_name&quot;:&quot;User Group&quot;,&quot;page_name&quot;:&quot;Login Page&quot;,&quot;page_id&quot;:1},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:2,&quot;permission_name&quot;:&quot;User Group&quot;,&quot;page_name&quot;:&quot;My Task&quot;,&quot;page_id&quot;:2},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;Login Page&quot;,&quot;page_id&quot;:1},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;My Task&quot;,&quot;page_id&quot;:2},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;Work Queue Summary&quot;,&quot;page_id&quot;:4},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;Release Notes&quot;,&quot;page_id&quot;:20},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:2,&quot;permission_name&quot;:&quot;User Group&quot;,&quot;page_name&quot;:&quot;Release Notes&quot;,&quot;page_id&quot;:20},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:2,&quot;permission_name&quot;:&quot;User Group&quot;,&quot;page_name&quot;:&quot;AR User Entry Screen&quot;,&quot;page_id&quot;:23},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:3,&quot;permission_name&quot;:&quot;Admin Group&quot;,&quot;page_name&quot;:&quot;Login Page&quot;,&quot;page_id&quot;:1},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:3,&quot;permission_name&quot;:&quot;Admin Group&quot;,&quot;page_name&quot;:&quot;My Task&quot;,&quot;page_id&quot;:2},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:3,&quot;permission_name&quot;:&quot;Admin Group&quot;,&quot;page_name&quot;:&quot;Work Queue Summary&quot;,&quot;page_id&quot;:4},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:3,&quot;permission_name&quot;:&quot;Admin Group&quot;,&quot;page_name&quot;:&quot;Work Queue Rule Engine&quot;,&quot;page_id&quot;:13},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:3,&quot;permission_name&quot;:&quot;Admin Group&quot;,&quot;page_name&quot;:&quot;Release Notes&quot;,&quot;page_id&quot;:20},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;Account Search&quot;,&quot;page_id&quot;:15},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:3,&quot;permission_name&quot;:&quot;Admin Group&quot;,&quot;page_name&quot;:&quot;User Onboarding&quot;,&quot;page_id&quot;:22},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;Reports-Home&quot;,&quot;page_id&quot;:14},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;Custom Report Builder&quot;,&quot;page_id&quot;:18},{&quot;permission_type&quot;:&quot;PERMISSION GROUP&quot;,&quot;permission_group_id&quot;:1,&quot;permission_name&quot;:&quot;Supervisor Group&quot;,&quot;page_name&quot;:&quot;Custom Report Draft&quot;,&quot;page_id&quot;:19}],&quot;customPermissions&quot;:[{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;My Task&quot;,&quot;menu_master_id&quot;:2},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Work Queue Summary&quot;,&quot;menu_master_id&quot;:4},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Work Queue Rule Engine&quot;,&quot;menu_master_id&quot;:13},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Report&quot;,&quot;menu_master_id&quot;:14},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Account Search&quot;,&quot;menu_master_id&quot;:15},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Production Data&quot;,&quot;menu_master_id&quot;:18},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;HCC - Overall&quot;,&quot;menu_master_id&quot;:29},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;HCC - RAF Scores&quot;,&quot;menu_master_id&quot;:30},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;HCC - AI-Assisted&quot;,&quot;menu_master_id&quot;:31},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;HCC - Quality&quot;,&quot;menu_master_id&quot;:32},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;HCC - Analytics &amp; Pipeline&quot;,&quot;menu_master_id&quot;:33},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;HCC - Compliance Quality&quot;,&quot;menu_master_id&quot;:34},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Clinical Knowledge Base&quot;,&quot;menu_master_id&quot;:36},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Lab Knowledge Base&quot;,&quot;menu_master_id&quot;:37},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Medication Disease Knowledge Base&quot;,&quot;menu_master_id&quot;:38},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Coding Process Field Mapping&quot;,&quot;menu_master_id&quot;:39},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Coding Process Field Data &quot;,&quot;menu_master_id&quot;:40},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;Coder Entry&quot;,&quot;menu_master_id&quot;:41},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;User Onboarding&quot;,&quot;menu_master_id&quot;:43},{&quot;PermissionType&quot;:&quot;CUSTOM GROUP&quot;,&quot;PermissionName&quot;:&quot;Custom Permission&quot;,&quot;menu_name&quot;:&quot;EDI Configuration&quot;,&quot;menu_master_id&quot;:44}]} 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.45">
+      <div class="step-ref passed">45</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponse = JSON.parse(decryptedResponseStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.46">
+      <div class="step-ref passed">46</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.46">{
+  userPermissions: &#39;#[]&#39;,
+  customPermissions: &#39;#[]&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.userPermissions ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.54">{
+  permission_type: &#39;#string&#39;,
+  permission_group_id: &#39;#number&#39;,
+  permission_name:&#39;#string&#39;,
+  page_name:&#39;#string&#39;,
+  page_id:&#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.customPermissions ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.65">{
+  PermissionType: &#39;#string&#39;,
+  PermissionName: &#39;#string&#39;,
+  menu_name:&#39;#string&#39;,
+  menu_master_id:&#39;#number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:76]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:76]</span>
+                <span class="scenario-name">Negative Flow - Unauthorised token.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1950</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:76]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">12:28:21.945 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...bnBuJdVI length: 585 
+12:28:23.530 ECDH Session ID: d0af0bff-cde1-442b-9d2e-8e023cde96b7 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:76]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">12:28:23.534 [print] Using auth_token cookie: eyJhbGciOiJI...bnBuJdVI length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.77">
+      <div class="step-ref passed">77</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email = &#39;Vuser_16@veehealthtek.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestTemplate =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.78">{
+  &quot;userEmail&quot;: &quot;Vuser_16@veehealthtek.com&quot;,
+  &quot;workQueueDataRequestModel&quot;: [
+    {
+      &quot;clientId&quot;: 1,
+      &quot;moduleId&quot;: 1,
+      &quot;processId&quot;: 1
+    }
+  ]
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = requestTemplate</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/admin-service/v3/user-on-board/get-page-permissions-details&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    And header Cookie = &#39;auth_token=&#39; + authCookie</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1943</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">12:28:23.537 request:
+1 &gt; GET https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/admin-service/v3/user-on-board/get-page-permissions-details
+1 &gt; X-ECDH-Session: d0af0bff-cde1-442b-9d2e-8e023cde96b7
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+nEXhVLqiCJ-DwywUah_yVxd1qfcHAh3gyjmVBgbKqc3tVswo5IakPh5ePQHeXKMAtlywT6o4JbQiguPZszH6ncSl4uZoQw6410PTke9-rwYMbUclgY86U5srQUh_7Ju7Q1YwpkMamSiVYqGMuzXvlwm2dgiec7yRaBDmfyOF0eqVfsqxsT7ok-XicOiK
+
+12:28:25.471 response time in milliseconds: 1934
+1 &lt; 401
+1 &lt; x-amzn-RequestId: 84ee4b74-5b03-45b1-8464-3ee38faad8af
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: ernxMHyEIAMEE8Q=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Tue, 09 Jun 2026 06:58:20 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 49
+1 &lt; Connection: close
+1 &lt; Date: Tue, 09 Jun 2026 06:58:41 GMT
+Authentication failed. A valid token is required.
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.101">12:28:25.481 [print] Authentication failed. A valid token is required. 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:106]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:106]</span>
+                <span class="scenario-name">Negative Flow - Method not found.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2307</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:106]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">12:28:58.839 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...NHyGMqvg length: 585 
+12:29:01.057 ECDH Session ID: 3da918ed-ff30-41f6-ac27-210a5211a34d 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:106]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.14">12:29:01.057 [print] Using auth_token cookie: eyJhbGciOiJI...NHyGMqvg length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email = &#39;Vuser_16@veehealthtek.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestTemplate =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.108">{
+  &quot;userEmail&quot;: &quot;Vuser_16@veehealthtek.com&quot;,
+  &quot;workQueueDataRequestModel&quot;: [
+    {
+      &quot;clientId&quot;: 1,
+      &quot;moduleId&quot;: 1,
+      &quot;processId&quot;: 1
+    }
+  ]
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.121">
+      <div class="step-ref passed">121</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = requestTemplate</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref passed">122</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/admin-service/v3/user-on-board/get-page-permissions-details&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2304</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.129">12:29:01.057 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/admin-service/v3/user-on-board/get-page-permissions-details
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDguMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiJjYWU5Yjk2OS1lZGJjLTQ5NDEtODNlYi00NjgwOGU2Mjc4NmUiLCJuYmYiOjE3ODA5ODgzMjIsImV4cCI6MTc4MDk5MTkyMiwiaWF0IjoxNzgwOTg4MzIyLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.dAQApl8ju9fiOBbC_6ikupcvcHZmZphzbjdNHyGMqvg
+1 &gt; X-ECDH-Session: 3da918ed-ff30-41f6-ac27-210a5211a34d
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 188
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+KhueSUdzKL1P4vjLcRLI6fMfIWn61jaEIgGhrOrCZwoDGWz_H0ZExlzKmBZXE2VS1KdlxRu0sESuBTuMEVZ-1B8rZGey1UNawq6MFGeo-2cKy8GnYi-cayrBE9pP1cc9-71HXU6eiuunwQOBzZVslfQkH4nKwNHmy4S4rAeLg6MouP97_WNYjOC_xY-w
+
+12:29:03.372 response time in milliseconds: 2315
+1 &lt; 405
+1 &lt; x-amzn-RequestId: 61ebe5c5-5846-41b1-be64-3efd8691c76b
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Allow: GET
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: ern3FGvboAMELLA=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Tue, 09 Jun 2026 06:58:58 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Tue, 09 Jun 2026 06:59:19 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 405</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.131">12:29:03.374 [print]  
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

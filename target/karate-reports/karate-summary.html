@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_summary",{distinct_id:"556ac484-f32b-4b42-881a-1fcd4af45733",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>Karate Summary Report</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">11</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Features</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-06-09 12:44:00 pm</div>
+  </div>
+</div>
+
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <a href="karate-timeline.html">Timeline</a>
+        </div>
+        <table class="features-table table table-sm">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Title</th>
+              <th class="num">Passed</th>
+              <th class="num">Failed</th>
+              <th class="num">Scenarios</th>
+              <th class="num">Time (ms)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_V3_user-on-board_get-client-mapping.html">features/Api_V3_user-on-board_get-client-mapping.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/get-client-mapping</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">10679</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_get-page-permissions-details.html">features/Api_v3_user-on-board_get-page-permissions-details.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/get-page-permissions-details</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">6500</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_get-user-page-permissions.html">features/Api_v3_user-on-board_get-user-page-permissions.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/get-user-page-permissions</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">6870</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_get-user-summary-details.html">features/Api_v3_user-on-board_get-user-summary-details.feature</a>
+              </td>
+              <td>Test API endpoint - GET /v3/user-on-board/get-user-summary-details</td>
+              <td class="num">2</td>
+              <td class="num">0</td>
+              <td class="num">2</td>
+              <td class="num">5169</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_get-workqueue-mapping.html">features/Api_v3_user-on-board_get-workqueue-mapping.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/get-workqueue-mapping</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">7526</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_insert-new-user.html">features/Api_v3_user-on-board_insert-new-user.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/insert-new-user</td>
+              <td class="num">3</td>
+              <td class="num">0</td>
+              <td class="num">3</td>
+              <td class="num">21896</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_insert-user-client-workqueue.html">features/Api_v3_user-on-board_insert-user-client-workqueue.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/insert-user-client-workqueue</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">18664</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_update-user-client-workqueue-mapping.html">features/Api_v3_user-on-board_update-user-client-workqueue-mapping.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/update-user-client-workqueue-mapping</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">9246</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_user-client-mapping.html">features/Api_v3_user-on-board_user-client-mapping.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/user-client-mapping</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">9101</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_user-group-permission.html">features/Api_v3_user-on-board_user-group-permission.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/user-group-permission</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">8721</td>
+            </tr>
+            <tr class="passed">
+              <td>
+                <a href="features.Api_v3_user-on-board_user-status.html">features/Api_v3_user-on-board_user-status.feature</a>
+              </td>
+              <td>Test API endpoint - POST /v3/user-on-board/user-status</td>
+              <td class="num">4</td>
+              <td class="num">0</td>
+              <td class="num">4</td>
+              <td class="num">12073</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
+

@@ -1,0 +1,17 @@
+[TokenExtractor] ========== TokenExtractorUtil started ==========
+[TokenExtractor] Headless mode: true
+[TokenExtractor] Opened login page | url=https://qa.revamprcm.com/login | title=RevAmp
+[TokenExtractor] Clicked app login button | url=https://qa.revamprcm.com/login | title=RevAmp
+[TokenExtractor] Password field populated successfully. length=10
+[TokenExtractor] Clicked Microsoft sign-in button | url=https://login.microsoftonline.com/b4e7e7b5-5a57-4b8e-b453-d0937d9fe57c/login | title=Sign in to your account
+[TokenExtractor] Clicked optional Microsoft stay-signed-in prompt.
+[TokenExtractor] After stay-signed-in prompt | url=https://qa.revamprcm.com/login-success | title=RevAmp
+[TokenExtractor] Returned from Microsoft login flow | url=https://qa.revamprcm.com/login-success | title=RevAmp
+[TokenExtractor] Cookies on current domain after login redirect: count=0
+[TokenExtractor] auth_token not found on current domain, checking API Gateway domain...
+[TokenExtractor] Opened API Gateway domain | url=https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa | title=
+[TokenExtractor] Cookies on API Gateway domain: count=1
+[TokenExtractor] Cookie name=auth_token, domain=mttd2k3khk.execute-api.us-east-1.amazonaws.com, path=/, httpOnly=true, secure=true, value=eyJhbGciOiJI...ZTiwnC9I
+[TokenExtractor] Extracted auth_token from API Gateway domain: eyJhbGciOiJI...ZTiwnC9I, length=585
+[TokenExtractor] AUTH_COOKIE_RESULT: SUCCESS eyJhbGciOiJI...ZTiwnC9I, length=585
+[TokenExtractor] ========== TokenExtractorUtil finished ==========
