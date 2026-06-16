@@ -108,7 +108,7 @@ Feature: Test API endpoint - POST /v3/user-on-board/update-user-client-workqueue
     * def requestTemplate =
       """
       {
-        "userEmail": "saravanan.sek@veehealthtek.com",
+        "userEmail": "vuser_16@veehealthtek.com",
         "workQueueDataRequestModel": [
           {
             "clientId": 1,
