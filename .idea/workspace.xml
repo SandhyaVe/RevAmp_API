@@ -4,66 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4df9c54-214e-4d61-bd86-c602e502f3a9" name="Changes" comment="">
+    <list default="true" id="c4df9c54-214e-4d61-bd86-c602e502f3a9" name="Changes" comment="Some clean up activity1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V1_Custom-Reports_Check-Duplicate-Collection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V1_Custom-Reports_Check-Duplicate-Collection.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V1_Custom-Reports_Check-User-Defined-Field-Config.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V1_Custom-Reports_Check-User-Defined-Field-Config.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V1_Custom-Reports_Check_Duplicate_Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V1_Custom-Reports_Check_Duplicate_Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V1_PA_Insert-User-Data.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V1_PA_Insert-User-Data.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V1_PA_Patient-Details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V1_PA_Patient-Details.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V1_PA_Update-Priority-And-Lock.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V1_PA_Update-Priority-And-Lock.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V1_Workqueue-Engine-Columns.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V1_Workqueue-Engine-Columns.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V2_PA_Insert-User-Data.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V2_PA_Insert-User-Data.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V2_PA_Patient-Details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V2_PA_Patient-Details.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Account-Search_Account-History-Search-Bar.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Account-Search_Account-History-Search-Bar.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Account-Search_Account-History.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Account-Search_Account-History.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Account-Search_Account-Summary.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Account-Search_Account-Summary.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Get-Profile-Image.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Get-Profile-Image.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Get-Profile.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Get-Profile.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Check-User-Defined-Field-Config.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Check-User-Defined-Field-Config.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Client.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Client.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Current-Client.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Current-Client.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Custom-Fields_Delete-User-Defined-Grid.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Custom-Fields_Delete-User-Defined-Grid.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Get-Page-Routes.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Get-Page-Routes.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Get-Release-Version.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Get-Release-Version.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Get_Release_Notes.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Get_Release_Notes.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Layout_Set-Client.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Layout_Set-Client.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Login-Authorized.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Login-Authorized.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Login-Tracker.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Login-Tracker.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Logout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Logout.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_PA_Get-Field-Configuration.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_PA_Get-Field-Configuration.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Create-Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Create-Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Execute-Custom-Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Execute-Custom-Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Get-Collection-Report-Data.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Get-Collection-Report-Data.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Get-Collections.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Get-Collections.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Get-Columns.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Get-Columns.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Get-Custom-Data.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Get-Custom-Data.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Get-Report-Information.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Get-Report-Information.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Get-Tables.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Get-Tables.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Insert-Collection.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Insert-Collection.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Reports_Update-Custom-Report.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Reports_Update-Custom-Report.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_User-Permissions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_User-Permissions.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Work-Queue_Completed-Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Work-Queue_Completed-Accounts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Work-Queue_Count.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Work-Queue_Count.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Work-Queue_Get-Inprogress-accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Work-Queue_Get-Inprogress-accounts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Work-Queue_Global-Task-List.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Work-Queue_Global-Task-List.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Work-Queue_Open-Work-Queue.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Work-Queue_Open-Work-Queue.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Work-Queue_Reworks-Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Work-Queue_Reworks-Accounts.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_Work-Queue_Workqueue-Summary.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_Work-Queue_Workqueue-Summary.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_get-client-mapping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_get-client-mapping.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_get-page-permissions-details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_get-page-permissions-details.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_get-user-page-permissions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_get-user-page-permissions.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_get-user-summary-details.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_get-user-summary-details.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_get-workqueue-mapping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_get-workqueue-mapping.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_insert-new-user.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_insert-new-user.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_insert-user-client-workqueue.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_insert-user-client-workqueue.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_update-user-client-workqueue-mapping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_update-user-client-workqueue-mapping.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_user-client-mapping.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_user-client-mapping.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_user-group-permission.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_user-group-permission.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Api_V3_user-on-board_user-status.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Api_V3_user-on-board_user-status.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Set-Client_For_Api_End_Points.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Set-Client_For_Api_End_Points.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Token_Retrieval_V3_login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features_old/Token_Retrieval_V3_login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +33,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Sandhya.Ve &lt;sandhya.ve@veehalthtek.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SandhyaVe/RevAmp_API.git",
+    "accountId": "52cc0689-ebc5-4092-aabf-e6eb9a198d04"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -218,6 +171,31 @@
       <option name="presentableId" value="Default" />
       <updated>1761394107113</updated>
     </task>
+    <task id="LOCAL-00001" summary="Some clean up activity">
+      <option name="closed" value="true" />
+      <created>1781587809722</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1781587809722</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Some clean up activity1">
+      <option name="closed" value="true" />
+      <created>1781588197581</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1781588197581</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Some clean up activity1">
+      <option name="closed" value="true" />
+      <created>1781588240197</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1781588240197</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -233,6 +211,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Some clean up activity" />
+    <MESSAGE value="Some clean up activity1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some clean up activity1" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
