@@ -1,0 +1,4197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"556ac484-f32b-4b42-881a-1fcd4af45733",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.Api_V3_User-Permissions</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-06-29 08:36:53 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Positive Flow</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:71]"><span>[2:71]</span> <span>400 bad request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:90]"><span>[3:90]</span> <span>405 method not found</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:109]"><span>[4:109]</span> <span>404 incorrect url</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:128]"><span>[5:128]</span> <span>401 - unautorised</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:147]"><span>[6:147]</span> <span>415 Unsupported Media Type</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/Api_V3_User-Permissions.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Api end point - /v3/users/permissions</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Positive Flow</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2454</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:33:19.879 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI..._R5ObMlY length: 585 
+20:33:22.204 ECDH Session ID: cda9055c-08ac-4258-bf75-6fc9948bf346 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:33:22.208 [print] Using auth_token cookie: eyJhbGciOiJI..._R5ObMlY length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.13">{
+  &quot;userId&quot;:43
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth-service/v3/users/permissions&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2419</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">20:33:22.211 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/auth-service/v3/users/permissions
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiIwMmYxYTYwNy0xNDY5LTQ2NDAtYjNmZC1lYjMxZjg4NjQyOTUiLCJuYmYiOjE3ODI3NDUzODgsImV4cCI6MTc4Mjc0ODk4OCwiaWF0IjoxNzgyNzQ1Mzg4LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.zUbwTpdv-j6jPSDc99NRR5auBsH4RLWDrD__R5ObMlY
+1 &gt; X-ECDH-Session: cda9055c-08ac-4258-bf75-6fc9948bf346
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 55
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+LVDIqAo3YrDwVmqf-gRg73AQ6kkdsm_4SYHxAnnzJVVcdXCI7x04NW4
+
+20:33:24.624 response time in milliseconds: 2413
+1 &lt; 200
+1 &lt; x-amzn-RequestId: 141a1fc5-e351-4a7a-9dca-2b04df24b20a
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fuplRHMboAMETBw=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; X-JWT-Expires-In: 3583
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:03:24 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 14143
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 15:03:48 GMT
+3WNe29VOv9fJuCa1XEdQRFJxJS3om31F6zs8cPmlKEY1ELQF-hXV6GO6kDaeXaG0OA1Cf4MuLiYLg5A8-TkSbYTTxyo6OHCWTW14wJTG-AHSAW1FVyWQSnEPn3ch7URHg602xOqc1jhU5qCj2WDGnmG1pi3NPy8Q6weiqXIEjSztwmT8m2ve10w4ZPbIaaVpt8i05JNpWkmcfHk0poXrSMvBlyhcHVA8HeXBLN_OK792cy-wcrAFTBbrI2daQS26bhBFjyT0RoUYMYGc72CV9nJCr9-ANAuVZ3dgGMyazEThBsd6Sw3RpyhzHKtouFss0rysSxG9QJK-2WKJdVFaFrjRDoZdL8zQRMrerpdUuvYFcqRDwNFEopcQO0i4Ux1RwMz1yN3wZyWoq_E1J6Tb4Q4FbudNoUiNrYMsXswWvNXLeYkShno07sURxBCnD6vzkmI5Wb-D1YygiKNZjdXsxuxiVsFfoQx1YB780PN9bCdhQ2cbziyCOZg5BY6V4ftB4tIEX6ATm24bC7NYjXabZ6OlerAafSir_98KQgSfx4toWr4BvlZzny9Ux2HeND-stZnBbSVe4RhvMlGSVvCcDaGDt4DhZq613v2A8aFftQdh9qhV4Qxqhv4QR-uKeaNzxM-jmeLTbZci5BP7e20c7vFSUGh45RuRn1eEij4amNLhp_rYHaAgR03xQDA8VF2IOmjLQ-qsaosqPDWW7kUrNrxfhVQfZvEXV-VCuRi3TS8F-IpjqoIBxaWzNA3_Ta8Xz31yeTeFxo211HTllzkh3v9oHJ8KNraPbMH_QWoUwjkCkAdUyaM6uh_xuoKVU9aKLxs9_aF7mJDNPVzh7N_CcMQJosMxoJIutERL53cQmwco9aunSqaPlxzFcf-oluyBpgHLpTG5yXXUYBtx0x8ImNY_QcSetBANlRSWrU9TCzBDh7LEFWETuqAWeLY97m-PEcCOAYpDofMj7dTtzIR-rmEOmu13SSWM8pG2t4Wjoh7tjMqUty0Cw51gb6WaIGZ4JMLRToOyYPcNqxMsyBzXKs48nV9JFTDYYvVFfIO7iPofq8iaNd6SZHlSaZom7rjGfATV5VC86BbPDS_OXAinvYhZjiirmALi2lFNBdaMGmccRo5W4aKMcrqIfgKI-jy2bgjZPLwSVYxsGs1K-VLxkCng2oz5SstBLPutdEY2WlxKDhYSNtLIlDuR4TMmYUoGq2ohdP5dj_ph9qxluf6kUK3Fc4oZHYjijE7btfp6Hq1qDlnQtzHBK9I7WpwS2obyvbTR1yudJOHiXfUkYVOcwB5pbAvKZoBTBfxXJbDVgBO76jP0pWB31tDfc0JlKcZj4d9c7o8iPqa7vfTeEp6BtMCdtiYx5IQI0uxQ-4td5zn-UNhyLl0lT2pjhv3p-mpCQ1a3wff1AaIecKzoULyw2wA2vOGbeuTOGBt77B4UYQRFAml5CGByqZEfcoNLjA4CCEJCx8GfRIJ4Gbzwb71UYBNaUoKP7lIcr_jHuDb7R1bTo1AZyWWj_lm9lTgRUEHQv4k-6PrrK0Vod10u0tmun2ptZhTPn9ofI4eUFv6t97AqjIDe1l2SNkOA_FUKU8GJZ06_MaWCojUKCXsOyK76TwTm9-t2ttHTcPo3d__l91KKrwSvSK9Jevh6g8lGPZha_kwe780F8JEW2cKGE999QDdyZMGwKGP65PTvAjBhMtI-VbmVYBR0RPCpdz02CfUrwCunP6_cxY3Y-1Dz9N7alawJjnWuNFfLO9w8RM8mwOHyMp258Z-82tJujEf6Y7kWh71KPqzL5k2H1VA2vdDpJjmY5Zt1B1HB4Q94LIYr8emnKojBw_kbeQpaEhaR6xuw14zSEotffSvRqKtPIRPPE78Mr6IcMyUtlUeELpnQ9QCEBR3My8Q7Zijb8FsM0BaiAPUCCjavIoGhyKem2nlkOh7ZYzr4C132Mjs5FnzmNFw3_1SXlG98lOHnd8xhboljqBHNL6Y11XaeUfdMWRwrcNMZDh-9PPaj69b0ZiNoxJV76s3Y6cSQ07cmjJeNBFYT_nycE1NCD_ySmyTkSeGv_UyNumhDyH-bMhx_hXHxs7L_bQEQmSNUURhKVyEfg8UN7NcNLb5xSXs5FsyZGId_yfIe59VdKc74Zk8uDazPUmXJHo8VqyR_cOM3W8BYKRZigh6Sqj_ZGfnzLAow8R8o4VqIiIPzh8EpL-oXzOi9Fm4WHmH2IP9oxh7v5ggHERteq-41kompZkEZmJXXK2dRXlml4hGE1v8uk0LVoHG1y6dqYQGO5efjf2UADnoFUJHTMdDqaCax5JkXjhOumWUzkX35mnW_sgGvGao4DcfZieUWvL7zL4Wljnn_lVJxzvyz1NRmYCpxoo1pGd7Tphq6ErbVvEMJFmoHZu1XSLFQia_Eafnj49qJpXdAQJFLTah_vFnB57UP8ciYjEJ4oQLmOkN9ti06ja_sczX4LrXNxXeUvG5OcHalUXctzuowzo6q7YMYVFhEJpi1KzWOxNA6HWR4gIXWYamiA-mJBB5u6QcrkQqIcs-fXUnPwa5uUxjygzK-mr22P-WkCq-w3DPAeTf7BH9O7lcgalubfqgopNnss5z5jHK-PFdqLXs5zokpTLh_92E5ZSRjeD0ULiHK0QTW6YUyB2766HHjRfki_Wliy7rvZgRPeIzgeu2Lf330y-R6v63PoDtrUt_zGkh-kLWgpBjfdkc4fZ5n9fQxnzaO8K0__ugxnbf1P65DEQ6LUlNMeoyt1NccYGniirc3fFBg5VhNAAkAyVT8rQuzfWTvdwT_Kv3n_RrrlGcj2by6F_bMbTJLHjU8z7u9vvsGRCFWORd_FbgIQG9SPj5Dlbm2mYzlTTaSe-8nTeZO5Upjr2wdiyA5olNkVgpT99Dfyu_u2KD4VnZClFtznOl7htOP_YsMWflb8qO5e3ED_kzg3W9TJoCvcYkViPYuVsVizZote3lA5MnCmZZhb0iDWYkRKu8_TiKXs0GQSZGJ5MWgWuApyoPgvjVPolLzt1JMDOkl1dIG-lmZygZig0qGYslsuZab7tHX19-8Ltictc1vFlecNUhF7CdAStMJqfJELwwd9trIFaCnNvhRsZcjfeFDUPkz1zOg-nPd5vuBO5laOQlO3GbR8lvUda9aqcR0uLC-w5p_BygfN2MHu5rtHrwvsGZ8z16o3Ok7cQ57tMW68YFKX64boXv3vyGmVrtdEdNJrk7Oz6i_RBRonB9MST8jbzlEzay-bA13pYC4b4IwdCrL-1yfmcaDB51aw7jU7K54KmFj99YmhiNT95tq51eq1ITlp3vXJkcZt5Ts1ocnDOVV922x7pU3TmR16JzID6KDcSC0dr3WEXtN1IFCZeu8g-lPZJyzh7Zi1GSuQ7i32oGhwwMJSdL30tbyecDeZMiVqh8Qf1VBSMbfP09D5p94QPHVu_ItGCBmFZp52fEMVnLm0IK7umf3CeUMqDN6khbddnSve36SB_TA1skgA1y7hqhMkIepOEfp7tfe9A8trT6B5djvgEx6ciw_FW3RapxCBNOzgfRHg6Z2WEjTarAqdPFu5uzKhK2tlQuGJrva9NlHejYu_WRId7AywwgZTc-9nSYq1Pl_Ztca2tr9ZQjbAdzDTxWA0escrukTdsKi9msw_pCgs1SmdQq30xavSl0Sd3TbvbfG4y33QlfdMNutDbVtHCMArHhR9cQZxxv0nXLoscXSTGRJPvUZ06E9BUGPjdloxf-KbJGcDSU9WC1oQUs-NSbn5my3uw9EgH_TMyuDwTusii4zyUOJ7V8oAquJLnhN46JN888eoPjuWsoWskUWjua_kooMMaVzVvSrLaf6YeXu-dmx5xWqoOYuwrZpEX6xXf1MNeUw09NE3IRotazLi01mdhGWWk_Ak5ZbWf256eKjwwGJtOqXq04Ypom3NmHL8qB0DZeqFKyZZxf5vCNdA7B078AIK3pIhwO5Dqvhndcz2bIHcYy9ECSRRRVXnThrfcnMTd4eoatsmUDtNSSIALK4GAEDn_0FYONptL2moMUA1ln3QOleUnR-UO_y0eN1QTyn-dnI9cWYmlEgHtmEsx6DzQbq3wBQgZE-FODjY87g5qfK0hwCH9O9p_gUeEeMYS6ZtBbHigY5kfyCKL1IOznANLPAxd28tVoHxCMxIPZMsL31zKh9oYEbQRsAQGXrgvlhlbozDNILMcXWA9jwuW4tItS5H0H1r0RA0b9-kjpvJOldqz2paYP4wBa1t1IoF_FLanJ9awG1EKUDt5yQmOzOi69Cs2wsnRcutMY5g1felmYQRT-ZOyYJdwVusL0AWGxjFYBX_1vCgLh8bSZmWy11UR0T4k-TZqPk13sFOI2KiET--LdHz98Mf6M0Se0f2zvy0tWYS2EThJDEOR64lTVDwPPESckaxm7Sg9lnqO_-b6vZdCV12n_L-7rmZ78OezgnLVpEKa1r5CriAvb6ztr4BXk2EcupYAwVB70MzCKHalmzrrg14AlUlb9thMHkBHSJIoHjXbCzCS8TZHDZawhiggTfr3GZj3jZLjFMqa-XBCvW8ANPaaqDd99V_pw01kjMJv9xAeV8I4U4Xat49nXAK3SxivswhSU-AdGR2koKlwXUz0MGH8dp_sfZ0PyNp7koQd_l0fqc2H8G-z1ahNC9fi4rxyV3pxEGjou3Fd0JtrwEb2Gdvl8YwaEXUYtNjFtfyV2KyPoJzkxFRsfceI-Wbokvacv3UNz49mccOmsx0keUJ5X_GdeQvi5VXW8Ig-t6e0B5QxoEiaRRkryl-kLTvouHBkxo0YrSJpHuS6Kt8nk4TA641gs0AfJH8MA0NwOJ8JNqq_rXtoeoNF6cZ_ga4ca2Sk6TDjMEugCW6xT4lecmiwYQmlGepRJc3IbdJZBdGKEElNzQb8pKvfoeDDUshVapiL2EO2Ki5tV6Xs6zsdpRxTi5BDJRhWFq57kfM-9LPDa-BFPqe812ir5JK8jnU_XHrD9IouWavM28_L6yK3efNwMEvQwxDFBt6BDvtJ33knMjomnbjjGnD2tXgXCYNldjeXGflQ5pvF-Ivfi1y2JqHJXDk9-9dlSYXxz3zBO8PJjNj-dZ8IyEjvNg7g6rw8mYjls35MneE2lLSa66wgYfXAeGhtWuPqn9n5HVBP1oZopk74M7drmB1DJrWtBwxHfH0NMJk5Btc4lGLeYNWi25cTYVvkBqBzFmvzN-iU80ZEevzWE64U5x2iW7iifbpOgKLdGz8zMY69AZrjBtlxRyO13ify5lwz_0-0C6VE0_1TNCDRNToy_GjL_qw2LiHFn8FD_0wY0X8n-holFTFeYHoi95HWOPIX3Z_udJxNUz2ANH67qshi7bHO1EhVI5b4LOM6E4pyt7aXgyDeUlfJ0s5cqkwZj3fcn3OZYVO-gCM0s2SYus4hHpJK226OVjH9Zrw5z082XoNAkrsiEnOBzURadXcSioYDnvp8zDhTH9sWR2amG2uwf-U4LEFwFOhksIqb7i0OOyP3g0QRd7dVmhwZDqnnVM2U-VOIfCSyz9x4OV7PPbZeUpBSyiRtiKCgakJUjl76LnU4jLURkfeaE5x1bntE3zX5v3jKB0NtIERF-YygzJMI5S9NrKadDBWDPLnt-2iuFgoScr-0-lb2oJaSWCra9VyVD9JQUtmpUr79SJstyBpCjbXSftlUkvj1HoRIo8uW78N7FObMvqv40sNine22Gq6atStNIpYdTQldFXT9qfai1DJWV9Zq2IuENdkThOsoc8CWPNcPXox8RgjOgG6QNqEwt-tOC8BrbQLvyl9Ao56Aoaf2YSVG6ICySWSdEQwyxSDaIPw-mBErbIOhyXLtva3y4_DeG2CNcpi3VbWnFDJkOYmAALP-x888LsjABGve_gQa8zAriHytYXfIjYBFlJ04Qeg3ZfKo7Y9pi-_taodMKVzaD-KB72GRThXoXcxt1QCmGcX5fITaZZTtBBIaoSvav3R1FW7E5Q6EPILiBEVH8MYPh38Oxp6-KtVeHvbK_KZ6YMPftSufnn09sffWcfusbevNy6BB-a0fisyErgibE9eI0egN-E5qpSmYN2-TPZM3FoJt_rEQoA_jntWX2tiPWWFPCROYyQr1O8FjKvcqK9WfvckNMKq0mhgNnGyhSw9yoMt-3_D7E1lGU_RkHWPUtQcuPEIqXj7SiLczkJM7axOJreOh9qekkMqT6Qm5yUAmQjxalIOplzN8jLaASDwIjOKoQwujrq4lkXg_mk49qFhKWbR4nikWCCVRt75P3laL7HltKyBfgFxV62zP3B_LBhq5QNV6VWljtO3vLPFPHTWDU4Jkm2qSeiu0ynZtZ2QvF_mtrPJs82YkAu2r9m_LeKVvBYouoNqXTHmENbgREtX28PvN4xv0hPV9POmM9io4LSUTGHIJ-lCtTnmC4JZzg_T86I-C7hMLQe2_ZInnLAbfvTQmM63qcL55FOqxd0a0tzgv8COYuGAnV4XHzDqNIEq7cU2uxDgG6S6_YuIiRi-FBffZTMkT8X7W9xb2W7k6dIhaUvcJwPvVhXH4_PKeZm0kZGeVKIOb419yGj7uLVdkRXIPS2tEKdNcvMFImcEzu-eLO0QBe0D_pH0yVMzhbGdVpGSx6sTTKAx-wnwSKHXhfP92WSKXNv22boJYNUXpzfZLaNRanUAp7YashuWnO0-aLserGzZIvG1VShXaVc95dzq4maj-nKPMnQ9Kp9fNen2126aNUgI0xp6dNT9nSL-i6nHu7ZAnJ2W8AnFCi6FzXEKgIhPdAZ8oBaGN-8n3hFACGvNfSQZt3QBjVKbOVq73DR_ZnunjNjySYuBe25JeR4FPAOTygCMnpeglX8V4wDAHoNsE1VCdvedl71JclcFac2It318wb_N8KERbdC6l8PoSNZM1vpsqiW5LJKqIRpu4ZDBSZlS1Wcvfr-zK73cUWW4GXLlxmARvEOvqWo1GRWZ9TonuqvjRb6oA6CRy1oa6z6OL5lNIKDfRaBY-M4nxeSNkjfyZE7GC2yJK75N2UcxvetfkQjUfCu3F1UAOWqo3PwlH_I-K4V9My8S_xb2m7zm4QbIfklsklCRqxgBDMmrQSRjzvrKxggQW3B7QLcR5TyzNRHNT71tJsC9whaWKf7kigjKA_3E7fBGQpY_0fH0lt7eR-faFhFgAVEg3xP9qfXZSv2WSXAWhPoBqCwT8cnT2q0_O4sLwD38Itn0krq0ZsLkPicG_W-OQAq4UQKB7oKvCSVbfpuIJe6KMDu8SFprDQtuwhD9DteuDLqe5vY4c8xatW6hfr9CI5iHEk3B3p31SzROqUnOVL3JiKN6T5W0Pk0mqIWCAiAiIWYha8NYcTACoOdyWdUu1qtsnJS-qOLw3IIspjth4dTekFZvIEhJo_4x8pWKn6FCVbL24NXn0lAr-Y21whHmJyWvQ4nVS0hfqwivQyF6-lgT-CsxLQ1dDEUAEtFMV9WmbntOnm_sTYCToW4t9dy6Q2IKC-fDcj_zlNfLHiDgCClNM8M2XDOMsRpu91X0bmB3DW6AJTXt5w38_CoZpTnTDj5MsIEx-afPSd4hZ2cATKwo-AkLIcVLNZYiRUhUREMCbynAjvDczO1RcTV-q2X3K8YG8PNhxuMfruRfon7dHJHZtnvlQBzVOnDhisqqYhkzlHwpWqMD0thxRuiRh4TJV8Mj_JYIBYLJiRQGvFQyOEQY8PXpQ9fMcVAypFhMEmzCIwyfPEbhccxNEe0EDEfXrUuTuFygyrx8ZbY7OlFrNCQzwz3YSaijGvBPlRzfwsWOOADcgoCLVVmKyCz7WeLzG1tRU_Qs88fE67fEH4qDTpWIu1ok8K7pzcVocFBUBx-i3FRr0t_2nOIm8gNUjMoBBpqgtKnQeE7w2ERkNka0jGY-MKrjJFIVkh8Gak_uoP8JCY_7B3TUQ5n2hXxpTiOBWstSTeVFKsdL-F7rNOSIKR7qWqZICWYe9WPRdCZfL0DTZmUw9RWtCIFkIJgjUg3hLW-3VAxRLPyH7dvgRulckxjnE1VHL4fEEJCh7_2o14Tq4WDWJ3CZ8wtO_22y_bDH9de-C-aR5XPvB_NRdfDKaMqQbbEXe3IKiAclpVseYTMoUARgBUVq4I4Ngzh9zO02cY65PmYF3obALdgmShCcCFTXHwykut2Agg0V7nOOWvDE2z54a53DEFUV3HEwrUHJbaFkZ-8t0qxbfwaS9buIgKcvUEmDHIiVtnDGrtuPNqdLS3HmCcOycBUo-0H9NnrGzV5dMk03wdGjJrBZEl7Ob__7UfeRGKOoUVrbw5_AKup51H5y60O-9P1jx5UmrtwIbD7vdpL9piDcPKrfzSdoBEUQUDRW5IjNAsXuuy-JnYQMsNMa3G2HoZaGKbd9zMPManEEPoHboBmYz0Ct8Hixplhtic0DOeQlAEDxeKVLOaWVWWr_-8s_VjsVsuLPhv7D3iE-nE5s2PGxWutx-gvSDBldv3XpmJQbnL_q1u5Mg8UTTzntG9HSkFE8bj59dyDnF_2oFUKu48vEPR8fk2cTfyPBbLCVk5Yr0z77wJx582eiqDr_AUFcOeJ2L_Ehm0fjbtjD_w7Xq5fR6NG5oUJTYOCcGoYxDp8AhzPIcWWMDixwh9qGI1tSTVbnpyHWJGOXKugdd3oLvSYgfohzdCnmMx7WZUa8DisG4sKGpuAZaF8y1FOCZSPUTT5HxMC4X-eU72aPI-tVx1vDfrIMz0tdQPD1pYiFqySA_npRSQuyVJ-0XvtnzDHWYk_hqL4qAhjgByXcosMMuE3xrCxqoOtqPDef-_2zS7JeEkYSY43ttU5ubujSLmdFETWN-za3ekOuqv9FZX-a77JaPnlTY_F0xEntzR9dHpesdeYozhhGCy8--nPJXMs0wF4FdMyJmsUqiQIRJ7X9DCiDskbPE0rbFDCz7dmoJgoWP7aHXn5Rpbtjh7RY64bQSAeDa0ZGFRzAGIReJXrubwO-G-thc_-H82nM1YMS0pA5jKQaR299JlkD51RNu0Bd7Pb_Fuekqbz3F_g2kJawTZx5btIsBv_5rcBaDFSqhFWWd8ksheItASDk2Uc6iZz48Wi1VEGqw_TGJaYM6Tu1-7nqc4U2zybfyV3sqxBIeoWg2Mgt-Ga0Lbh2oDxBWOrCND3Id-9S2eQG6BMoRnUmJeODkJEJ-_bG_w-jmMjxRvIBF0Einy8qyJBdefLmR7uu1khFGCttHYLozVpiH5paXrezZSrsKDKl0QU3dH5JDHn67L_wSQjQtefaDryakwqOo1JnZfOQRa5uJCr_jEtGetOBOz7Rj8asGZGnUN_Xmn9_e7nyWtDn7d9K77UfcabYx8l56NQi8wUfIxAmK44u8mCPYZ17lHi11D017gxblbeutd5hDLhwlUv3RkD-AINJDqRUfYCa2CHm52YnP22T3oo8lfqE8dR2hKRcIlMyytlmkbzPNCu_FZEdntsG1ZUt6llccCtyiZqP5GaWlZ6IuQcrwChxAEwr1CITf3NbomYntyBUHpU8MSMLDWFDM52zLUuG7zxNYmLtDMwQ6xmrKSp7CLiI4h7DMOy5xE1VnI6nI45WCCLvEly3XarHJ_80v7Ym1yJa9POZv5Jd0-hXVn4TN_0daA5SCDdQCBNQ-QpPqJ0rNaGZcHBLd9MCzhbI7C5DbKJXidfFLBNApSNgboe6VkquAvnm8xdT2w_2l1sVYid0nAIiPG8eKfgHwKesGkaQZBc70V6vF6IdzgacoJ7gReAPjsb8J495fOuYZLzm7YbdrwFTpX3iU6MWRe6nr_xQUHODVMLSlg857zr7NXChhHb_2aWbO4X96eqtKmMU7SGuPdBv2QuhdnDc1Mvmu4MsS6iLjAbTIp_y_IOcVbIdl3kAZbPDRe8iKn4Zr6RoEyMGDTNVN75OCshZfS2S4w80FhI99rn6yGRqzW84uWndHByjtn8v7_k_TuOpRXj4kBSoQ8AVexKRwbMYoI2lMiNHytVUkbJLC5XiLJKwnI2C-JPKB3M7arZXTL9NGM_46UVOw2b71GBXBS91GJnfdKeQTLZmuVJqwCKDPqfjFrPKZJc-BGEjPWPMirVSZJbeM5waoveoMrD8Rvs5wqRvVk-iz-1PJlSMaA0ccndvB2mNykMEMHTEoQjgqU4O_fR1qKuPYiSIEdgKKtuPAPclsTO9jPZX4lPXs50-pIN8_gzXzpcORSwK79UTKCQxpGTmzj31v45ZPJ8-NtlnE60hvATwR9Vav61ryfWFJ4wcfTYeCJjxVB6zVHKnsX9mE5-hBuHwh5o8DrJWECNmN_Fpy8ya0JXLCmLEN2sht2Tdk1CFuwrH89J_Hga_qXRO1hfUHw-IkeOL719NTDNLl4EfDUe8ClP8UKlBLSoP01r7Ol3lkBVBKQXqJRwU2x0IWC6bMDEkr1WsYG1qVAdoY9EA3LsjvYWT7Vf904UpqEhg6AeGwc_v0tUodVXMGszi_EFaysTkdO8wE3qwyYn8zOa9zOgmIayvxM8_jmJVJ3E2y0gLMa2PYvGrpEjN4dcz8GYU1pRhRvYyzUpqxqzRkq7IXrr274mEskdyafaHIpZz0u5H3nKmbM_sf4OFSsZ5xEKiwOUb2QLNTF2_h1E3KLqWqnsLixmfAchiDcXQ4JJxmTye7ekmpR1kACMaj3dbMEbJVKJSF120z0CNp2uWNFtPKw5AUX0MAZX_9Aec14KA4XFUo-yMDoPyJQHGZY-i36CJb2XRxdwh2we8Tn8sN0HlkHSRpb8f0L4V6EuKeIQJDCuht3ESaCDrK5e_hgAvqu6zJCcpWe7rooWhMKRTVcgDxUt9bGIhLm9cicrKDEhKs6l-cR3E9SGlX1hUFikJZE93cw6TShCVLYiY4DWrWBCgSIX2tNZLhFHetoE914GU6ksT5um_E6g4ISCykwStrMUU9t8ZNq9Nw6tWcRyRL2sEy-MtoE3TsbD9TQKLcj_Vr4AkS-AahD0Lz0gxgFiM8N4m40M5QAipSXBH4_GzkZver0V2C2tRSs3Q6EL1az2P9uinL-LcgfAPnHS1wEuGY4NdMeFQqRQLSgOBf3vjzGIvtFiYIW_fv3nySuJMNwjTZor1yDVrhkLg7QnmWNMxLXhAkSdGbTELq8oJGt6smkMsRvMGG944ijCi3-6zxjfWcI6lr_iVELyQHYZHjJtAFF3BeTnSpKhCFEWRzzKktDN7GdeGox9elt1UVVqvgP1dzFxuIfQVcoF9mcL9QMMoXP39dQ1kMdZeURQWZ2_bHvplHsh7VRNzUrcQgC_KZuRsz1csPv7UGr_xXjbTb1fjgEwB7tf4RB0kFozFF18QGwRFHDKvWFDKatzC5hT9fgCWHTEgG3b2R-ro10HX_fTfxrAEc8PP7DxZMSGBRZ0YMwI0eiyhIq5LU34F5cDw9R_KC1KflwOABh9epuT16aRTm_9hJ2F_UOompBM6sOcO3sgdSKU4-nzwIPxklelsvU10jrEC2oRZbr_wevx9sZIFbUdk6OSXBCKyjxwehwWrcerb9PvusVNEUd3l04RDnZqQ8SsywfQM-U9pOiLWTr2OeHj5swnY-fGOs3_b-U3ulI-SFwUP2MITeskDqMADdGo-FpwHapWk6SKYjqbF3P54X6o5ney9K10P2stDSlqtcn9dcUS26WDtbaSoLDh0jDSNJ3DUg-mcleFYHKTPHdr8N6jhvqRSVQESnAUWggx99ngtnxMOIlmGbUK5zR0buvMoWHE6sf7_dUQQMCm2F9JzUW4ct0GHCln4621xpGv8atlz5WomozzwwAky_M-8Xi42ipycit7kV6WAFmefjdp2ig9oW9Z4SyKNEHdIojBQW8IWGxc5YX38fbCCYEhymPygoteu3jX7ML6LTruqo2EuHWGZ9tYNLi5MKYQLx3O4-4I6PVW4EEKEKV4FP4Q5vSO-Iwx0Gv0S0sOfBndOh1hfJlm6Np-flcSzP_mqLvdoSxrs3T7yx5FajmO84QvCJBQO62Ck_5McYIuAzFzOqKkO2dld0IGOGZmyPobEaomtd0cw8Bftom-XVwuQYZXFT8J2i9iNooXUvXsDCvWRuwJIYRaKO_HnCTT4yvVyUBF7S2xQYDgQ6jlDfScWUeyYk5NlOM2RDVjiNZ5fdLpOmhuSKjjqlOX51EY49nMg7uLV4jhpMTXkek30PCSoYnkERkJmIK-ssXwOyEx1hjagZ7Q3AknnvQkUvEKxFAMc2VXEPgTqne28z1ykMrytZB0tVDLRdim-T2f2rphUp3UO8LZfaWFGcpriumGpCuY0Dvtm-VyOU3NFkf3TXDNG8PD9j0p0gBUtdG9f-kRshCQAUkRC_tas3lGC90To_-ranemqRgVIgiV-YAsNVfj4poM_J95-BVu3ECvHjrMaFe_eLvq5a_Ou81WLbtyLISu9itIP9jLcNECMXuI9LUinMhWX0PzO4UDlV65UajokN-3NWah-73iG1rn9A5Y4e_dmWRaPH7QB_D7cWhRIVKepwsVcyaPHqMrFByC99bG1v2o2dV3Vz38Py-RFMlS2HJ8WRpLCsU273G-08dX71OxC0kogtWWdpGmRL4Uqt4Nxc8g4V5SHu-c7wdZavC8FIjQEd0TZJ28tkkgxL4mpynozUUSrco6vLst0UeI-5CHHE-SrKmetP71PQ5vc4iuXfpelq4c2nqI_-IClySHJ5et1PzpmrOYF6bVHq_JeSZaW2FFPaXyUh4ilsKF-Z9MJQukR4N6vyNXFGgAIHPVANDehNfAkaXwgUFc5QC1J0tYu9n5Yml3jiVovPr3xETG2X6ViIOgAmHOwPkCtQFW-E2tSkLAIRZUbr33CXG7kudrpD-GRt73JrzMkpCYdfrvfpw_dyH0qQnvZDr08ufOmOFa70w1yufY0QgKIdrO6DnI2qV_R6eL3b2c18JtoFbYD-Jv8nZKQ3XnVlXW6IyaERaMri4kAnbLpu8wFR2lDd0d0r7W95K1j6hTnsIOVKf88bP_Y6r6aLW0L1zQ8Ga86xJLGxQ1weh_igj-e0c3Y245FcdJqOswv8MIO37exOfbj14gA3LnK5qwipwri287WEDiOeTq5hHVqe0mTcSijZ5JVrFjDYI-Z1hLlSjvM4PMrxp2oRiTV6-KF6z53zjLtNLPmaPC1f1rxQoPmBhwIxWYdv19KMvgEF-HWkiZtQI4e0ImKse_rHcv3sKXzAR2XFr2-4MBEnemdJqUYtl7UoWgkr3iRgmREoMEcaydkhdwYV1yvit-new6P2WFQ64yu52geWLI5yrcROZd5PTSdfsVXmNTwCeZ0twdr68tQRQhUz6fwkjilMCmOjIFu3H3tVm7LFSBr8kHzU1won-1dLx2gFuU6FVeZcuTQHRZ5ycL5GUfSS5flanxNccaNlLuj9pgE1WYY4jLpnvlS32x2mieZXsN5PlaDX7dhy8HMzEmGVfC6MbIFNuLYPLLpxIMFTYhn1n8s1IItx7DK-1dbiu49VHrvhUa3A5EbfSeeSuY3_Y-cJ2xduQV7h2sAcazGM1oXhIQV4_xXTtw3KQqFdpi6WAxiSfZ1WkdIwrDhpuhBx_ic9Mr2z9QmYg0lPh9RFsUR58tbMp8A9dKqPUISOz0kCrSW7Od4xZ-dT6D8W5E0HOb3i-RXjnrIuHvKwSvMbVmsu38OLGjQh6z9lvEy6Eo7ahAPpQSN7VBRYJY6LPiiyi7Q6K582xt4saBB6xAk1GZFGAIY-n0_vHZ0lgeFsukfMFhPs43yBM8_uX4eYMf0XX3cbG--lI-m73oXhIu-cZez1GFpRysLO0hyW6euTbFNDdWU0f7wdVY1IQBf1WXEUGolagC7kr9d3Cj6YO6ZpTjyJPDhB4-tgSpr21i7_MvRKMZnVwPpzoX19CjZgTP8IlYEXu0DBu6447hrbBjLoPqZCcW9gdep3fP9wuCl5vWcOTMuFVFaH6R76AIV58fauMlToKZyxiH8iYLrrI0oC7NND1xguIOm-cfMMrKwvVZ7O3eIzRVFrZjHRok4dujSVuznGUbLqNRclNiJ9A7qgSLDqmqf-6kERRso_tuB_1RcskBrKuK_2808yT0BKQBf6ADwPcCoeYcvvECKlAfutSt-OE3WMkfyjwbmo5jJiMLCLbaJbu2kuGQCO4vHTgQkMw-O_flDQI21kMaNngaikID_uY
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponseStr = crypto.decrypt(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Decrypted Response:&#39;, decryptedResponseStr</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">20:33:24.624 [print] Decrypted Response: {&quot;permissions&quot;:[{&quot;page_id&quot;:1,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;Login Page&quot;,&quot;page_name&quot;:&quot;Login Page&quot;,&quot;page_url&quot;:&quot;/login&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:3,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;Work Queue List&quot;,&quot;page_name&quot;:&quot;My Task / Work Queue List&quot;,&quot;page_url&quot;:&quot;/layout/work-queue&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:5,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;Work Queue Process Monitor&quot;,&quot;page_name&quot;:&quot;WQ Summary/ WQ Process Monitor&quot;,&quot;page_url&quot;:&quot;/layout/process-monitor-view&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:6,&quot;permission_group_id&quot;:2,&quot;permission_group_name&quot;:&quot;User Group&quot;,&quot;descriptions&quot;:&quot;EVBV User Entry Screen&quot;,&quot;page_name&quot;:&quot;EVBV User Entry Screen&quot;,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:9,&quot;permission_group_id&quot;:2,&quot;permission_group_name&quot;:&quot;User Group&quot;,&quot;descriptions&quot;:&quot;In-Progress&quot;,&quot;page_name&quot;:&quot;My Task / In Progress List&quot;,&quot;page_url&quot;:&quot;/layout/in-progress&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:10,&quot;permission_group_id&quot;:2,&quot;permission_group_name&quot;:&quot;User Group&quot;,&quot;descriptions&quot;:&quot;Completed&quot;,&quot;page_name&quot;:&quot;My Task / Completed List&quot;,&quot;page_url&quot;:&quot;/layout/completed&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:11,&quot;permission_group_id&quot;:2,&quot;permission_group_name&quot;:&quot;User Group&quot;,&quot;descriptions&quot;:&quot;Reworks&quot;,&quot;page_name&quot;:&quot;My Task / Rework List&quot;,&quot;page_url&quot;:&quot;/layout/reworks&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:18,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Supervisor Group&quot;,&quot;descriptions&quot;:&quot;Custom Report Patient Demographic Details&quot;,&quot;page_name&quot;:&quot;Custom Report Builder&quot;,&quot;page_url&quot;:&quot;/layout/cr-patient-details&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:19,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Supervisor Group&quot;,&quot;descriptions&quot;:&quot;Custom Report Patient  Details&quot;,&quot;page_name&quot;:&quot;Custom Report Draft&quot;,&quot;page_url&quot;:&quot;/layout/cr-view-details&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:23,&quot;permission_group_id&quot;:2,&quot;permission_group_name&quot;:&quot;User Group&quot;,&quot;descriptions&quot;:&quot;AR User Entry Screen&quot;,&quot;page_name&quot;:&quot;AR User Entry Screen&quot;,&quot;page_url&quot;:&quot;/layout/account-receivable&quot;,&quot;menu_master_id&quot;:null,&quot;menu_name&quot;:null,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:null,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:null},{&quot;page_id&quot;:2,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;My Task&quot;,&quot;page_name&quot;:&quot;My Task&quot;,&quot;page_url&quot;:&quot;/layout/my-task&quot;,&quot;menu_master_id&quot;:2,&quot;menu_name&quot;:&quot;My Task&quot;,&quot;parent_menu_master_id&quot;:2,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;demography&quot;,&quot;display_order&quot;:1},{&quot;page_id&quot;:4,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;Work Queue Summary&quot;,&quot;page_name&quot;:&quot;Work Queue Summary&quot;,&quot;page_url&quot;:&quot;/layout/wq-process-monitor&quot;,&quot;menu_master_id&quot;:4,&quot;menu_name&quot;:&quot;Work Queue Summary&quot;,&quot;parent_menu_master_id&quot;:4,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;list_alt&quot;,&quot;display_order&quot;:1},{&quot;page_id&quot;:17,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;&quot;,&quot;page_name&quot;:&quot;TRS - EVBV Production Report&quot;,&quot;page_url&quot;:&quot;/layout/bi-report/production-data&quot;,&quot;menu_master_id&quot;:18,&quot;menu_name&quot;:&quot;Production Data&quot;,&quot;parent_menu_master_id&quot;:16,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;incomplete_circle&quot;,&quot;display_order&quot;:1},{&quot;page_id&quot;:27,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Quality Program Dashboard&quot;,&quot;page_name&quot;:&quot;Quality Program Dashboard&quot;,&quot;page_url&quot;:&quot;/layout/bi-report/hcc-quality&quot;,&quot;menu_master_id&quot;:32,&quot;menu_name&quot;:&quot;HCC - Quality&quot;,&quot;parent_menu_master_id&quot;:16,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;finance&quot;,&quot;display_order&quot;:1},{&quot;page_id&quot;:24,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Overall HCC Coding Project Dashboard&quot;,&quot;page_name&quot;:&quot;HCC Reporting Dashboard&quot;,&quot;page_url&quot;:&quot;/layout/bi-report/hcc-overall&quot;,&quot;menu_master_id&quot;:29,&quot;menu_name&quot;:&quot;HCC - Overall&quot;,&quot;parent_menu_master_id&quot;:16,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;finance&quot;,&quot;display_order&quot;:2},{&quot;page_id&quot;:26,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;AI-Assisted Dashboard&quot;,&quot;page_name&quot;:&quot;AI-Assisted Dashboard&quot;,&quot;page_url&quot;:&quot;/layout/bi-report/hcc-ai-assisted&quot;,&quot;menu_master_id&quot;:31,&quot;menu_name&quot;:&quot;HCC - AI-Assisted&quot;,&quot;parent_menu_master_id&quot;:16,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;finance&quot;,&quot;display_order&quot;:2},{&quot;page_id&quot;:13,&quot;permission_group_id&quot;:3,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;Work Queue Rule Engine&quot;,&quot;page_name&quot;:&quot;Work Queue Rule Engine&quot;,&quot;page_url&quot;:&quot;/layout/rule-engine&quot;,&quot;menu_master_id&quot;:13,&quot;menu_name&quot;:&quot;Work Queue Rule Engine&quot;,&quot;parent_menu_master_id&quot;:13,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;construction&quot;,&quot;display_order&quot;:3},{&quot;page_id&quot;:28,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Analytics and Pipeline Dashboard&quot;,&quot;page_name&quot;:&quot;Analytics and Pipeline Dashboard&quot;,&quot;page_url&quot;:&quot;/layout/bi-report/hcc-analytics&quot;,&quot;menu_master_id&quot;:33,&quot;menu_name&quot;:&quot;HCC - Analytics &amp; Pipeline&quot;,&quot;parent_menu_master_id&quot;:16,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;finance&quot;,&quot;display_order&quot;:3},{&quot;page_id&quot;:0,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:null,&quot;page_name&quot;:&quot;&quot;,&quot;page_url&quot;:&quot;&quot;,&quot;menu_master_id&quot;:23,&quot;menu_name&quot;:&quot;Settings&quot;,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:0,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:null,&quot;page_name&quot;:&quot;&quot;,&quot;page_url&quot;:&quot;&quot;,&quot;menu_master_id&quot;:35,&quot;menu_name&quot;:&quot;Masters&quot;,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;deployed_code_account&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:14,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Supervisor Group&quot;,&quot;descriptions&quot;:&quot;RevAmp Reports&quot;,&quot;page_name&quot;:&quot;Reports-Home&quot;,&quot;page_url&quot;:&quot;/layout/custom-report&quot;,&quot;menu_master_id&quot;:14,&quot;menu_name&quot;:&quot;Report&quot;,&quot;parent_menu_master_id&quot;:14,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;assignment&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:15,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Supervisor Group&quot;,&quot;descriptions&quot;:&quot;Account Search&quot;,&quot;page_name&quot;:&quot;Account Search&quot;,&quot;page_url&quot;:&quot;/layout/account-search&quot;,&quot;menu_master_id&quot;:15,&quot;menu_name&quot;:&quot;Account Search&quot;,&quot;parent_menu_master_id&quot;:15,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;person_search&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:20,&quot;permission_group_id&quot;:1,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;Version Details&quot;,&quot;page_name&quot;:&quot;Release Notes&quot;,&quot;page_url&quot;:&quot;/layout/release-notes&quot;,&quot;menu_master_id&quot;:25,&quot;menu_name&quot;:&quot;Release Notes&quot;,&quot;parent_menu_master_id&quot;:23,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:22,&quot;permission_group_id&quot;:3,&quot;permission_group_name&quot;:&quot;Admin Group&quot;,&quot;descriptions&quot;:&quot;User Onboarding Page&quot;,&quot;page_name&quot;:&quot;User Onboarding&quot;,&quot;page_url&quot;:&quot;/layout/user-onboarding&quot;,&quot;menu_master_id&quot;:43,&quot;menu_name&quot;:&quot;User Onboarding&quot;,&quot;parent_menu_master_id&quot;:42,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;ar_on_you&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:32,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Clinical Knowledge&quot;,&quot;page_name&quot;:&quot;Clinical Knowledge Base&quot;,&quot;page_url&quot;:&quot;/layout/clinical-knowledge&quot;,&quot;menu_master_id&quot;:36,&quot;menu_name&quot;:&quot;Clinical Knowledge Base&quot;,&quot;parent_menu_master_id&quot;:35,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;other_admission&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:33,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Lab Knowledge&quot;,&quot;page_name&quot;:&quot;Lab Knowledge Base&quot;,&quot;page_url&quot;:&quot;/layout/lab-knowledge&quot;,&quot;menu_master_id&quot;:37,&quot;menu_name&quot;:&quot;Lab Knowledge Base&quot;,&quot;parent_menu_master_id&quot;:35,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;other_admission&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:34,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Medication Disease Knowledge&quot;,&quot;page_name&quot;:&quot;Medication Disease Knowledge Base&quot;,&quot;page_url&quot;:&quot;/layout/medication-disease-knowledge&quot;,&quot;menu_master_id&quot;:38,&quot;menu_name&quot;:&quot;Medication Disease Knowledge Base&quot;,&quot;parent_menu_master_id&quot;:35,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;other_admission&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:35,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Coding Process Field Mapping&quot;,&quot;page_name&quot;:&quot;Coding Process Field Mapping&quot;,&quot;page_url&quot;:&quot;/layout/coding-process-field-mapping&quot;,&quot;menu_master_id&quot;:39,&quot;menu_name&quot;:&quot;Coding Process Field Mapping&quot;,&quot;parent_menu_master_id&quot;:35,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;other_admission&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:36,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Coding Process Field Data &quot;,&quot;page_name&quot;:&quot;Coding Process Field Data &quot;,&quot;page_url&quot;:&quot;/layout/coding-process-field-data&quot;,&quot;menu_master_id&quot;:40,&quot;menu_name&quot;:&quot;Coding Process Field Data &quot;,&quot;parent_menu_master_id&quot;:35,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;other_admission&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:37,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;Coder Entry&quot;,&quot;page_name&quot;:&quot;Coder Entry&quot;,&quot;page_url&quot;:&quot;/layout/coder-entry&quot;,&quot;menu_master_id&quot;:41,&quot;menu_name&quot;:&quot;Coder Entry&quot;,&quot;parent_menu_master_id&quot;:35,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;other_admission&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:39,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;EDI Congifuration Page&quot;,&quot;page_name&quot;:&quot;EDI Configuration&quot;,&quot;page_url&quot;:&quot;/layout/edi-configuration&quot;,&quot;menu_master_id&quot;:44,&quot;menu_name&quot;:&quot;EDI Configuration&quot;,&quot;parent_menu_master_id&quot;:42,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;build&quot;,&quot;display_order&quot;:4},{&quot;page_id&quot;:0,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:null,&quot;page_name&quot;:&quot;&quot;,&quot;page_url&quot;:&quot;&quot;,&quot;menu_master_id&quot;:16,&quot;menu_name&quot;:&quot;BI Reports&quot;,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;bar_chart&quot;,&quot;display_order&quot;:5},{&quot;page_id&quot;:0,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:null,&quot;page_name&quot;:&quot;&quot;,&quot;page_url&quot;:&quot;&quot;,&quot;menu_master_id&quot;:42,&quot;menu_name&quot;:&quot;Admin&quot;,&quot;parent_menu_master_id&quot;:null,&quot;menu_type&quot;:&quot;Main&quot;,&quot;icon&quot;:&quot;admin_panel_settings&quot;,&quot;display_order&quot;:5},{&quot;page_id&quot;:25,&quot;permission_group_id&quot;:null,&quot;permission_group_name&quot;:null,&quot;descriptions&quot;:&quot;RAF Scores Dashboard&quot;,&quot;page_name&quot;:&quot;RAF Scores Dashboard&quot;,&quot;page_url&quot;:&quot;/layout/bi-report/hcc-raf&quot;,&quot;menu_master_id&quot;:30,&quot;menu_name&quot;:&quot;HCC - RAF Scores&quot;,&quot;parent_menu_master_id&quot;:16,&quot;menu_type&quot;:&quot;Sub&quot;,&quot;icon&quot;:&quot;finance&quot;,&quot;display_order&quot;:5}],&quot;landingPages&quot;:[{&quot;page_id&quot;:2,&quot;page_name&quot;:&quot;My Task&quot;,&quot;page_url&quot;:&quot;/layout/my-task&quot;}],&quot;isPermissionGroup&quot;:true} 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponse = JSON.parse(decryptedResponseStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print decryptedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.34">20:33:24.646 [print] {
+  &quot;permissions&quot;: [
+    {
+      &quot;page_id&quot;: 1,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;Login Page&quot;,
+      &quot;page_name&quot;: &quot;Login Page&quot;,
+      &quot;page_url&quot;: &quot;/login&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 3,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;Work Queue List&quot;,
+      &quot;page_name&quot;: &quot;My Task / Work Queue List&quot;,
+      &quot;page_url&quot;: &quot;/layout/work-queue&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 5,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;Work Queue Process Monitor&quot;,
+      &quot;page_name&quot;: &quot;WQ Summary/ WQ Process Monitor&quot;,
+      &quot;page_url&quot;: &quot;/layout/process-monitor-view&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 6,
+      &quot;permission_group_id&quot;: 2,
+      &quot;permission_group_name&quot;: &quot;User Group&quot;,
+      &quot;descriptions&quot;: &quot;EVBV User Entry Screen&quot;,
+      &quot;page_name&quot;: &quot;EVBV User Entry Screen&quot;,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 9,
+      &quot;permission_group_id&quot;: 2,
+      &quot;permission_group_name&quot;: &quot;User Group&quot;,
+      &quot;descriptions&quot;: &quot;In-Progress&quot;,
+      &quot;page_name&quot;: &quot;My Task / In Progress List&quot;,
+      &quot;page_url&quot;: &quot;/layout/in-progress&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 10,
+      &quot;permission_group_id&quot;: 2,
+      &quot;permission_group_name&quot;: &quot;User Group&quot;,
+      &quot;descriptions&quot;: &quot;Completed&quot;,
+      &quot;page_name&quot;: &quot;My Task / Completed List&quot;,
+      &quot;page_url&quot;: &quot;/layout/completed&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 11,
+      &quot;permission_group_id&quot;: 2,
+      &quot;permission_group_name&quot;: &quot;User Group&quot;,
+      &quot;descriptions&quot;: &quot;Reworks&quot;,
+      &quot;page_name&quot;: &quot;My Task / Rework List&quot;,
+      &quot;page_url&quot;: &quot;/layout/reworks&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 18,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Supervisor Group&quot;,
+      &quot;descriptions&quot;: &quot;Custom Report Patient Demographic Details&quot;,
+      &quot;page_name&quot;: &quot;Custom Report Builder&quot;,
+      &quot;page_url&quot;: &quot;/layout/cr-patient-details&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 19,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Supervisor Group&quot;,
+      &quot;descriptions&quot;: &quot;Custom Report Patient  Details&quot;,
+      &quot;page_name&quot;: &quot;Custom Report Draft&quot;,
+      &quot;page_url&quot;: &quot;/layout/cr-view-details&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 23,
+      &quot;permission_group_id&quot;: 2,
+      &quot;permission_group_name&quot;: &quot;User Group&quot;,
+      &quot;descriptions&quot;: &quot;AR User Entry Screen&quot;,
+      &quot;page_name&quot;: &quot;AR User Entry Screen&quot;,
+      &quot;page_url&quot;: &quot;/layout/account-receivable&quot;,
+      &quot;menu_master_id&quot;: null,
+      &quot;menu_name&quot;: null,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: null,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: null
+    },
+    {
+      &quot;page_id&quot;: 2,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;My Task&quot;,
+      &quot;page_name&quot;: &quot;My Task&quot;,
+      &quot;page_url&quot;: &quot;/layout/my-task&quot;,
+      &quot;menu_master_id&quot;: 2,
+      &quot;menu_name&quot;: &quot;My Task&quot;,
+      &quot;parent_menu_master_id&quot;: 2,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;demography&quot;,
+      &quot;display_order&quot;: 1
+    },
+    {
+      &quot;page_id&quot;: 4,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;Work Queue Summary&quot;,
+      &quot;page_name&quot;: &quot;Work Queue Summary&quot;,
+      &quot;page_url&quot;: &quot;/layout/wq-process-monitor&quot;,
+      &quot;menu_master_id&quot;: 4,
+      &quot;menu_name&quot;: &quot;Work Queue Summary&quot;,
+      &quot;parent_menu_master_id&quot;: 4,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;list_alt&quot;,
+      &quot;display_order&quot;: 1
+    },
+    {
+      &quot;page_id&quot;: 17,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;&quot;,
+      &quot;page_name&quot;: &quot;TRS - EVBV Production Report&quot;,
+      &quot;page_url&quot;: &quot;/layout/bi-report/production-data&quot;,
+      &quot;menu_master_id&quot;: 18,
+      &quot;menu_name&quot;: &quot;Production Data&quot;,
+      &quot;parent_menu_master_id&quot;: 16,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;incomplete_circle&quot;,
+      &quot;display_order&quot;: 1
+    },
+    {
+      &quot;page_id&quot;: 27,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Quality Program Dashboard&quot;,
+      &quot;page_name&quot;: &quot;Quality Program Dashboard&quot;,
+      &quot;page_url&quot;: &quot;/layout/bi-report/hcc-quality&quot;,
+      &quot;menu_master_id&quot;: 32,
+      &quot;menu_name&quot;: &quot;HCC - Quality&quot;,
+      &quot;parent_menu_master_id&quot;: 16,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;finance&quot;,
+      &quot;display_order&quot;: 1
+    },
+    {
+      &quot;page_id&quot;: 24,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Overall HCC Coding Project Dashboard&quot;,
+      &quot;page_name&quot;: &quot;HCC Reporting Dashboard&quot;,
+      &quot;page_url&quot;: &quot;/layout/bi-report/hcc-overall&quot;,
+      &quot;menu_master_id&quot;: 29,
+      &quot;menu_name&quot;: &quot;HCC - Overall&quot;,
+      &quot;parent_menu_master_id&quot;: 16,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;finance&quot;,
+      &quot;display_order&quot;: 2
+    },
+    {
+      &quot;page_id&quot;: 26,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;AI-Assisted Dashboard&quot;,
+      &quot;page_name&quot;: &quot;AI-Assisted Dashboard&quot;,
+      &quot;page_url&quot;: &quot;/layout/bi-report/hcc-ai-assisted&quot;,
+      &quot;menu_master_id&quot;: 31,
+      &quot;menu_name&quot;: &quot;HCC - AI-Assisted&quot;,
+      &quot;parent_menu_master_id&quot;: 16,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;finance&quot;,
+      &quot;display_order&quot;: 2
+    },
+    {
+      &quot;page_id&quot;: 13,
+      &quot;permission_group_id&quot;: 3,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;Work Queue Rule Engine&quot;,
+      &quot;page_name&quot;: &quot;Work Queue Rule Engine&quot;,
+      &quot;page_url&quot;: &quot;/layout/rule-engine&quot;,
+      &quot;menu_master_id&quot;: 13,
+      &quot;menu_name&quot;: &quot;Work Queue Rule Engine&quot;,
+      &quot;parent_menu_master_id&quot;: 13,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;construction&quot;,
+      &quot;display_order&quot;: 3
+    },
+    {
+      &quot;page_id&quot;: 28,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Analytics and Pipeline Dashboard&quot;,
+      &quot;page_name&quot;: &quot;Analytics and Pipeline Dashboard&quot;,
+      &quot;page_url&quot;: &quot;/layout/bi-report/hcc-analytics&quot;,
+      &quot;menu_master_id&quot;: 33,
+      &quot;menu_name&quot;: &quot;HCC - Analytics &amp; Pipeline&quot;,
+      &quot;parent_menu_master_id&quot;: 16,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;finance&quot;,
+      &quot;display_order&quot;: 3
+    },
+    {
+      &quot;page_id&quot;: 0,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: null,
+      &quot;page_name&quot;: &quot;&quot;,
+      &quot;page_url&quot;: &quot;&quot;,
+      &quot;menu_master_id&quot;: 23,
+      &quot;menu_name&quot;: &quot;Settings&quot;,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 0,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: null,
+      &quot;page_name&quot;: &quot;&quot;,
+      &quot;page_url&quot;: &quot;&quot;,
+      &quot;menu_master_id&quot;: 35,
+      &quot;menu_name&quot;: &quot;Masters&quot;,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;deployed_code_account&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 14,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Supervisor Group&quot;,
+      &quot;descriptions&quot;: &quot;RevAmp Reports&quot;,
+      &quot;page_name&quot;: &quot;Reports-Home&quot;,
+      &quot;page_url&quot;: &quot;/layout/custom-report&quot;,
+      &quot;menu_master_id&quot;: 14,
+      &quot;menu_name&quot;: &quot;Report&quot;,
+      &quot;parent_menu_master_id&quot;: 14,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;assignment&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 15,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Supervisor Group&quot;,
+      &quot;descriptions&quot;: &quot;Account Search&quot;,
+      &quot;page_name&quot;: &quot;Account Search&quot;,
+      &quot;page_url&quot;: &quot;/layout/account-search&quot;,
+      &quot;menu_master_id&quot;: 15,
+      &quot;menu_name&quot;: &quot;Account Search&quot;,
+      &quot;parent_menu_master_id&quot;: 15,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;person_search&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 20,
+      &quot;permission_group_id&quot;: 1,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;Version Details&quot;,
+      &quot;page_name&quot;: &quot;Release Notes&quot;,
+      &quot;page_url&quot;: &quot;/layout/release-notes&quot;,
+      &quot;menu_master_id&quot;: 25,
+      &quot;menu_name&quot;: &quot;Release Notes&quot;,
+      &quot;parent_menu_master_id&quot;: 23,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 22,
+      &quot;permission_group_id&quot;: 3,
+      &quot;permission_group_name&quot;: &quot;Admin Group&quot;,
+      &quot;descriptions&quot;: &quot;User Onboarding Page&quot;,
+      &quot;page_name&quot;: &quot;User Onboarding&quot;,
+      &quot;page_url&quot;: &quot;/layout/user-onboarding&quot;,
+      &quot;menu_master_id&quot;: 43,
+      &quot;menu_name&quot;: &quot;User Onboarding&quot;,
+      &quot;parent_menu_master_id&quot;: 42,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;ar_on_you&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 32,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Clinical Knowledge&quot;,
+      &quot;page_name&quot;: &quot;Clinical Knowledge Base&quot;,
+      &quot;page_url&quot;: &quot;/layout/clinical-knowledge&quot;,
+      &quot;menu_master_id&quot;: 36,
+      &quot;menu_name&quot;: &quot;Clinical Knowledge Base&quot;,
+      &quot;parent_menu_master_id&quot;: 35,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;other_admission&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 33,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Lab Knowledge&quot;,
+      &quot;page_name&quot;: &quot;Lab Knowledge Base&quot;,
+      &quot;page_url&quot;: &quot;/layout/lab-knowledge&quot;,
+      &quot;menu_master_id&quot;: 37,
+      &quot;menu_name&quot;: &quot;Lab Knowledge Base&quot;,
+      &quot;parent_menu_master_id&quot;: 35,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;other_admission&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 34,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Medication Disease Knowledge&quot;,
+      &quot;page_name&quot;: &quot;Medication Disease Knowledge Base&quot;,
+      &quot;page_url&quot;: &quot;/layout/medication-disease-knowledge&quot;,
+      &quot;menu_master_id&quot;: 38,
+      &quot;menu_name&quot;: &quot;Medication Disease Knowledge Base&quot;,
+      &quot;parent_menu_master_id&quot;: 35,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;other_admission&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 35,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Coding Process Field Mapping&quot;,
+      &quot;page_name&quot;: &quot;Coding Process Field Mapping&quot;,
+      &quot;page_url&quot;: &quot;/layout/coding-process-field-mapping&quot;,
+      &quot;menu_master_id&quot;: 39,
+      &quot;menu_name&quot;: &quot;Coding Process Field Mapping&quot;,
+      &quot;parent_menu_master_id&quot;: 35,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;other_admission&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 36,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Coding Process Field Data &quot;,
+      &quot;page_name&quot;: &quot;Coding Process Field Data &quot;,
+      &quot;page_url&quot;: &quot;/layout/coding-process-field-data&quot;,
+      &quot;menu_master_id&quot;: 40,
+      &quot;menu_name&quot;: &quot;Coding Process Field Data &quot;,
+      &quot;parent_menu_master_id&quot;: 35,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;other_admission&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 37,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;Coder Entry&quot;,
+      &quot;page_name&quot;: &quot;Coder Entry&quot;,
+      &quot;page_url&quot;: &quot;/layout/coder-entry&quot;,
+      &quot;menu_master_id&quot;: 41,
+      &quot;menu_name&quot;: &quot;Coder Entry&quot;,
+      &quot;parent_menu_master_id&quot;: 35,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;other_admission&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 39,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;EDI Congifuration Page&quot;,
+      &quot;page_name&quot;: &quot;EDI Configuration&quot;,
+      &quot;page_url&quot;: &quot;/layout/edi-configuration&quot;,
+      &quot;menu_master_id&quot;: 44,
+      &quot;menu_name&quot;: &quot;EDI Configuration&quot;,
+      &quot;parent_menu_master_id&quot;: 42,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;build&quot;,
+      &quot;display_order&quot;: 4
+    },
+    {
+      &quot;page_id&quot;: 0,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: null,
+      &quot;page_name&quot;: &quot;&quot;,
+      &quot;page_url&quot;: &quot;&quot;,
+      &quot;menu_master_id&quot;: 16,
+      &quot;menu_name&quot;: &quot;BI Reports&quot;,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;bar_chart&quot;,
+      &quot;display_order&quot;: 5
+    },
+    {
+      &quot;page_id&quot;: 0,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: null,
+      &quot;page_name&quot;: &quot;&quot;,
+      &quot;page_url&quot;: &quot;&quot;,
+      &quot;menu_master_id&quot;: 42,
+      &quot;menu_name&quot;: &quot;Admin&quot;,
+      &quot;parent_menu_master_id&quot;: null,
+      &quot;menu_type&quot;: &quot;Main&quot;,
+      &quot;icon&quot;: &quot;admin_panel_settings&quot;,
+      &quot;display_order&quot;: 5
+    },
+    {
+      &quot;page_id&quot;: 25,
+      &quot;permission_group_id&quot;: null,
+      &quot;permission_group_name&quot;: null,
+      &quot;descriptions&quot;: &quot;RAF Scores Dashboard&quot;,
+      &quot;page_name&quot;: &quot;RAF Scores Dashboard&quot;,
+      &quot;page_url&quot;: &quot;/layout/bi-report/hcc-raf&quot;,
+      &quot;menu_master_id&quot;: 30,
+      &quot;menu_name&quot;: &quot;HCC - RAF Scores&quot;,
+      &quot;parent_menu_master_id&quot;: 16,
+      &quot;menu_type&quot;: &quot;Sub&quot;,
+      &quot;icon&quot;: &quot;finance&quot;,
+      &quot;display_order&quot;: 5
+    }
+  ],
+  &quot;landingPages&quot;: [
+    {
+      &quot;page_id&quot;: 2,
+      &quot;page_name&quot;: &quot;My Task&quot;,
+      &quot;page_url&quot;: &quot;/layout/my-task&quot;
+    }
+  ],
+  &quot;isPermissionGroup&quot;: true
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Response Validation</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.permissions == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.permissions ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.38">{
+  page_id: &#39;#number&#39;,
+  permission_group_id: &#39;##number&#39;,
+  permission_group_name: &#39;##string&#39;,
+  descriptions: &#39;##string&#39;,
+  page_name: &#39;#string&#39;,
+  page_url: &#39;#string&#39;,
+  menu_master_id: &#39;##number&#39;,
+  menu_name: &#39;##string&#39;,
+  parent_menu_master_id: &#39;##number&#39;,
+  menu_type: &#39;##string&#39;,
+  icon: &#39;##string&#39;,
+  display_order: &#39;##number&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 2nd</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.landingPages == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.landingPages ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.58">{
+  page_id: &#39;#number&#39;,
+  page_name: &#39;#string&#39;,
+  page_url: &#39;#string&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># 3rd</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.isPermissionGroup == &#39;#boolean&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:71]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:71]</span>
+                <span class="scenario-name">400 bad request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2037</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:71]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:33:59.241 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...Dp_vDFoY length: 585 
+20:34:01.763 ECDH Session ID: 639c56b2-d07a-44fc-ba43-5676a78b2927 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:71]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:34:01.764 [print] Using auth_token cookie: eyJhbGciOiJI...Dp_vDFoY length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.72">
+      <div class="step-ref passed">72</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.72">{
+  &quot;userIdddd&quot;:43
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.78">
+      <div class="step-ref passed">78</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.79">
+      <div class="step-ref passed">79</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.81">
+      <div class="step-ref passed">81</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth-service/v3/users/permissions&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.83">
+      <div class="step-ref passed">83</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.86">
+      <div class="step-ref passed">86</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2036</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.87">20:34:01.765 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/auth-service/v3/users/permissions
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiJiOTIxMDBkZS04YmFjLTRhODgtYjE1OC0xOGU2ZjU3MjJiZGYiLCJuYmYiOjE3ODI3NDU0MzAsImV4cCI6MTc4Mjc0OTAzMCwiaWF0IjoxNzgyNzQ1NDMwLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.pNuaR5Hkk4yY7mK9AcIKiBPk1L4rBemJpXHDp_vDFoY
+1 &gt; X-ECDH-Session: 639c56b2-d07a-44fc-ba43-5676a78b2927
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 59
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+sN6LC89zm2WlwFdX_SkTFLtvBiNGNdc6Wu2NRLQ-lR7ws8FONpfUEydzQi8
+
+20:34:03.787 response time in milliseconds: 2022
+1 &lt; 400
+1 &lt; x-amzn-RequestId: 8c2e7e02-5377-4b5e-a304-734b5c72ba71
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fuprdGjcIAMEYTQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; X-JWT-Expires-In: 3585
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:04:03 GMT
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 25
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 15:04:29 GMT
+Invalid user ID provided.
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:90]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:90]</span>
+                <span class="scenario-name">405 method not found</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1934</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:90]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:34:38.119 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...1FqPkbDI length: 585 
+20:34:40.487 ECDH Session ID: 859c660a-22d1-4466-88f4-0ae3c3972a16 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:90]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:34:40.488 [print] Using auth_token cookie: eyJhbGciOiJI...1FqPkbDI length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.91">{
+  &quot;userId&quot;:43
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.100">
+      <div class="step-ref passed">100</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth-service/v3/users/permissions&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref passed">103</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.104">
+      <div class="step-ref passed">104</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.105">
+      <div class="step-ref passed">105</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1932</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.106">20:34:40.492 request:
+1 &gt; GET https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/auth-service/v3/users/permissions
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiI5NjU5MGU0Yi1kMDc5LTQyZDItOTZiOC1iMTExZDM4NTgxZWIiLCJuYmYiOjE3ODI3NDU0NjksImV4cCI6MTc4Mjc0OTA2OSwiaWF0IjoxNzgyNzQ1NDY5LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.q1ISWlyi2zF2_1VZw5tQiqa8sjQmTOIRk5i1FqPkbDI
+1 &gt; X-ECDH-Session: 859c660a-22d1-4466-88f4-0ae3c3972a16
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 55
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+lmo243WUxOUmmqDJDZwob8wnKadYVmN3h2XRbJ-aLP9UgFrWetlPeqg
+
+20:34:42.422 response time in milliseconds: 1929
+1 &lt; 405
+1 &lt; x-amzn-RequestId: 03ffb80f-5a3f-49bf-ad4a-ffd13071f91b
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Allow: POST
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fupxfERPIAMEYmA=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:04:42 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: close
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 15:05:06 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 405</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:109]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:109]</span>
+                <span class="scenario-name">404 incorrect url</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2157</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:109]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:35:20.623 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...NJfIMZ2U length: 585 
+20:35:22.883 ECDH Session ID: b634da29-d537-4cd2-b45e-4f27c75bc083 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:109]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:35:22.885 [print] Using auth_token cookie: eyJhbGciOiJI...NJfIMZ2U length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.110">{
+  &quot;userId&quot;:43
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.119">
+      <div class="step-ref passed">119</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth-service/v2/users/permissionssss&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.121">
+      <div class="step-ref passed">121</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.122">
+      <div class="step-ref passed">122</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.125">
+      <div class="step-ref passed">125</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2155</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.125">20:35:22.886 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/auth-service/v2/users/permissionssss
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiJiNDM0Y2E2Yy1mZWUyLTRkMzItYjFhZC1hMTAyMmQzMTI3N2IiLCJuYmYiOjE3ODI3NDU1MTAsImV4cCI6MTc4Mjc0OTExMCwiaWF0IjoxNzgyNzQ1NTEwLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.LGlp3wLF2c7uWNdUr4MCaQ02twFEhWlJtWtNJfIMZ2U
+1 &gt; X-ECDH-Session: b634da29-d537-4cd2-b45e-4f27c75bc083
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 55
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+lILrS5HajdUOp8OPimwkOlN_XQjO2UlH51SPEy45UbzKG30HYSgU0g8
+
+20:35:25.039 response time in milliseconds: 2153
+1 &lt; 404
+1 &lt; x-amzn-RequestId: fd315a14-eb9e-419d-a651-b8eaff68fa1d
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fup4JHs1oAMEQUg=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:05:25 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 15:05:50 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:128]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:128]</span>
+                <span class="scenario-name">401 - unautorised</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2331</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:128]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:07.416 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...bdBO1M3I length: 585 
+20:36:09.776 ECDH Session ID: 2e04366c-8f79-40a9-983d-3497b2427db9 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:128]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:36:09.780 [print] Using auth_token cookie: eyJhbGciOiJI...bdBO1M3I length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.129">{
+  &quot;userId&quot;:43
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.136">
+      <div class="step-ref passed">136</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.138">
+      <div class="step-ref passed">138</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth-service/v3/users/permissions&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#    And header Cookie = &#39;auth_token=&#39; + authCookie</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.140">
+      <div class="step-ref passed">140</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.141">
+      <div class="step-ref passed">141</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.142">
+      <div class="step-ref passed">142</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.143">
+      <div class="step-ref passed">143</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.144">
+      <div class="step-ref passed">144</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2327</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.144">20:36:09.782 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/auth-service/v3/users/permissions
+1 &gt; X-ECDH-Session: 2e04366c-8f79-40a9-983d-3497b2427db9
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 55
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+inNX769l50AOkFCBtAMC4Nj4N_0SEtohHIUNdjOI0r4Z6pEntHyKxfQ
+
+20:36:12.101 response time in milliseconds: 2319
+1 &lt; 401
+1 &lt; x-amzn-RequestId: c5a22a41-54ab-4ed1-9e22-956a750f6402
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fup_gFiroAMEejg=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:06:12 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 49
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 15:06:37 GMT
+Authentication failed. A valid token is required.
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.145">
+      <div class="step-ref passed">145</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:147]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:147]</span>
+                <span class="scenario-name">415 Unsupported Media Type</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1465</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:147]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:147]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:36:49.767 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...vr5iu6QY length: 585 
+20:36:52.162 ECDH Session ID: e8be6106-8dc8-4377-b3ba-05298640e2d3 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:147]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:147]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:147]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:147]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:147]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:147]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">20:36:52.166 [print] Using auth_token cookie: eyJhbGciOiJI...vr5iu6QY length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/auth-service/v3/users/permissions&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.149">
+      <div class="step-ref passed">149</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.151">
+      <div class="step-ref passed">151</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;false&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref passed">152</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.154">
+      <div class="step-ref passed">154</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1461</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.154">20:36:52.168 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/auth-service/v3/users/permissions
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiIwNTZkNGM4Ni0wYzBlLTRkNDQtYmVlNC0yNDk1ZGViYTI3NWEiLCJuYmYiOjE3ODI3NDU1OTksImV4cCI6MTc4Mjc0OTE5OSwiaWF0IjoxNzgyNzQ1NTk5LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.t8aBih8UuwstILObHyYXXnWZd46nx7MlIoBvr5iu6QY
+1 &gt; X-ECDH-Session: e8be6106-8dc8-4377-b3ba-05298640e2d3
+1 &gt; X-Encrypted-Payload: false
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Content-Length: 0
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+20:36:53.627 response time in milliseconds: 1443
+1 &lt; 415
+1 &lt; x-amzn-RequestId: d26e272e-6180-4ac9-bacd-325cc40bf088
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fuqGGHmWIAMEYTQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; X-JWT-Expires-In: 3584
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:06:54 GMT
+1 &lt; Content-Type: application/problem+json; charset=utf-8
+1 &lt; Content-Length: 176
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 15:07:18 GMT
+{&quot;type&quot;:&quot;https://tools.ietf.org/html/rfc9110#section-15.5.16&quot;,&quot;title&quot;:&quot;Unsupported Media Type&quot;,&quot;status&quot;:415,&quot;traceId&quot;:&quot;00-e3d7643ea7ba958a416085de860518a8-565ff2a8fdf305a0-00&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.155">
+      <div class="step-ref passed">155</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 415</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.156">
+      <div class="step-ref passed">156</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.156">20:36:53.627 [print] {
+  &quot;type&quot;: &quot;https://tools.ietf.org/html/rfc9110#section-15.5.16&quot;,
+  &quot;title&quot;: &quot;Unsupported Media Type&quot;,
+  &quot;status&quot;: 415,
+  &quot;traceId&quot;: &quot;00-e3d7643ea7ba958a416085de860518a8-565ff2a8fdf305a0-00&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

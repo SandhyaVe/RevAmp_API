@@ -26,7 +26,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 });
 </script>
 
-    <title>features.Api_V3_Work-Queue_Open-Work-Queue</title>
+    <title>features.Api_v3_work-queue_open-work-queue</title>
   </head>
   <body>
     <div id="root-container">
@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">0</div>
-      <div id="nav-fail" class="bg-danger">1</div>
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,13 +49,28 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2026-06-08 02:00:05 pm</div>
+    <div>2026-06-29 10:30:34 pm</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item failed">
-            <a href="#[1:13]"><span>[1:13]</span> <span>Positive Flow</span></a>
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Positive Flow</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:81]"><span>[2:81]</span> <span>400 - Bad Request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:100]"><span>[3:100]</span> <span>405 - method not found</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:119]"><span>[4:119]</span> <span>404 - Incorrect URL</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:138]"><span>[5:138]</span> <span>401 - Unauthorized</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:157]"><span>[6:157]</span> <span>415 - Unsupported Media Type</span></a>
           </div>
         </div>
       </div>
@@ -64,34 +79,34 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
           <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
           <span class="feature-label">Feature:</span>
-          <span class="feature-path">features/Api_V3_Work-Queue_Open-Work-Queue.feature</span><span class="feature-label">|</span>
-          <span class="feature-name">Testing Api End point - /v3/work-queue/open-work-queue</span>
+          <span class="feature-path">features/Api_v3_work-queue_open-work-queue.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Api End Point - /v3/work-queue/open-work-queue</span>
           <span class="feature-description"></span>
         </div>
         <div class="scenario">
-          <div class="scenario-heading" id="[1:13]">
+          <div class="scenario-heading" id="[1:12]">
             <div class="heading-container">
               <div class="scenario-tags">
                 
               </div>
               <div class="scenario-keyword">
-                Scenario: <span>[1:13]</span>
+                Scenario: <span>[1:12]</span>
                 <span class="scenario-name">Positive Flow</span>
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time failed">
-              <span>ms:</span>&nbsp;<span>1287</span>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3003</span>
             </div>
           </div>
           <div class="step-row">
-            <div class="step-container" id="[1:13]bg">
+            <div class="step-container" id="[1:12]bg">
               <div class="step-ref bg-step">&gt;&gt;</div>
               <div class="step-cell passed">Background:</div>
             </div>
             <div class="time-cell passed"></div>
           </div>
-          <div data-parent="[1:13]bg"><div>
+          <div data-parent="[1:12]bg"><div>
   
 
   
@@ -101,10 +116,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">4</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>url &#39;https://apiqa.revamprcm.com&#39;</span>
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">3</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -113,15 +128,15 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.4">14:00:00.987 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...lLIGmzSg length: 585 
-14:00:03.771 ECDH Session ID: 54c54f5e-7ce2-4701-9def-524294416e4a 
+  <div class="preformatted" data-parent="0.4">22:27:11.084 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...qcNPRICE length: 585 
+22:27:13.588 ECDH Session ID: 47ef8caf-62f6-403f-a732-204108e7f91f 
 </div>   
 
   
 
 </div>
 </div>
-          <div data-parent="[1:13]bg"><div>
+          <div data-parent="[1:12]bg"><div>
   
 
   
@@ -131,10 +146,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">5</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def mainToken = karate.get(&#39;authToken&#39;)</span>
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">24</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -149,7 +164,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
 </div>
 </div>
-          <div data-parent="[1:13]bg"><div>
+          <div data-parent="[1:12]bg"><div>
   
 
   
@@ -159,16 +174,157 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref bg-step">6</div>
       
       <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>def requestBody =</span>
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
       </div>
     </div>
-    <div class="time-cell passed">54</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.6">{
-  &quot;pageId&quot;: 3
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:27:13.588 [print] Using auth_token cookie: eyJhbGciOiJI...qcNPRICE length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.13">{
+ &quot;pageId&quot;:3
 }</div>
 
   
@@ -185,11 +341,381 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.14">
-      <div class="step-ref passed">14</div>
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>path &#39;/v3/work-queue/open-work-queue&#39;</span>
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.22">
+      <div class="step-ref passed">22</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/work-queue-service/v3/work-queue/open-work-queue&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2998</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.28">22:27:13.590 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/work-queue-service/v3/work-queue/open-work-queue
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiI3OTE4ZWVjZi0yYzVkLTQ1YmMtOTM1NC03M2U1ZGJmMDNmM2EiLCJuYmYiOjE3ODI3NTIyMjEsImV4cCI6MTc4Mjc1NTgyMSwiaWF0IjoxNzgyNzUyMjIxLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.XYy7sV5DMqIxaf8oVZ1v5heCURcylZJODL4qcNPRICE
+1 &gt; X-ECDH-Session: 47ef8caf-62f6-403f-a732-204108e7f91f
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+r2CxX0HQwrrqWoPzOnh9K5jt8snxuXcdAshCIv6VXrvFjhJ20fmFbw
+
+22:27:16.582 response time in milliseconds: 2992
+1 &lt; 200
+1 &lt; x-amzn-RequestId: 473404c2-385f-46a3-8f85-efe340b4c0eb
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu6QuEwqoAMEqVw=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 16:57:17 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 7326
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 16:57:40 GMT
+SQjRyPhzqTO5q9AXacxBby_GzN9nrdS7wOAZeFsMPb4rmAjpDpFsSkAIC7SCir-Y99i8gAmcQIw2A81febt71PGO_0QhNtbxIOY9zlipJfKtTjzMoa1IaSi06-MaN2n1Cat1FYHutcvnLvidtAsfjDXfpirxXgM9dRha2w69mmfLWRufMbX5N6u-1UOIF3i6e256SMZHaL1UMNtQWsaKVrAMnNgUISMJ_yJ-Kz6CgXCD41F7zo2znjVRZ86OSIw0GifWLiKf1-6j97WsvBHSmAVZp95PBfP9G4VUfKds838jJC5q6ey43fDulZGGekk6GVfc1lmXzanZ3HTKbdls1-PcTJRPB9kaRSbd86kM3O4SqsdCCHXkDGkENYacu21ppC2xEq4S8DrDEyiPU6asmo_GgoTGAjfK-061WFLtG-LnBES4ARFfEjUv3TfVJ9qJAoAqa05_MWpbknwCwxLQL8CwFllSCNCWq7nYkislabPqSexLO7DSXs_2zwd7lcy_FojyD3jeL2D-0MQUtJt0J84Nrz3CTPHYFtv-4uClZYY7K5fu8v7Mp-wPmUoEMJtJORJXX6MFtDC5UCrnwxwc7lzeJZQOHsDjrHmHDld52s7_TgDxNn7YIMLflfk0GzTWA7to_6w4EEFcguJAEn7yIRFejl-VwUi1T8FQQz_5zWK9FuNKL9sC26fuAy452YzEYsX2vqDf3oVFyMfDXfU4UKvHDi4SwNDiycLsqAvOiTIkaxJtcoSEIT70J3t7zxs90uTWsIi2Hqokn9JLNGw30LhrqDLlkNa6isJrtIwVQ_6GkPzzwFIqXFJr8QnG4VZ6LxQ_MotMvvWe8_pEf8jUSAbhqhatMeO0fNKgRD8LKiKE4CZDl-SkXVn1We7hE3vtKZWQvKc3-A2FbfoNs58x8etE3k8KUB-Vc6XmdmsA2QPFd3keuh431yulTp8xgA18R3vBHJLKrD1mlRyl2ENjmvrg45HO2iShZBDX-5TuPphcKLb0_F2EPX5HCC9yC4MLPvdDQ9RJIy4UJkvZsd2nwnaUra1bTL_8AfKtlDq0zPISJdguJOlQeT3MfbKKuqdlJXt2A2x9PweiknHv04peslxEuUZHsZOFaZD8qC0E_mIh2b-XHxgsAXkid-IpE-YbFA0nGiWnSmq6klqCWke-TlXrqlY8zPdaYNbPT13Hxs9b5QRtGtWmPpfBRqLitPq-XASHVxDMcCvCUrb2J7MR9UVUy-VWnE1dkPUtjtbaJVnHKROB4hWvY7KW_iBqkDCJ6ifZIA5PMkZevsarle-dl5sUFJTn58fTaLTWj8vOifW03VpliBKwSTP-LoyDVBT9gqqpNqXVhE-777o8_ZKNL6nQfo2ChOFU7v5zmSI5yOdufvVraM43rlzuBqL9xMCgWfshwjvYRLezoKBxe4EuMGwdAZFy6hXOCoGuYHrVK1J5hhwp5nJg9R2aB3YqwjMIwUXyewE0KlqPYGkTYfKyrZu4xEi9RxF4xE2eIZGfInrv6KpqWAtn60kE0dX-7ZvHDIu0H1cnS8Ym5tB13J-cHY_7lLIBLNimtAfNhqlrTfmP3O_yoE9vjkLBSVXaIuOIg5KKl5TkyMD8bDQ7iDccxK2c2130vpKDWcFbApWbRBM1SywdhYynQR4yAMD4rRW0zDBRjMI9StQatUInFsQFKaM1DcuZKMambW_d4M-gfy5G8QBrzD9ndGGV_1lPxkK5TleZ5NrNSd7SxWoQm8tth9RvPzMyTdgJWxE5s0iywuXvHDsEcjzyeIgbYypj24tRKfCXFTO9pX5CGNM5UOMLzPAcyy3Pr-Wy7SY5IDT7s9pvBhjWW7tboucRns6ouGoSHuUMOILriwd5PgkcNQU3ChsqPj-bIiQOMovBUiWd8Zp0vDaDo-lAMdotpvod7PJOnc9P25E45zhGda-_Gjhzq9-OuKy6sYdn3lLX1KgLmjEmb6NMzZx5bM_3WQPZmjqSVzjb6_W-vMEe7TLZcP56_d7DgrRnUkQk5k0WkI2H8JYesQW-4PWv4Rm30U_13N5lUpQF_fMNL0mOHLLK7dgfuJWjYfRSHEJp-mMJoQUsNVxd7PZRbCZSMc8dR7ouKzgUSNboTGrqQ2oDRJ6pk9sBC-VorH1zJmmLRFNpsZ5fgCpagB8URb3l_BCA-aiTR6Fl0W1BZBCIO-nbH7LA5-HzmF8PpQe3dveJH1QJlNsJlgaet0imPjH7ysM1F99ksirtThqNqYAlT9RySNFCStWKj5wO7DyZmYrgiK40-XIShfv6oeJXS8zM_ZcLoLJ8pOeABJcvf_jfaS6MhRVy8beWBJ3c5SlWgGCD4QO3ClC1JAQi2mwJkiH0bGWi2WtedhW3EhHx8wv11zvMqlvSKPUug4vi4B1vqbc5N3e_bAesX6Ls6hUgW9mdZKAIKGkBvn0Pu2glxvTYJk1r3EUhPMQVGS8XCuaFGgymaqO3m_Lfs3oOtGkz5lE3yJW4Vi4fmqOA1VUH2HsxbUHLQOMsyD6K15kFowYm8c4Z0VUTy9tKYCGZzd_KIcjteZH6nHpgC1YKCX49O-GPYvoELODjgXgLoOzMOCZ31khBMVKk2r0YGa_5yQGUFN3oQhlMgu-KWNjVTWPruRyH89SkGjGHpl85Ozgcrwd1-5dx638auM7bNUJqOHF9lS88MEKdqxVWj2PzyaIT_6TC2sCSF37BXRYvqMRmneuLfQo19Nj9CEoZHOcfSH_KUDpWuTtEKuDtsD1SrFzcYbYq-ZHiw7bFj2Xbra2O4nMvj3W5-SoWzn_oZuPQmclOhj2QDs5KaBUFfU3P5InB2QfOLPIiFfG8QqET29uPi_bUhHkqcjkFjDBOivWiEyur702QLds4TJeGQYYfTP_kj6v0eAMw4RmZ_eTMKsSqgdTWZQFb9UJEgJnUs-XYSiBuSeyXKqdEqUraq6-aaIIG5gHvo2yx7VlTFsjpIRLKPOLwjNXafwFlzkXFAuKrE-45t0-0xhNPmDHCBUg9HuIaaQsODp0_bT-muCL8L9IlRr2R31AWz-6MdU4SpwvzP1HMpBRWw-zeZ-0H3ma3q3WbQ4r3L1ICBAOCKcllC4Ck5w4CikCpozZNwovCJquv31PZhhsON7RD3oJDnF39m0NbY5MT5sBC8G_v9KURswe7o61qyZPOqE28rFc_voHj47jdf-ywE4C_Pfr7ZegNBsmBOlO5nfgxLC9y8aonmrP_PaexvSUhLJXK90MxISSwsaNgvFvhp72sX5W9gcYYabwVnKx_ri22-Q_nF3FeSM105b-BLIjhPAh0tKzKwvuVHpuJE5rbvElS1UHeFUS5s4UOhtPacYrEUZXbdRwX5x12FU7p0N4j_7JD78kMwqyxo_HsCr9Jq2dy7en3d3RgNEIBGcm1FOPRaQYexWAE2OOy3Z3yk_Pr83K3we5hF2h8-nWVs3YZI97K0hIOGgcA802d9ILBpJuxGP9NTpx1Ku9bnX1irFIvP84XsVY_NFHTgcwjnrKVLrd8EBf7xwCq177F_qbS4jcGzOKkubmmz3IrJYuu1mc7BJhTetl4mGUzFk-Y9sHTBwi17vYikL5gAufng-lZr-e6UyeIPoWsNw8qge6Koa_YqAylVAe4QC5qP8cdpM_XigqmfJWMyqTZjwL4d_Ne6j4CX-2KuTI8kZFBTv1CpYy6LtvSS0mrOwdXvWbNNYJzUy0RsScwzpd_RGR9tr7s1L9QozCQtxtisgkaydnEK4RFb_ADt-kcz5RqQl9UURWjcciawkCwyyDzibIuoOA7B-YOMFxkAW0umLUskGnG1pv2RrGxBveTy2JLSi7OWSUXlaMwbO4tL6jsFxx4j1Pz14l6KmxcGzyPwMFvokg-6PvMdlq7BfmLzOnmqS2WAWHRG4Zk3ksO0jahrJEoDb3_GBLLS2wiwieCYvkSOvB8fRHtaFSxAgpuc5dV7-co3XkbFzA76sQdAlZh_Mji4bCpzE_Gnkm6lpB47fHfe006fJPKBM8X2KhnJ6sKzQuGXRkkTBGHS1Gfdaqvd3gKPD_0OKvt9sZD-kviXqaESaF8eaiGAp92VkTWg5cjGOHMd69sO_g9bZo-lli_V95NE9xcG-RdSXCOoBT14cv3H_583nyKORHT1E26s7OJP1DggyomsxlTPhY7ddTju2YyyVrkcPyN0w58N3DrTzOp_X2FdIlHKq_FGdRuxe7sCaLXnnjzONqkYrsYnhuMY3c-KIveNva3mFtMJWMEGTeY9hJDBmiDJ4VvFk3AKwHd8rykCgg6G3m4lpWuaKB0l7AnIGXwlXKG3-uMNGy_xjMHPXuwo9vg-eBxPnthEENiOxavb2BebRLNs157PfytWMn8AyLfaFlBWLkO0dXNSczDywZ0Y-82_vEIuBinAcApJFEJnKSELeZyzYtSmkvhMXyKaMIdVR7hAlCPSBdfNDl3KwjBTJ1Zrl9M-oesC1CUSqvz32xZLMxk2ZmVJeK03hpYGtj_tgaySken6nzctysosAoOdMFysR_E6A8Wovq2dsJ1k9ilJRuvCc3XINqE1u_KduOGqduguY3M7GD3odr_SQZk4Z8wD9azm2P5Q2OtZdfpJ1myjRkcwA9cJu6wsfqUvJWbKxFdGH0Ik4t6xq7FrrKYkm_SKDS-i_KVfjyNlKk0qkhu4pgsTCZsv9xcy1uZMIzH2tgS59SUrceJpgQNDujMlGZhvIr9bLMteg3fYki8YpxnLod7BXMAV84K-5GgmwjwY3l68Qv6eStiSsu_HQUEOnLEs38LjSgePrss54n3OmEOGqyfiqcnc7NCCq92YoH59w-3RscmnM4iGqzutbY9WctjNt7sVcCAGpGtwEsooSIJc12H9IeuZC4Y_Yr7AP4kkBM9L70CtmQzuN6OXYeQNleO0-m5ri99C2y64X9HYeS591z83uctXEEITMJIcG0_BMU9zmxE-uHv7tByfOt-rTisBdeMAkccEkUfiupte-ARUvMVgEBjvXUfgVOXa46lrXyC-jSn40DfgxvHfi0pqT2NWDkNRqWJBvHt0hP6SMHp028X4tbjPAtNgyPl9BF8Ss55PZ-Dj85lyphkKTMNQrC-BneVT3NtmiGtY7lYQvBUh_IvoEtONRaSe-SkwX6cu_NqbdNTqiGf_eEq_ysunnvq0p4IsNPwezMaC-auPelvZwnbf-5VqsUKZItfWzaNN2kUT8hema0fuOjppHReVreUkAyLjBZGfa09HC42uufJKc_IZOF5zN7_M6aTF5s6xDtm-b9PPcNwBykMAxKTenbwrLzuZPksaKbFBV2ThAufdoMBSxZDnrvEbqe1iXKHSuR32sqmP8tStstHg2jQaEeuSFEUWicz5V0_b4h7YJSTQ3Ar6m_UDZhBuDkIEXPVS0CVVl3yaEQwsH2nkaHTw0AiKsiCbRJ6jeQNJ__okmXSVOvAGymEP3ftmOCIBP2lK66DBEn6DaRVwgeSVg5zNyIEbDfaC5K2Pc_WLRiY4F_k5BgDrzP3rhVSfxk71GFkeEzjU4vT9Q2vTtSm1dldnN2WWdISLVBwRW6bfTtEZDXePJb9s3NaquCKFe-a0suNo5yX5-zkDbweBum4pGXg7NkaRe4m7LbYy7wI4MsEfSNUT_Hr2xBlISc3jFreAsWbrD0AqPzOUD2U1MvfmxOQgVJUWjCf3P4zB5LKpZqT1Tf-Sw1iDIIY-qRH_0RMrSIOlddF-tKYWCpPVPMBkYqI9scxq9uzMSo7tgnhUMlCBieI5yFZWIUzXI46RRUCXD4_plCLq3t92MgVaqd5F9JqmhRiTSG7ib_LhhcosmLagMfqYAwNpIiG-rUg0-IB1aZk4QWs87juKJ-0wYEQxh_PTsaL_kHkCd9StSInp_WcJu0rYox5eykYs5A8YgTD1sfEX6UKHZpef5BIE2UvcfeaLcykJvQXU2EpdVZP-Sbr8EKYg-9_EWZllt9lElecgDQ_i_2ArCxRoiCk_8An8N31URGkZ1-5fPYN9qMSfUp-ZNO_Ljq2gHbxTFyF8Sms3BdiXthiJc6e-gJ6gfG4xa9_ka2vPY951MBS_BMNa3teWGk3-SYAT4Vu6U8NaozDuRw9AUmRLd71elDbm1baLjF5jbx3iFOqq6G93254gZVOmz_yhtjmpGhPu_kg-6tsgTmVVzraRMq0UMpH3F9sikRx-PV-6HE1IN8YalR3N0zITgx33yMCssPTFre79uTN33W_dMak3sUmYYySp_P8EYkvb0ofP6cfFq3cQDjRCLuIJ15YiwYet4I8ZzbcpvZasnpygQhNtfs09Qp381o_zNuohkkoidhOR0ixuUKx3hzeIuLLHEc6sj5Q2t5lRgIDLcADzGPo2oXnOnFK7UGdQ6RyQsU_ckHnIqAMlq2F427L5FbSy6VEwlRy_ot2EyhSf0mmdpwACFnE2JLoQIPGt4p3UBwvJmpKhV0DEqp90NUPoHHy0DFkFiB9QRg3C-2cMgtOnWhANp9Lb2-2lilMptTlsR8Gu_8cPRldqxh3auJSNYUByuuUtLUAltiv-RQDw-4g42bQA29Suo32iTmXZFoltfdWmW_LIhXd8GO8fGSNeT1ccAET_xjLq9OXldy5HhUSwG6zavdi2jslrm27yDH-_GGZWC-f3Tm3VL5rwns7BAGzsDiQQ3odI0orUe-XsgNtq0g9148uL-DKwRIUPs85epY2sM90DPPOU97vtCslh2blUhy9MN8ga9SSihLdsegA8BSq6Bh5HbYJt2gu1NKdBInUx3WPfILoUlKFJO5xIUJ_gzZcyopcv1oP79qdDMgxmr1YdYIoww8_YTXbGj1G_v-WUNnVgrpfspgBDVYv-YDBOM_Qc9MMBZwTPyiRvX4XQt6M6-t-XtvdWwv6PQydABlMsbyCMkBxg4JsiRHUaFBjPSkxyGUmsppOHdT7D0JHK3mhrP0ztYN4Dn06mM7BVa1tlGyv-0b1bTT38rYLFL9yoTcrijvPJaSp4UaIkcz69mg-0jEyYXQTeXG2MOmhFOFxjb8Y8qq5PwClFo_10jWHD3cPqPorl3R_6tCT9YpFTKkbq-qPhRAtSdEmyFCDrU_2fu2wJGJ79_bHG0IWOEu_S_kxnmjkBGrkMU7gSBGU0JDVx2dRfumqoykEchoLuVG2XlY54Gax6JYb_GeVDxbCcYfwi5nfeibYWHq9Z_krNNhP5YMyJnPcTScUcsZofUfaAMbc7XRJmvEdVQA-VxLiF-YZoR6hmlB6VVy59X8SMDuibWCUUAb9s7Hs-O_jFk9L_eqkxB8wZbqrE1VSWVU2bdeCVsp3GEQg-KfoF48aEAbEVRVMHsomcy6PkhjYlg
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponseStr = crypto.decrypt(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.31">
+      <div class="step-ref passed">31</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Decrypted Response:&#39;, decryptedResponseStr</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.31">22:27:16.582 [print] Decrypted Response: {&quot;taskCounts&quot;:{&quot;Open&quot;:8775,&quot;Completed&quot;:0,&quot;Audited&quot;:0,&quot;Accuracy %&quot;:100},&quot;workqueueData&quot;:[{&quot;row_number&quot;:1,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:false,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1401,&quot;workqueue_priority&quot;:&quot;Medium&quot;,&quot;workqueue_name&quot;:&quot;TRS - HAP&quot;,&quot;open_accounts&quot;:424},{&quot;row_number&quot;:2,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:true,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:false,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;LOCK&quot;,&quot;workqueue_id&quot;:1402,&quot;workqueue_priority&quot;:&quot;Low&quot;,&quot;workqueue_name&quot;:&quot;TRS - Priority Health&quot;,&quot;open_accounts&quot;:517},{&quot;row_number&quot;:3,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:false,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1403,&quot;workqueue_priority&quot;:&quot;Low&quot;,&quot;workqueue_name&quot;:&quot;TRS - UMR&quot;,&quot;open_accounts&quot;:260},{&quot;row_number&quot;:4,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:true,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:false,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1404,&quot;workqueue_priority&quot;:&quot;High&quot;,&quot;workqueue_name&quot;:&quot;TRS - Waystar&quot;,&quot;open_accounts&quot;:2555},{&quot;row_number&quot;:5,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:false,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1405,&quot;workqueue_priority&quot;:&quot;Medium&quot;,&quot;workqueue_name&quot;:&quot;TRS - Humana Tricare&quot;,&quot;open_accounts&quot;:320},{&quot;row_number&quot;:6,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:true,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:false,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1406,&quot;workqueue_priority&quot;:&quot;Low&quot;,&quot;workqueue_name&quot;:&quot;TRS - All other payers&quot;,&quot;open_accounts&quot;:4075},{&quot;row_number&quot;:7,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:true,&quot;is_display_evbv_fields&quot;:false,&quot;is_display_qa_fields&quot;:false,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1409,&quot;workqueue_priority&quot;:&quot;Low&quot;,&quot;workqueue_name&quot;:&quot;TRS - Availity&quot;,&quot;open_accounts&quot;:532},{&quot;row_number&quot;:8,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:true,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1500,&quot;workqueue_priority&quot;:&quot;High&quot;,&quot;workqueue_name&quot;:&quot;TRS - QA - Availity&quot;,&quot;open_accounts&quot;:1},{&quot;row_number&quot;:9,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:true,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1501,&quot;workqueue_priority&quot;:&quot;Low&quot;,&quot;workqueue_name&quot;:&quot;TRS - QA - HAP&quot;,&quot;open_accounts&quot;:14},{&quot;row_number&quot;:10,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:true,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1502,&quot;workqueue_priority&quot;:&quot;High&quot;,&quot;workqueue_name&quot;:&quot;TRS - QA - Priority Health&quot;,&quot;open_accounts&quot;:8},{&quot;row_number&quot;:11,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:true,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1503,&quot;workqueue_priority&quot;:&quot;Low&quot;,&quot;workqueue_name&quot;:&quot;TRS - QA - UMR&quot;,&quot;open_accounts&quot;:64},{&quot;row_number&quot;:12,&quot;action&quot;:&quot;Start&quot;,&quot;is_display_auth_fields&quot;:false,&quot;is_display_evbv_fields&quot;:true,&quot;is_display_qa_fields&quot;:true,&quot;page_url&quot;:&quot;/layout/user-entry&quot;,&quot;preference&quot;:&quot;OPEN&quot;,&quot;workqueue_id&quot;:1504,&quot;workqueue_priority&quot;:&quot;Medium&quot;,&quot;workqueue_name&quot;:&quot;TRS - QA - Waystar&quot;,&quot;open_accounts&quot;:5}],&quot;fieldConfig&quot;:[{&quot;field_name&quot;:&quot;action&quot;,&quot;display_name&quot;:&quot;Action&quot;,&quot;order&quot;:0,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:278,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;is_display_auth_fields&quot;,&quot;display_name&quot;:&quot;Is Display Auth Fields&quot;,&quot;order&quot;:0,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:927,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;is_display_evbv_fields&quot;,&quot;display_name&quot;:&quot;Is Display Evbv Fields&quot;,&quot;order&quot;:0,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:926,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;is_display_qa_fields&quot;,&quot;display_name&quot;:&quot;Is Display Qa Fields&quot;,&quot;order&quot;:0,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:928,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;page_url&quot;,&quot;display_name&quot;:&quot;Pageurl&quot;,&quot;order&quot;:0,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:279,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;preference&quot;,&quot;display_name&quot;:&quot;Preference&quot;,&quot;order&quot;:0,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:277,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;workqueue_id&quot;,&quot;display_name&quot;:&quot;Work Queue Id&quot;,&quot;order&quot;:0,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:273,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;workqueue_priority&quot;,&quot;display_name&quot;:&quot;Priority&quot;,&quot;order&quot;:0,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:276,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:false},{&quot;field_name&quot;:&quot;workqueue_name&quot;,&quot;display_name&quot;:&quot;Work Queue Name&quot;,&quot;order&quot;:1,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:274,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:true},{&quot;field_name&quot;:&quot;open_accounts&quot;,&quot;display_name&quot;:&quot;No Of Acc&quot;,&quot;order&quot;:2,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;minWidth&quot;:200,&quot;custom_fields&quot;:275,&quot;table_name&quot;:&quot;vw_ods_open_work_queue&quot;,&quot;is_visible&quot;:true}]} 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponse = JSON.parse(decryptedResponseStr)</span>
       </div>
     </div>
     <div class="time-cell passed">1</div>
@@ -213,14 +739,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.15">
-      <div class="step-ref passed">15</div>
+    <div class="step-container" id="0.34">
+      <div class="step-ref passed">34</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>header Authorization = &#39;Bearer &#39; + mainToken</span>
+        <span>*</span>&nbsp;<span>print decryptedResponse</span>
       </div>
     </div>
-    <div class="time-cell passed">7</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
@@ -229,88 +755,285 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.16">
-      <div class="step-ref passed">16</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>request requestBody</span>
-      </div>
-    </div>
-    <div class="time-cell passed">9</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.17">
-      <div class="step-ref passed">17</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>method post</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1177</div>
-  </div>
-
-   
-  
-  
-
-  
-
-  <div class="preformatted" data-parent="0.17">14:00:04.027 request:
-1 &gt; POST https://apiqa.revamprcm.com/v3/work-queue/open-work-queue
-1 &gt; Authorization: Bearer null
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Content-Length: 12
-1 &gt; Host: apiqa.revamprcm.com
-1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
-1 &gt; Accept-Encoding: gzip,deflate
-{&quot;pageId&quot;:3}
-
-14:00:05.094 response time in milliseconds: 1053
-1 &lt; 404
-1 &lt; Cache-Control: no-cache, no-store, must-revalidate
-1 &lt; Pragma: no-cache
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Expires: 0
-1 &lt; Server: Microsoft-IIS/10.0
-1 &lt; X-Content-Type-Options: nosniff
-1 &lt; X-Frame-Options: DENY
-1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
-1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-1 &lt; X-Powered-By: ASP.NET
-1 &lt; Date: Mon, 08 Jun 2026 08:30:00 GMT
-
-
+  <div class="preformatted" data-parent="0.34">22:27:16.582 [print] {
+  &quot;taskCounts&quot;: {
+    &quot;Open&quot;: 8775,
+    &quot;Completed&quot;: 0,
+    &quot;Audited&quot;: 0,
+    &quot;Accuracy %&quot;: 100
+  },
+  &quot;workqueueData&quot;: [
+    {
+      &quot;row_number&quot;: 1,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: false,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1401,
+      &quot;workqueue_priority&quot;: &quot;Medium&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - HAP&quot;,
+      &quot;open_accounts&quot;: 424
+    },
+    {
+      &quot;row_number&quot;: 2,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: true,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: false,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;LOCK&quot;,
+      &quot;workqueue_id&quot;: 1402,
+      &quot;workqueue_priority&quot;: &quot;Low&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - Priority Health&quot;,
+      &quot;open_accounts&quot;: 517
+    },
+    {
+      &quot;row_number&quot;: 3,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: false,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1403,
+      &quot;workqueue_priority&quot;: &quot;Low&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - UMR&quot;,
+      &quot;open_accounts&quot;: 260
+    },
+    {
+      &quot;row_number&quot;: 4,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: true,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: false,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1404,
+      &quot;workqueue_priority&quot;: &quot;High&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - Waystar&quot;,
+      &quot;open_accounts&quot;: 2555
+    },
+    {
+      &quot;row_number&quot;: 5,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: false,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1405,
+      &quot;workqueue_priority&quot;: &quot;Medium&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - Humana Tricare&quot;,
+      &quot;open_accounts&quot;: 320
+    },
+    {
+      &quot;row_number&quot;: 6,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: true,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: false,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1406,
+      &quot;workqueue_priority&quot;: &quot;Low&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - All other payers&quot;,
+      &quot;open_accounts&quot;: 4075
+    },
+    {
+      &quot;row_number&quot;: 7,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: true,
+      &quot;is_display_evbv_fields&quot;: false,
+      &quot;is_display_qa_fields&quot;: false,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1409,
+      &quot;workqueue_priority&quot;: &quot;Low&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - Availity&quot;,
+      &quot;open_accounts&quot;: 532
+    },
+    {
+      &quot;row_number&quot;: 8,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: true,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1500,
+      &quot;workqueue_priority&quot;: &quot;High&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - QA - Availity&quot;,
+      &quot;open_accounts&quot;: 1
+    },
+    {
+      &quot;row_number&quot;: 9,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: true,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1501,
+      &quot;workqueue_priority&quot;: &quot;Low&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - QA - HAP&quot;,
+      &quot;open_accounts&quot;: 14
+    },
+    {
+      &quot;row_number&quot;: 10,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: true,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1502,
+      &quot;workqueue_priority&quot;: &quot;High&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - QA - Priority Health&quot;,
+      &quot;open_accounts&quot;: 8
+    },
+    {
+      &quot;row_number&quot;: 11,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: true,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1503,
+      &quot;workqueue_priority&quot;: &quot;Low&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - QA - UMR&quot;,
+      &quot;open_accounts&quot;: 64
+    },
+    {
+      &quot;row_number&quot;: 12,
+      &quot;action&quot;: &quot;Start&quot;,
+      &quot;is_display_auth_fields&quot;: false,
+      &quot;is_display_evbv_fields&quot;: true,
+      &quot;is_display_qa_fields&quot;: true,
+      &quot;page_url&quot;: &quot;/layout/user-entry&quot;,
+      &quot;preference&quot;: &quot;OPEN&quot;,
+      &quot;workqueue_id&quot;: 1504,
+      &quot;workqueue_priority&quot;: &quot;Medium&quot;,
+      &quot;workqueue_name&quot;: &quot;TRS - QA - Waystar&quot;,
+      &quot;open_accounts&quot;: 5
+    }
+  ],
+  &quot;fieldConfig&quot;: [
+    {
+      &quot;field_name&quot;: &quot;action&quot;,
+      &quot;display_name&quot;: &quot;Action&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: false,
+      &quot;filterable&quot;: false,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 278,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;is_display_auth_fields&quot;,
+      &quot;display_name&quot;: &quot;Is Display Auth Fields&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: false,
+      &quot;filterable&quot;: false,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 927,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;is_display_evbv_fields&quot;,
+      &quot;display_name&quot;: &quot;Is Display Evbv Fields&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: false,
+      &quot;filterable&quot;: false,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 926,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;is_display_qa_fields&quot;,
+      &quot;display_name&quot;: &quot;Is Display Qa Fields&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: false,
+      &quot;filterable&quot;: false,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 928,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;page_url&quot;,
+      &quot;display_name&quot;: &quot;Pageurl&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: true,
+      &quot;filterable&quot;: true,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 279,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;preference&quot;,
+      &quot;display_name&quot;: &quot;Preference&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: true,
+      &quot;filterable&quot;: true,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 277,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;workqueue_id&quot;,
+      &quot;display_name&quot;: &quot;Work Queue Id&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: false,
+      &quot;filterable&quot;: false,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 273,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;workqueue_priority&quot;,
+      &quot;display_name&quot;: &quot;Priority&quot;,
+      &quot;order&quot;: 0,
+      &quot;sortable&quot;: true,
+      &quot;filterable&quot;: true,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 276,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: false
+    },
+    {
+      &quot;field_name&quot;: &quot;workqueue_name&quot;,
+      &quot;display_name&quot;: &quot;Work Queue Name&quot;,
+      &quot;order&quot;: 1,
+      &quot;sortable&quot;: true,
+      &quot;filterable&quot;: true,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 274,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: true
+    },
+    {
+      &quot;field_name&quot;: &quot;open_accounts&quot;,
+      &quot;display_name&quot;: &quot;No Of Acc&quot;,
+      &quot;order&quot;: 2,
+      &quot;sortable&quot;: true,
+      &quot;filterable&quot;: true,
+      &quot;minWidth&quot;: 200,
+      &quot;custom_fields&quot;: 275,
+      &quot;table_name&quot;: &quot;vw_ods_open_work_queue&quot;,
+      &quot;is_visible&quot;: true
+    }
+  ]
+}
+ 
 </div>   
 
   
@@ -323,124 +1046,23 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   
 
   <div class="step-row">
-    <div class="step-container" id="0.18">
-      <div class="step-ref failed">18</div>
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
       
-      <div class="step-cell failed">
-        <span>Then</span>&nbsp;<span>status 200</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.taskCounts ==</span>
       </div>
     </div>
-    <div class="time-cell failed">12</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  
-
-  
-
-  <div class="preformatted" data-parent="0.18">14:00:05.110 classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
-Then status 200
-status code was: 404, expected: 200, response time in milliseconds: 1053, url: https://apiqa.revamprcm.com/v3/work-queue/open-work-queue, response: 
-
-classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
-</div>   
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.19">
-      <div class="step-ref skipped">19</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>print response</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.20">
-      <div class="step-ref skipped">20</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.taskCounts ==</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.20">{
+  <div class="preformatted" data-parent="0.36">{
   Open: &#39;#number&#39;,
   Completed: &#39;#number&#39;,
   Audited: &#39;#number&#39;,
-  &#39;Accuracy %&#39;: &#39;#number&#39;
-}</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.29">
-      <div class="step-ref skipped">29</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.workqueueData[0] ==</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.29">{
-  row_number: &#39;#number&#39;,
-  action: &#39;Start&#39;,
-  is_display_auth_fields: &#39;#boolean&#39;,
-  is_display_evbv_fields: &#39;#boolean&#39;,
-  is_display_qa_fields: &#39;#boolean&#39;,
-  page_url: &#39;/layout/user-entry&#39;,
-  preference: &#39;#string&#39;,
-  workqueue_id: &#39;#number&#39;,
-  workqueue_priority: &#39;#string&#39;,
-  workqueue_name: &#39;#string&#39;,
-  open_accounts: &#39;#number&#39;,
+  &quot;Accuracy %&quot;: &#39;#number&#39;
 }</div>
 
   
@@ -458,27 +1080,57 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
 
   <div class="step-row">
     <div class="step-container" id="0.46">
-      <div class="step-ref skipped">46</div>
+      <div class="step-ref passed">46</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[0] ==</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.workqueueData == &#39;#[]&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.46">{
-  field_name: &#39;action&#39;,
-  display_name: &#39;Action&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.workqueueData ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.47">{
+ &quot;row_number&quot;: &#39;#number&#39;,
+ &quot;action&quot;: &#39;#string&#39;,
+ &quot;is_display_auth_fields&quot;: &#39;#boolean&#39;,
+ &quot;is_display_evbv_fields&quot;: &#39;#boolean&#39;,
+ &quot;is_display_qa_fields&quot;: &#39;#boolean&#39;,
+ &quot;page_url&quot;: &#39;#string&#39;,
+ &quot;preference&quot;: &#39;#string&#39;,
+ &quot;workqueue_id&quot;: &#39;#number&#39;,
+ &quot;workqueue_priority&quot;: &#39;#string&#39;,
+ &quot;workqueue_name&quot;: &#39;#string&#39;,
+ &quot;open_accounts&quot;: &#39;#number&#39;
 }</div>
 
   
@@ -495,28 +1147,309 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
   
 
   <div class="step-row">
-    <div class="step-container" id="0.61">
-      <div class="step-ref skipped">61</div>
+    <div class="step-container" id="0.64">
+      <div class="step-ref passed">64</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[1] ==</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.fieldConfig == &#39;#[]&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.61">{
-  field_name: &#39;is_display_auth_fields&#39;,
-  display_name: &#39;Is Display Auth Fields&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.fieldConfig ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.65">{
+ &quot;field_name&quot;: &#39;#string&#39;,
+ &quot;display_name&quot;: &#39;#string&#39;,
+ &quot;order&quot;: &#39;#number&#39;,
+ &quot;sortable&quot;: &#39;#boolean&#39;,
+ &quot;filterable&quot;: &#39;#boolean&#39;,
+ &quot;minWidth&quot;: &#39;#number&#39;,
+ &quot;custom_fields&quot;: &#39;#number&#39;,
+ &quot;table_name&quot;: &#39;#string&#39;,
+ &quot;is_visible&quot;: &#39;#boolean&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:81]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:81]</span>
+                <span class="scenario-name">400 - Bad Request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2251</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:81]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:27:51.819 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...jgb0uQ3c length: 585 
+22:27:54.332 ECDH Session ID: 6372a21d-0c89-4f7e-9661-5204d9e5f786 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:81]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:27:54.333 [print] Using auth_token cookie: eyJhbGciOiJI...jgb0uQ3c length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.82">
+      <div class="step-ref passed">82</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.82">{
+ &quot;pag111&quot;: &quot;test&quot;
 }</div>
 
   
@@ -533,29 +1466,47 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
   
 
   <div class="step-row">
-    <div class="step-container" id="0.76">
-      <div class="step-ref skipped">76</div>
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[2] ==</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.76">{
-  field_name: &#39;is_display_evbv_fields&#39;,
-  display_name: &#39;Is Display Evbv Fields&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
-}</div>
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
 
   
 
@@ -572,27 +1523,499 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
 
   <div class="step-row">
     <div class="step-container" id="0.91">
-      <div class="step-ref skipped">91</div>
+      <div class="step-ref passed">91</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[3] ==</span>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/work-queue-service/v3/work-queue/open-work-queue&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.91">{
-  field_name: &#39;is_display_qa_fields&#39;,
-  display_name: &#39;Is Display Qa Fields&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.97">
+      <div class="step-ref passed">97</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2249</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.97">22:27:54.335 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/work-queue-service/v3/work-queue/open-work-queue
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiI1MDE4ZjIwZC04MDg2LTQ3MTItODk2NS02NDRmZDk5NjhmYzQiLCJuYmYiOjE3ODI3NTIyNjEsImV4cCI6MTc4Mjc1NTg2MSwiaWF0IjoxNzgyNzUyMjYxLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.ivGPqsMkRdboRGGsxCurTi1656_qjpsyDEojgb0uQ3c
+1 &gt; X-ECDH-Session: 6372a21d-0c89-4f7e-9661-5204d9e5f786
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 60
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+WRY7CLCCzQYQGzE4k9KNriV6B420Hx_s6yOcae9Rh_2dMBot_a4ZJhkAvr0y
+
+22:27:56.583 response time in milliseconds: 2246
+1 &lt; 400
+1 &lt; x-amzn-RequestId: c082fc5a-5f6e-447f-a53e-63145a4bdc00
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu6XEHMeoAMEgyw=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 16:57:57 GMT
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 25
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 16:58:21 GMT
+Valid page ID is required
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:100]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:100]</span>
+                <span class="scenario-name">405 - method not found</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2014</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:100]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:28:30.513 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...dl6FdLmE length: 585 
+22:28:32.892 ECDH Session ID: 961b5173-b881-4f37-b04a-80eb3645efd7 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:100]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:28:32.895 [print] Using auth_token cookie: eyJhbGciOiJI...dl6FdLmE length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.101">
+      <div class="step-ref passed">101</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.101">{
+ &quot;pageId&quot;:3
 }</div>
 
   
@@ -609,28 +2032,557 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
   
 
   <div class="step-row">
-    <div class="step-container" id="0.106">
-      <div class="step-ref skipped">106</div>
+    <div class="step-container" id="0.107">
+      <div class="step-ref passed">107</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[4] ==</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.106">{
-  field_name: &#39;page_url&#39;,
-  display_name: &#39;Pageurl&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.108">
+      <div class="step-ref passed">108</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.110">
+      <div class="step-ref passed">110</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/work-queue-service/v3/work-queue/open-work-queue&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref passed">111</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.112">
+      <div class="step-ref passed">112</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.113">
+      <div class="step-ref passed">113</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.114">
+      <div class="step-ref passed">114</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/unknown&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref passed">115</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.116">
+      <div class="step-ref passed">116</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2013</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.116">22:28:32.897 request:
+1 &gt; GET https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/work-queue-service/v3/work-queue/open-work-queue
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiJhNDI3YWQ3NS1hZGFkLTQxM2UtOTU0OC00OTA5ZDRjNjMyYTkiLCJuYmYiOjE3ODI3NTIzMDAsImV4cCI6MTc4Mjc1NTkwMCwiaWF0IjoxNzgyNzUyMzAwLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.tmXhcQiljXj3ZPJJbOPoP4B9jluPKBGwVfSdl6FdLmE
+1 &gt; X-ECDH-Session: 961b5173-b881-4f37-b04a-80eb3645efd7
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: application/unknown; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:28:34.903 response time in milliseconds: 2006
+1 &lt; 405
+1 &lt; x-amzn-RequestId: d37b616f-6255-4773-9123-a5f0b14664c0
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Allow: POST
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu6dGHI9IAMEixw=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 16:58:35 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: close
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 16:58:59 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.117">
+      <div class="step-ref passed">117</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 405</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:119]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:119]</span>
+                <span class="scenario-name">404 - Incorrect URL</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2337</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:119]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:29:09.845 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...0eZ60JO4 length: 585 
+22:29:12.138 ECDH Session ID: e91690cf-aebb-4ca7-815c-7e021b4a8b07 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:119]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:29:12.142 [print] Using auth_token cookie: eyJhbGciOiJI...0eZ60JO4 length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.120">
+      <div class="step-ref passed">120</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.120">{
+ &quot;pageId&quot;:3
 }</div>
 
   
@@ -647,33 +2599,280 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
   
 
   <div class="step-row">
-    <div class="step-container" id="0.121">
-      <div class="step-ref skipped">121</div>
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[5] ==</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.121">{
-  field_name: &#39;preference&#39;,
-  display_name: &#39;Preference&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
-}</div>
+  
 
   
 
      
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/work-queue-service/v2/work-queue/open-work-queueeeee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.134">
+      <div class="step-ref passed">134</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.135">
+      <div class="step-ref passed">135</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2335</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.135">22:29:12.144 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/work-queue-service/v2/work-queue/open-work-queueeeee
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiI4OTdhMWRkOS1hZTg2LTQ3NjctYjYyYy05NDIwZjNjYTdiNjIiLCJuYmYiOjE3ODI3NTIzMzksImV4cCI6MTc4Mjc1NTkzOSwiaWF0IjoxNzgyNzUyMzM5LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.JYVJets4HKrbrI2U4F0QlzkNPdVOjar7svE0eZ60JO4
+1 &gt; X-ECDH-Session: e91690cf-aebb-4ca7-815c-7e021b4a8b07
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+pJ_IcfuHy1RM_ndEgvBhoN23Zc3qRtHhXEOIXXLFcrqbKUWBkfCMTQ
+
+22:29:14.478 response time in milliseconds: 2334
+1 &lt; 404
+1 &lt; x-amzn-RequestId: 94cb5b48-2875-4569-9d62-965690285892
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu6jPHXWIAMEr7A=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 16:59:15 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 16:59:39 GMT
+
+
+</div>   
 
   
 
@@ -686,28 +2885,390 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
 
   <div class="step-row">
     <div class="step-container" id="0.136">
-      <div class="step-ref skipped">136</div>
+      <div class="step-ref passed">136</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[6] ==</span>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.136">{
-  field_name: &#39;workqueue_id&#39;,
-  display_name: &#39;Work Queue Id&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:138]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:138]</span>
+                <span class="scenario-name">401 - Unauthorized</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2418</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:138]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:138]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:29:49.696 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...IbCulx1c length: 585 
+22:29:52.077 ECDH Session ID: 43e7372d-6225-4158-99bb-9994a33d8b10 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:138]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:138]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:138]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:138]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:138]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:138]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:29:52.077 [print] Using auth_token cookie: eyJhbGciOiJI...IbCulx1c length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.139">
+      <div class="step-ref passed">139</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.139">{
+ &quot;pageId&quot;:3
 }</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.145">
+      <div class="step-ref passed">145</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.146">
+      <div class="step-ref passed">146</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.148">
+      <div class="step-ref passed">148</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/work-queue-service/v3/work-queue/open-work-queue&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#  And header Cookie = &#39;auth_token=&#39; + authCookie</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.150">
+      <div class="step-ref passed">150</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
 
   
 
@@ -724,28 +3285,642 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
 
   <div class="step-row">
     <div class="step-container" id="0.151">
-      <div class="step-ref skipped">151</div>
+      <div class="step-ref passed">151</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[7] ==</span>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">0</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.151">{
-  field_name: &#39;workqueue_priority&#39;,
-  display_name: &#39;Priority&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
-}</div>
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.152">
+      <div class="step-ref passed">152</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.153">
+      <div class="step-ref passed">153</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.154">
+      <div class="step-ref passed">154</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2417</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.154">22:29:52.077 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/work-queue-service/v3/work-queue/open-work-queue
+1 &gt; X-ECDH-Session: 43e7372d-6225-4158-99bb-9994a33d8b10
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 54
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+QZkQb1wZdm2HZs5SYm8YDtypM7tGHrb4WKSLKcYX4iHKNCQnZPZECw
+
+22:29:54.503 response time in milliseconds: 2426
+1 &lt; 401
+1 &lt; x-amzn-RequestId: 3ad68ca3-99ce-490c-b70e-36377a397887
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu6pgG9KIAMEmAA=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 16:59:55 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 49
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 17:00:20 GMT
+Authentication failed. A valid token is required.
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.155">
+      <div class="step-ref passed">155</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:157]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:157]</span>
+                <span class="scenario-name">415 - Unsupported Media Type</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2196</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:157]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:157]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:30:30.243 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...ZQVgshZE length: 585 
+22:30:31.909 ECDH Session ID: 36cefba3-ddd0-494e-a3dc-b1044f57fd85 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:157]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:157]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:157]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:157]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:157]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:157]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:30:31.909 [print] Using auth_token cookie: eyJhbGciOiJI...ZQVgshZE length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.158">
+      <div class="step-ref passed">158</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/work-queue-service/v3/work-queue/open-work-queue&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.159">
+      <div class="step-ref passed">159</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.160">
+      <div class="step-ref passed">160</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.161">
+      <div class="step-ref passed">161</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;false&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.162">
+      <div class="step-ref passed">162</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.163">
+      <div class="step-ref passed">163</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.164">
+      <div class="step-ref passed">164</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2195</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.164">22:30:31.909 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/work-queue-service/v3/work-queue/open-work-queue
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiIxNjcyMWQzNC1hYjUzLTRjODktYWJmNC0yMzUxMTdlMGFjZmYiLCJuYmYiOjE3ODI3NTI0MjAsImV4cCI6MTc4Mjc1NjAyMCwiaWF0IjoxNzgyNzUyNDIwLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.NxLeJjdjN1r6jqgkQ5Ke1Y33v3cDuUe5awLZQVgshZE
+1 &gt; X-ECDH-Session: 36cefba3-ddd0-494e-a3dc-b1044f57fd85
+1 &gt; X-Encrypted-Payload: false
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Content-Length: 0
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:30:34.109 response time in milliseconds: 2200
+1 &lt; 415
+1 &lt; x-amzn-RequestId: 9fedc494-93f6-443b-b8e3-8e55182cfa5c
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu6vtEIWoAMEjzQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 17:00:34 GMT
+1 &lt; Content-Type: application/problem+json; charset=utf-8
+1 &lt; Content-Length: 176
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 17:00:59 GMT
+{&quot;type&quot;:&quot;https://tools.ietf.org/html/rfc9110#section-15.5.16&quot;,&quot;title&quot;:&quot;Unsupported Media Type&quot;,&quot;status&quot;:415,&quot;traceId&quot;:&quot;00-389675d4e08d18c9c880e745eb6d487c-3748b7e3f5d61314-00&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.165">
+      <div class="step-ref passed">165</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 415</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
 
   
 
@@ -762,70 +3937,29 @@ classpath:features/Api_V3_Work-Queue_Open-Work-Queue.feature:18
 
   <div class="step-row">
     <div class="step-container" id="0.166">
-      <div class="step-ref skipped">166</div>
+      <div class="step-ref passed">166</div>
       
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[8] ==</span>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print response</span>
       </div>
     </div>
-    <div class="time-cell skipped">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
   
-  <div class="preformatted" data-parent="0.166">{
-  field_name: &#39;workqueue_name&#39;,
-  display_name: &#39;Work Queue Name&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
-}</div>
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
   
 
   
 
-  <div class="step-row">
-    <div class="step-container" id="0.181">
-      <div class="step-ref skipped">181</div>
-      
-      <div class="step-cell skipped">
-        <span>*</span>&nbsp;<span>match response.fieldConfig[9] ==</span>
-      </div>
-    </div>
-    <div class="time-cell skipped">0</div>
-  </div>
-
-   
-  
-  <div class="preformatted" data-parent="0.181">{
-  field_name: &#39;open_accounts&#39;,
-  display_name: &#39;No Of Acc&#39;,
-  order: &#39;#number&#39;,
-  sortable: &#39;#boolean&#39;,
-  filterable: &#39;#boolean&#39;,
-  minWidth: &#39;#number&#39;,
-  custom_fields: &#39;#number&#39;,
-  table_name: &#39;vw_ods_open_work_queue&#39;,
-  is_visible: &#39;#boolean&#39;
-}</div>
-
-  
-
-     
+  <div class="preformatted" data-parent="0.166">22:30:34.119 [print] {
+  &quot;type&quot;: &quot;https://tools.ietf.org/html/rfc9110#section-15.5.16&quot;,
+  &quot;title&quot;: &quot;Unsupported Media Type&quot;,
+  &quot;status&quot;: 415,
+  &quot;traceId&quot;: &quot;00-389675d4e08d18c9c880e745eb6d487c-3748b7e3f5d61314-00&quot;
+}
+ 
+</div>   
 
   
 

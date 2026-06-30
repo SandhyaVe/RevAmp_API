@@ -1,4 +1,7 @@
 function fn() {
+  // Disable SSL certificate verification for all Karate HTTP calls (fixes PKIX path building error)
+  karate.configure('ssl', true);
+
   // Step 1: Cookie Extraction via Selenium (for downstream APIs like login-tracker)
   var TokenExtractor = Java.type('org.Token_Extraction.TokenExtractorUtil');
   var authCookie = TokenExtractor.getAuthCookie('Vuser_2@veehealthtek.com', 'Cloud@1234');
@@ -22,6 +25,5 @@ function fn() {
     crypto: crypto,
     ecdhSessionId: ecdhSessionId,
     gatewayBaseUrl: 'https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa'
-//                   https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/auth-service/v3/login
   };
 }

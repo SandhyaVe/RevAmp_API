@@ -1,0 +1,2828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"556ac484-f32b-4b42-881a-1fcd4af45733",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.Api_v3_custom-reports_get-tables</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">4</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-06-29 09:02:21 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Positive Flow</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:46]"><span>[2:46]</span> <span>405 - method not found</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:55]"><span>[3:55]</span> <span>404 - url incorrect</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:64]"><span>[4:64]</span> <span>401 - unauthoriZed</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/Api_v3_custom-reports_get-tables.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Api End Point - /v3/custom-reports/get-tables</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Positive Flow</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>3735</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">20:59:58.231 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...wL6VRFik length: 585 
+21:00:00.864 ECDH Session ID: 1083ec34-b580-4503-9696-9cd545bf5fcc 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">21:00:00.967 [print] Using auth_token cookie: eyJhbGciOiJI...wL6VRFik length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/report-service/v3/custom-reports/get-tables&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3320</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.18">21:00:01.212 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/report-service/v3/custom-reports/get-tables
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiIzNjZiMWMwMi04ZDMwLTQ3YzktYTYxZS01Njk0MjE3ZjdkZDMiLCJuYmYiOjE3ODI3NDY5ODYsImV4cCI6MTc4Mjc1MDU4NiwiaWF0IjoxNzgyNzQ2OTg2LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.IzaFulU4z71yZhdVxGjqZYIZyOWIilCuEuPwL6VRFik
+1 &gt; X-ECDH-Session: 1083ec34-b580-4503-9696-9cd545bf5fcc
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:00:04.258 response time in milliseconds: 3030
+1 &lt; 200
+1 &lt; x-amzn-RequestId: 7d3bb26b-02cd-4254-bc81-a505ec9140d6
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: futfJFfUIAMEuJg=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:30:04 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 13358
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 15:30:29 GMT
+0IhLay-H5id6xfZJOL7egIrgG7IZYyZiDR3XkrTjCkkJmIc_muk-76IlQBPoDY5yGY_Ez8vAJkS2hFnbHUDIGLTu5YD1_3zQiNov5G4CdiMCSOx71FAKo_4CJ-S2QHeTn026pwNTMT8DMGVR4eOUTSie3H0sn3NJ0TM65Xgr4gY1b1pQ7L2uCuhPKH7_ibRjwqaGYWwKWlKgGBvpGjHhv9DhpZjAKPPblY-FkF3pMMJCMCf3WtRQJJqglq3w_uSPXKvrSiJi_SDAb-EeEvKx6x8W8HHe2W6NHGptkKDHrdYfAAhqOYck-EcGGaACv7CE3anYEOp9oVyJwGb1PyUvxT0fnQ2_DWjWOS8qtDY8Ezf7bYox9ntNhqUYzaWCt5g8-3EBL1uW4ZeuHsNCbqPXdjHw08iWQ5o0iXCWrbNLyQrhNKBMKMiFobeIVLvRMevXaXjADGOEh_z--8jU5Ydi64ibKvLltO274YcZAaxV2PW8M8EBi5l3bh8kULEAkC1lVQdrY0B_cU4VrmpWiwhUjew1KLuQuQmkVJQGS3YknRG7fa12zd2NFdtJnYVpXP4xdJJWyxgl3Y7T73dHTvSXr_dhCsmIQRaxrDl_Kj4-0bokQlhNcLyRjGcgPLK7IZBRp4bPj5FLhVhZS8IqSDQKMtIHdtzsNkaowcO7STiUiB4LhDAlqMOpphvowIappPUJptwQFARKCDf2-EkHuBASGUBCgibWmZlBzXYJYXvjV2xDaUFO5mTtCEnvmb8utZRpMmLVi_Zu7MJBgoD27fZnw6zJ2vbzKWwD_0LKK80WW8UbIQmDhzo_NEDpmY_HYZL6wjCohYATJbEUuh7Ujh6GyTNMhX0BUTiCmySslv1AVV7Ki27Z2OSPMq0JRfQ9kpHaFOOZwDUwST1Dr3-4TnuOQ_3cQ5ojbL7kFxSTiq7s4kEZ1zDvGFkslRf6IpBQY3DqVCzK34xzo4dUOxt-P0CqJTFdnmDCK8Rl_uVXKjeIh_as3t7RPwx2JMY0opAi8rcwmi_MaNaR-BB1JRZs4aG1pdbrItM6cSKAvkbjUmR3SygBOer4XauE51PATE10eWipZ9Vg9I0yhYtgbNOPxBptCSJ1K1g0IIkNdRt-lQnzs6tFSexWyVdQucw6mCKt9zqNKUzW0MHzygDodXeIbvpuj41YkpdRm0Q8e0tw0aNnr3h_elsgV2cndi1y3Ep7L5aaosWCHWhSjx1l7FE8nuUwjKFoI5yDOMs3t0U1WAwRws7s7KnVrbXima2WcNESKrRig-IQwJE4-zuS0I9rsEzDUWC4TG6p7I-ZEDLnzviIiTWZ2b-WQk7UYFF45A0JoBE478eZGBqeXIBjGaUcyOnUdfgyE-YbldVf_b7gaEvw-08gZ1ky2Okd-pp1GXnmaENVhiXxEa1FYedq0z9h52QBd2r93WDg4l-_LATSVKwraxiC0v3zzluuhp8BVdmuPMoYf3fff-RE-QyRqkHPyeBMPdRXf9or2WzNndqEiA1YymB4Rcc20sFGDe1hbKPRtdWmMm9M-UhmSyfFttbb6MVLuINHTNAEUobdEgMp8nI4WaLs_xo7UH62K9hCB1VKZXd3Vf2QLYOEaHesgcqec-u5IcL2Kjw7_gkj8nP_o2UO8FM5KCfu74ide6Scb6h0JATMcFfxKcAVHEzIBPf1SCLvFhs4OMZrB8OT3qUuYUL-ztMvINBYpJlEk0kuqFbsS4ItiSRyMfwKsoTGnDlP2iHTQuMEGuPyOs27B78MvKdHC4tY9kSribM4T3r8oPMG1ruFdfvDcYYxvbptsEl9lyJP4RDEtaEPDsNlVyppOC9GBZwunEQHUT8G5PUUtxWbdMmXsw0awxBY8VFF37Zdpz1FO2uf2mz0PTxw5Wf8nD5_hxc4KgW08EZI79F6mZtNebN3ZcQdJv5gCLRY3TUHMJqnOZCksn5rDbRQ5tmKE0RkRWdRr9hdOo5xUtTYAZGWdbS1KJNQTdt6TV0ftttX-ZMQ3dyoF5enbShV-VqPJtLo-U-BOgP8BL5qBv2ujldWOrROFU0c-SrcU73h-vXCU1HRYgCyFKLoQvnAaJP7CYqSiWWPm7Erk4Cf4MWzHrPRiVmJ64633vfD7wC3vNGdNd-TjAXZhiBWQO9kyUM5fHvV62KiXV3L7qBzRNe4wOmhLtX6DisAHX-16tlWO5Mz95fEoiNK7yp_AmXDb-2k5aVgq8uH_u5Kt850SFrgc61zgx8sBO5_LyGcHwGRk4GrnGJtT4r6JCzHuRLJq1QwVLNKeIiYsEo_9f6cmI49gA8NiQizCIxNRv6fvDbkuvER6vzY0wAdRu3RVXDUjvdw5UyQkH13Ald9Y0Opj7RG5sMTd6lon9bE9F9GtdpHkQm5Vl_gA5uRgNKEkv6HxfG-SBiIK2c5zlsfpl4MvKBYWeh97b09QoPOxYp-6LX0e_SIq5cAFKfMJ1PrskeJkVq052nxys01sBhwVJR7suKSnx13Y2GLL2c7mNf7xTjmBqRyJgMBColbULG4rxcUjznb6dmPoyyK_WJK3ZPNzSDrce0_H1uXXIGv1MA6kF3uJbmmhYTdLLLyCdEWxvXEmcY7wyxyw8Q0YCh1eC1r8g8wVdk8xd3lsb-OINVgZi6V_m_mQauwFda_2JXA9DvtEcksvu7kWr2L0-YxCs4sLXpLesBjNcmPETCnWCqX15Tbcy48-V00fKaSPCw72FCi6NGX9nq-yZQqWr1EXvBlwlYUgDKG5_ELUMt-IDh3DmfWIfGiKsP4rm-OPYnKFhixXUY5XiOX3skPG_l-0pHcHIZ5YVRTJXxn_JBhrRwQPVBb6IDL9-ak7ts5kQPsMu127iKr9ocLlcfk36rAd8h3y4Kt1q_wMPSn-aBzX63dQ-fz-dav6IQud4LEfDBb-MiYFdUXyyDsFgN50xFfy20v04WpHCE3OYY8Ud7W8MkzS3qlVrDkE3jCzL6Z6JLso98Vm2vVCrS2kxg3_f-45RafVBcYszKAU2P1ZIKIELxrMoOvdvPUfVoYW2McyS_G_AI78mkHy-rFgAn8_SQQXlsuFv6OUpqEsNG6v0lviyLlt9Bw9--ThoB3dzA2oGeJE4cIS1fbyuGSk7r9sol04jWesD-XKEiWxGwbku0i-FIuoQ-x4DRzcRGbLSL4CsxVtB3X1WKIJm8czjVsrr0y-LxBVxruHDge0CNOwMsWZIvHEkwxAftNXJEEsT8vM0fWhyp583XHRbVq6lXifkKtYCg4yNQ3sTeNlrIpbgHIAF5f-FCEuRwiUlP3dvs5eeeH05eOZBAphkVEJN3qyOiC1pOC8jzaDtyvn7zCwoqF81bk-82mH4MueT4cVQZ-JNh2Mtm__0h96mYIovXC2FWqeLxK6StuROY4ih3JMfpTOesa5laMfLutRsTbljps9i0VZQ6rq7gwmo58bsotmgZz0TKQoAdxnfFVai8vIFs7S2o4pu_ibJl8o8JbLslOUlFszst7Zb6_0PAP-psF09-n23hRgdZW8oNyokOBUWt7ya5RsBVXaGuOU6zmeoJNJscBNTquoQTQ-Y37XM7q3QzqoSDgCSw_l6W7mpuXWYAE30ahWiFh42JqhhVjw_XW6B_4CigPCG8CtYclc_VqBBgKdRHdaR7MtWix8FiAOcpl25Y_IapaWfwhP3ji6EbMflJLX2GScdm95DDYP3UNON_hLhYLV-e8m_NoVoc9vcE5lBKd2GaTdHKdOzbjHmw4Mqc2JVAx_h9EPunRByMaipAMvI9m0g6ektutnPCYq69Aj9UohFBklStIKCGFJL1ZnhPcMpk2Xusp3FUmSEg_FEWZ1q_1Z_8qa1YR6XrXJH3D6b2A_XtbnD1BCtmkQyhRZwZzakDObxjdWQbsgvXODL6kOLGsnjLbLa5sAoyGEout9dBLIWXB9AjbXgQWCYdiDVo-BpMv1TLftLhmrk2evGmInWiJOVLCHCiD__LHH6YGClymOjjEIkuxwSHxptbbe4AEicTfDyTUfpuWSZE6OSgT8Cb-po0EmutrGwmlcXhtwkhGDavTjZAwu0SwwdomN5wQ3fGNqnxjTZNaXJHMODuealRjnDhVCHVsrhEERXtsPe_sB0u_-jLK3Fgj0iAaARYNalCTCzyr5AZBu-ctFXTIiJk0qd024ElvKcdl7dydnMUBm4ZyQ_gA18sTe_LJA_72tVwyfbWeGIHAC5CWc69O4rIEUulJwhWLH5VWl3YNL0zqyu4l5gWgeGWG-l4SFKljrcrZL1cXkZVTB_dOp6KT5O2NoMuduKEFp2fPCjcGJGcMVVYjgCTUTNhdXuhtHkIYLNVooc7BFmg8H4HCDj8QieZV7jeL-Z8sGHQ8Kinl-HTa5cPlSJR0Ml0YoZQNDFaMOzBpeFKt6amj6Zf238kBnOJduY1r7SzTlfTWF5aett8WzGymPDf24SjlZyxtqJPAK2RJ7yW_Op9BYeNmLhXy1F1dWDn7jTnChWKw4lmO73sbHBEb4whm3dmsahOlCETH3dlV7hwVAAZLQf_KKENSHWOVkq1oDf94NirEZDbto0hVttTb6fZ2JWqjG8SJKfpyRmLKyK_sTZwDGRUsE45-pRjvShMKghd5QB_1vHV8YiXGrnNXI8xaBdKQCexwp-J9p7KTKBKL3-yidbf2TPXxyBd1NH0MOthN4R_jYb4Ym3r9FCKo-5d-pnEgSqtP66JLI5T7pAHt4eFi2E0M5-doxN1_-ZAcv8UA_5wPdKQvFcXOXtPyAbXkcpEISACzOhV-UxBnwnnvlmaJ0jUXX8y0cAdUESlm04zt3Hy6OeKaHncxIDEoxdf2AfxJ-ft7thClVBj3GLdW-NHs69215He3d35d7aNTJl-vvX9wCRva8-pQj0j-eGToTOd92o0vK0YKRmJnZxlX2rH1jj_SlmtsFVSmBCn6zmUzwDw7cquHYCEXQN2P-enUEqZzHxQYWOPSxWOFuJ8DJXgk2kQtg1I2Tc2PUj65W_Dm7d6BeNFo0X96pI8EnxgybRGSahLgko3V6P9jl46_FRWF_PpTP5IpnkhqOV3g36y-6AbkU8Jm_txy5TjaOpbd7phRcNjGgY5v7Nrr8R10am_8chDkYcN8j8KBfo5P2wjCTMkvKYvKlGmvTwD13euMYh07hd2viXpvQaWUGknk0FqILw4Li-T_j_GjFkoLBfKf9XAx1x72JYpGGXHoTu1laH1QPp5EHcSJA6KR7N1UxtBjwdP2BWNzigWXCkzc6kINvkbmDZ3yJqZ7-H13pinDL-AFXyUsArSORg5RBPGWImXqDMMgJQP9At62ZI_KgSdfsakK6ljQhRhuigw29vA_CcALnnLIBdo4h0vVQxANXWFO9-dIoNOgjmrqqLb4mPVnFPL_uYQegWDpi6SDJEGlEo9-ShLLaer0mXasMCqBkr0_ZEFR0vR2zmS3TzqaSIR4evQq_T_dVyEPd2UrfHIBJpTRh5866K4JZA_0xq0NmUiLVSC4udNIyAclB-hXHIM9RQBBjQie2k6nrAXLSQa6oRan7yiUhoMJqZ6I8iur5CrvrFcNmhje6L7lUDogj2beEV88b_RC28CGA13rBAkrlpTfIM8UIld8vrEGuQ_vwVbu5Sg22JlRzjGOqLBFcU6yaORdWmQk7TCm1vt74MnleubI5yCkX9PtD904JkgilzbCvdy6sc0WzG1IpAPUSmY33KOfD4tld0-iU1ethWHjNu5k5jY7W0LYia791wWDsWIbW5oskMM5HTKYzz_Wv54M9aExeIKna0f34PFNf9O9yz1bA4Pt2mMMXLdNp7EHqb0fM8kSuuSUHL6bYJNqU9wRnzaIE9FLjmZEZf6PCiblhWOuBo9eO3i7Fd7heVZqH5apivwiFoRfwGKqUANuCL9HDY9Qaw2B6c6DSx8RCnww6hhCGppoIhG1SQZzQ04Fvh0MbCkk1euBK9sSSaSpFwRIFRutUw07N_uUcd9GmVYSCzLhdEG0INE21jQP8oCCKmW_3Z-QXtVDGoKPyvUOSD-qA7jrIHE0CpiEaCMSoVpkZ1xFF-xOcEo9lMjalbprjj8cS-lesAeWGlbbaka0V4-2bYfIaOA8DPQ6gG3CMJ7mrs5H7CtCw2zEVGu1URT8wmryziWWruu9sLTkn3FSFPbvGKa9gsMo8-VcGeB0s8JMTgcZl7t4lD1RB7x5lFWg_nBXSp6omp2SNaFAGw3w2adkRlUPo4A3tW0rtaV01ySanV6Hbxb_Opxjdr6R4zwq5X8_6sHOdK3UpFxrwRhT1Z4JU1vulf6xqOg6wKqBRs10qDFuc22dCpJkZ8ydzQ8U37p_zfYD_rr-NplPXUPNtAJX4HDGuF4jcj6hxit3d0hLCEgQadbYU01OvT6AeOo8mOMcgryMF05zniMSX8ZvO7LOeT3_RrVX_Yczm_OAW66fcz_iY6bVVNsGe38rrQ2vLg4p18c9rDvwrh-S9KhFxWNjl5L-j5DkKAxo6c6sMYdqmkSfc9SGpAlRaPbV70WAPo06uaVQ559D5KuHWl43Dlwo8EXgQQR_Rz59hjRU5B_O8w55L-t8w1voREPoPRUSOl_YUlI6NMIgIVR10mVvcnsWYURUt-Yz-UoJXV5aja-ytGjF_N0Pm_0nGzypV9S8Ng49uz2_4HwtolXIARdTLVBR82we2tljpdYi4JUBR8oGP3jrTMKiC6aoqu8I-cmnX2znT_lXwcYTPNKFz3V1t7PGuGJul67egwcpe7j8XNB_jtLLRr12sqzFVm3Z9ufNvgd57g61Q86ciHqWU0G_JzkbrHtqDeK-K1GkYxvhU4NYwZ-RN_yITPAjjtNDWd2w77vIX0svk0g9I-jyuSnSDoTSChy4859Pjhuhg0_8JWcYQ4RssOtYqsWaeCsKXQWeAzSweW4mdjtjg9K-jRlW56muIjLT1-ARcpfL50SEbthd9tkpouSytCfnaSlCAzOzWwtowWF4PqW197_x6JJofNdUA6d5Zwe425j4Ci62orEGGCWthrb_Cb3hXyBORwGOdOqo1AESrtF_c_t_N3JBaZOsl_uzxbO6bZY5ZYZKmFa30BKds5_aaNDGCgzKmDHFhsefuTH6n-UbQikGJsVnic3Gl_E_VuVHqTvRcAUp-mFEfcbkvYlx2b10e9nw_du4yDOY22GLN_w7iYu223S8Sc930OSRTWKY81tI2oYU2TFRdIJ6Zb_NCubxhqOz0vd4OZat6Mr7IdpM_m1QNZzYrfkpLNJJcwcKb2ts7iRNdtmPRZq_JAUBgBtXplaVxrKnwV9KR96k2P6M9k9oQizbRyQXoPTUp9yfKcrFeAYqB1ZieQBgPt0r0pMzaFQCnP3YSh7IBdbtDIxPMKUl1gH7kCMK9unDpiSVdStVXbn3D5souTtdrK_MDuubnz-Zsi2IbLif3ZXcyE73X8oJ64fn5HH7BbNN9NIXcbS3qbHUqfsbqotTisHZbZQe4ov-FD6ozoOtZkbO4VTH4Mw2XYXX6yLwemR9_7GuYUpaRHTNaPo-UaTkCcnmBADf_abcCOLL4pnKJWrXJenmL8MHGO-HEgRPN-w81JHDTm7_NZHuhwlhMWHpPojOBlVVQxF2zOdx23zXIMgIFu9kqBDsLW2PpeOeuMhkuRjcRz__YT9QJVQWbnqV7ZKsMh2NliY4xVSAi9abDJg3QxUc9FB3Js3TF9vgGuAJWOjz396yg43ZDvW1B9bAapI1ib9ixSxEZJpiWpTIwT8cvKFLXSGjIm6XimtJneajHiECX0X07cEVT9ZNiz31rz3lmCFFZeXaCGw8TV76qwjCLytI1sNplvjJRVlilk13oE0tdXDtNJcWKDLLPdTPRG108_MslaFX6vhTbc8jcH2hU2IBuYpUOnZ_X1_0irxjshe3GmjtO1LjjhbRkx4WEkzDL8qFK5ieCyjL7X6EKeN4EROKiWtf-bKK8f7IO9rm8MSrnoWynzuZw7HZHI-WU_t8FCD1Lb2pxp1XijyuePjoV4-UYJYaijtjEJI26zC5Ffb6MHSk0zQbIYL1GEyq4DA3TTJot62EHMNFcxVnPCFiS_qRi4KM4rP3xWSe9olD1tRnhL1HhK9THSCOkf6t7Tbz-TdfWbv_gI43IdjPExCAD3YZ34BvtlWMOgzYtm8iuUWjFR1yZ9tnUPSPpHemkQOB8L7EfXyB01vZC0NQy8DAPsl4b1go4IYOo7xN9H8YmGzWwFBvOsSFVrNgaqmXDj2q-3sP-9G1d2ysWm2upigceK5idH8qRSb-YPZAWq3Um278bxgcPcU_MSthd88Ohb7WHOA9LsBPa1Z6mGAQrQrMkW6sbpXr_aLwt29_QoizeTfWTo7KFOP6LFANe2nKvvBL86DTNSRDbTen8Npo_deD1FM58wCVUWSQ9ORadMig6dt4jKMUP1lxTWps-uHcJFkF0DsmWYOZYKs5vAqO3InV-aN6YLtS2Wm-D-WCuIbhfwG8WzKb2juYV3jqNHmyt3lLg9frrG29aHmgfs6HEitfVqKInmrva10XzuoWD4gg91NZ409MSroxCtDjnQBUg4l3pxqZ2Qvq8quuQ7C8VY7nolXCKHnshDA1M7NdOG9d2KAtJZe7HiENcCOOa1gkgCk_bdCz6NszKeIZ7nTRrDRY8tn8o-qTz68jL8TviinCHDGNryCht06iS67dsnIM7qhrVwAWdhVN8RZtfk4tS3jRnp5dnTY-n4vKmVc18JShGlqIiNP_mEs67rNBWEIFbJ2TDp5KCX08d3N0WXIaDN5iLlqokTxsPZNRKG2OogM-BYssWE3D_p5_Sa-nCMxBepaMDqUOBiWx6ecFOk2mj0aWZKWQ2RWzNmCSaiw9X_9hb5KxU2JRno-l0-Yofh5f9rSF_TNSo1_2prAzVwVUuijWsrcQLEcAj3_NQnYdXg7drLOUPNBUd_y9vhMhiMgQjXYnU6IKSl3KcOwgUU-XuB3DMMVQcm-85NfTzV0m-YDJaQqqsP4HtABJV4l88qh_qtBZbkO5Ip3eI7XlPGYqvj07HrIhPUO1p05QjmuH1xMG0orORA_Ee6tUTG4GRip_J4Np3LvtBSakpF5YBqdq8HMgVD-NIMhKw917TCPLjRWwl6j_3AsaRQeH7OFtMXYcdAP-17A7_yQsYLh_OIt4PPBVDqSMwL9Osm4g_2qinzlPNg1U2ORd42IfB9dzRNh-cB5aUELn3jV9OHy4BqA4RYgABlaa5LKf1EX3jmGTjQA-yiCq4XpXrXDtQ4jC7oaaG0pukXqV8ASp0Rj88w7SoRr7x3Umy3u5uLmfh_yjzDIl9s-jGCXpjZVrXEmQJl7TBZjgUBTpj97BQ4YQVAEXk6tIJDec1sMGVfYTG5MalcutzXmL7sIobJiqtNc_r0tHVw6CNYiW6CW1uTw2cDf5OwqqaR-_jfI83p7ZXOExmKxw-EU5DsIr2Zvy3AMhoACO_sd7ir7tn1T1NuWq95w6ELiGzFMDaAspaWbuDjzeR9e8b3P0pv7N_r6jCjWsGHeLfJb1d8obOujzh0K88_hRoko4IPFX_on2h4Cu7f_cn7Mklkz4oGhVNyPO77-ddft91I3r0W4_-36WEGXiK0jjAoh9spziPlxSzQQ0jNe9A7f8l2oARStOf26nxsB5ED54_BVHF1AEsrVq_dfXZEMfEnIh0MZzYZgJNPLcNASwSymHNKH2Ph5mCuBrNyseynrTVlVofH5juBUCRc9cy64TJrvufq2By-9-6_BYc9gKIwZG7wxzwN0cg2dOFXre0mJyKuCpPO8NgkXIAzZRvtR7qRfI93T7iQSHsk8fIrETucyt70qvr-4t3jS1UFtjI9c5cHi1OgcHcLwa_0pVpz2wooFgup6TNGgj9mdl3oMcK0JZBKNu7DRJm3U9uqD934HTM6b4_vqgPmVcGFhrHVZyl4iJPNSSXagaZQuunY_bbLCZe0C5fSSTXbUtbiC_k8k_lPhZ1BKQR5qMEHkE_ojP2y382d9qwWh9jmvwdC9_pfNfr1oh3koK40ciVCqX_ndOsnJH-iu4hyUkyn34B05IRgJjAw5taB8QukDT4eBguOKJvPy5gVuXqxtbqUwaNPeKg2zSLrPbJN8VGm9MG5O_JKUU_UZ1ZYnTEaGRhPTVhwTwu002QvqHbdSk515NMTmjagz-ve_xpXg21P-gI5_lyBytOpKDsyYpClfLipMnA42dt8D0TRrd5bLjKx3wIrirNHPyybHiQi2m_m4_OzmFL8SR3_G_oOONjB-KNL5Ej5KHUYa5sbG6tmp5y082Fu4xqIaqimF0L3_ZIJFojfkgEKnT4RXMHt69joq84ZjhZmI3JBAMXKsK2LdtOJXr6whJVnS4TlumjRYifcRw0nF-Ag2REc6w0-W3f7lo4hCyutDkD8tM7a3YRboQ10Lvnsllqte-tgzOXDtpBUqpcsEsQD0VnnFoN9pksaCIn1LI28YmywnBigJcJ7AdjBrg--32Qx6CzSZ9hcmkwNqFzle2nAxRGkVzCtHj-eyvu275Jmm6Jq8_l7aUx3iKjp1ShAd2gtfdS8pkq40NU_W6q-twRGJxHm0SiGMr8gAIMj2gES3ZMck3tIXSAm5gUCv-tz_vOVG4KT2iHpYJpZM8ur_du-axP9XF3JS7uPNK_23PcPTbkbg2C9gZ8GRhyxrqzlLNkQE9JjFG7KJ1nv31ZuaroTcyGsjI1PES0QrO9ZTOcVzljg9a7kYyXh8nhvmpxpshZ0cG46SF-e0OB2aJvDpxJ0rKb8bFgYWKupem_zMSn-xvuVh_Ir0bzpV4yEaWGvrQaeXSaSVpX7SE6_qHtZZ48Bleh5_fZuW7J555Rm-c1rGYLgXwQHPxq4I10S-GJ2I4ekRF0gZSORjBaaX-LzQ4eQt-nF30XFYmD000C2Dhkccc-aShx_zE02nhu2r9xm4Ak6-iHl4cBe_0f2b3pyUXY9oDT7WRqh2WFdFClsDjBiKDVzPDcOyfdMYwCHwvdMu1IkBZV9KximpwUBqn71Wn6zZHIvcNl1h9t8hkQPRx5GoIniQYWUM__tViHkv6NBTNqE7ae1N_OsNI1-7bRj6_E92ua-6sZBv8BwUzD9ABPLUAdpsjx4FFCrlzT0MOo2dOJdLoq3y2PJKzvOFIZi6NoJOxcNpCPImysRoNCwu4AniqHTtI22GoImQdh8WHTl6TLveedO7YuPpF1eO3vV3c12W04NhbPAI6Br7-umhySKPO67l_n595wCZo6Pcj0iHyfEQ24VC24k5z3bQOGySCY9LSIEBkHjeXVKcZSeTGZw8cPjGjpWJjrKx1fWJJXIaSXNFkdIBjQ_QfFF6_fTxMgIcPgOdEDyjV85KP4ZPXRitdUz1k7z_AZS_9OpHccyGY_ZndTRCa_YlawQtReD39fd4ME2v-Hk4PB7eh6S2hXy43vBTbhGqz6WkU79zwvTTltZ_k02yrwAvqjJxwy-UWgoB5oqDAROsEX2zPul90Dh9_ZRd9k6FPVqz5BDZDJ_9ui2UpRsyZXRLKtRjZJTlMOr1oc_E8mMW6DvKnX4PGT77br64Mq1QyNLdk5MzbAgTuRAhv4kVXwvBtLjL-f6gEiJ2ivgjIuyLYDI8bsgG3yZbvdVojc_ecqjLrKKLPUt12Fc3JIv_h97rDelT4tR9vGoU-bFaeuJNcQXt4upbCyXOgvT4TSnVDlKI2j7N3505HijJKCgKH2BfSVCzDXWpzPoX-XLvs53j-SLUUJp7ASuAnAx1f0g347n9fhfnzN_5EYBCCdxNKoWg_Nai_QFu8wkcv_PuXLAJ3wHlciX1NfrvAoj43dai9tcItKI0-SQsPRw1QFJM-HPJWbhZmD-BzR_DpdUrCI7uQSQ4gIKCjQeJeVZifaDVLeoy7pZcKtzovbltY4QJPslbiHKH4FI3opDr63cWFZgra38Q3YwWX2YuEOYhGFdlZqvqVKJVHe3HD-kcjEcrvYZgckKuSOp0sMxIc0bhEC_Dhbp68-Xzj7a01et_LdIoZ42pUsgq3s8QD6AMPoVG6XVHUi1WM93IcOXeercfPiq80oB8zfrqsX5EnXR4O3HAE7VtZ0H3R_v3B__rd6uOrywEw29TdSK1maNEOFqh9urMrw22YEicRnGclaYSaEMSLcZzL-lq-ciNfUuYUD0eHZUTbkzpSSJqmiyWmP13VQGjLEfBhlDXnuu-8xT_GDysZkPm5vn-rvfLNqW5Rg4y743OcdcIu3jRL0UK3w40E9A85t6qIoGulX8k72b31zzwejVjSadqzz0iga4TY0owjm6iH--g85SgKvTy0jSRgjpC0LD6SHJfz5YH4Ai6w6it5F76EHZw3Up5foXKJI3p54c-8ExShNJdcXVYPC_4pI0rd_ETQgTsjKNM7B787x3AtdpzwN9fuExzHlhHn09I12rnjYRZ6Uwf5-hUcfhsBhW_1BN-ZhbSjXO0pG_WT7RN1bYrEZ78vnZet3KjO4kwy_BHhA9jPQiTrLwQquhEH-y2W1CXR0PAS5gmNzb95sf9Ck_EYjoD9PzGjohn0_dyyFKA5h2-9S0TB1ZVtNTMeQsJZJcRV8jFEZJK2CvcgrhQzMmTFXgLYiniY0gAlo0Y8y767rGSYt9Rp077W-MSwnABSigqaqudeo4YPxHu0kbbj_QYEfJUfHjVNTrwjufw2672T5QBewJC1tBQP3eE--HuduZrh_CNlRaHIoL8JfF5LjCRvHaUNFsTEa8yRlLVcyV5BtQ7_CJj05io-l9IFEZbFgodgHuzZaz0ZYHTaQXHFppnIlt-sGRPwnuZQKnMABbMua0eZPVgmSA5w_4T0Y7rZas6DTYifsbSUAPgoBQSKehxpHuMzq3-v4VpRVkTBZSUUAoUZEKxGIpYU6yBZ9AWCM0i3EX0vWerxorSooWmlYAIGJh9Hem6dmiMp2heQvh-1a6jAWGGqJ0T88GLFyY_ohFpkgyTiDzBof9zEp7vnc5o1NBQHmsMC_wlpLK9L7aGfc1eFuCapsInTp8-yK55APwHoEkUjguCKCqvnj_H1gGxTd0pSe-c7DyyE-IB0bqiJUNUb47f9gyqcVZML5zdhQNFp4g0BkIon9iwtx7kVy5psLxE8afLdGvr1VkQw8Mh8IGX1MKIA-NZxdJbyIdztPgUKoEmcwx3BvHBzsmMKNEtqRQpMY4Bkq1BmWQotHeX_JPGP7FVIdPSb6TChmjRDi2dGoMhFzVKileBMMixgpnB7GcAmFhSnJp59CVbhDf3q9aAkiRgrcAdjKkhC3Ch05TTP_Q8KQxSE1_uBbT3MwfJTnoPvU5v9ddB04H-i2CgaFRVZSFQFbS-dNn0M_2Xsn1C82scAvX8FZMf-uRwCt-oSZtLxUvk628gDTx4id3AwBYvwBg6gyoYLww
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.19">
+      <div class="step-ref passed">19</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponseStr = crypto.decrypt(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Decrypted Response:&#39;, decryptedResponseStr</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">21:00:04.305 [print] Decrypted Response: {&quot;tableNames&quot;:[{&quot;tableName&quot;:&quot;vw_patient&quot;,&quot;displayTableName&quot;:&quot;Patient Details&quot;}],&quot;collections&quot;:[{&quot;collection_id&quot;:60,&quot;collection_name&quot;:&quot;!@#$%^&amp;*&quot;},{&quot;collection_id&quot;:19,&quot;collection_name&quot;:&quot;!@#$%^&amp;*()&quot;},{&quot;collection_id&quot;:218,&quot;collection_name&quot;:&quot;0y0ftu29&quot;},{&quot;collection_id&quot;:219,&quot;collection_name&quot;:&quot;12qh1k0k&quot;},{&quot;collection_id&quot;:100,&quot;collection_name&quot;:&quot;29/11/2025&quot;},{&quot;collection_id&quot;:223,&quot;collection_name&quot;:&quot;2h3nxyiv&quot;},{&quot;collection_id&quot;:220,&quot;collection_name&quot;:&quot;2t65x9w0&quot;},{&quot;collection_id&quot;:22,&quot;collection_name&quot;:&quot;33434&quot;},{&quot;collection_id&quot;:156,&quot;collection_name&quot;:&quot;342432&quot;},{&quot;collection_id&quot;:214,&quot;collection_name&quot;:&quot;388o5qbg&quot;},{&quot;collection_id&quot;:6,&quot;collection_name&quot;:&quot;43534534&quot;},{&quot;collection_id&quot;:109,&quot;collection_name&quot;:&quot;45!@#$%^&amp;*()!@#$%^&amp;*(!@#$%^&amp;*()!@#$%^&amp;*(!@#$%^&amp;*!@&quot;},{&quot;collection_id&quot;:186,&quot;collection_name&quot;:&quot;4cssgpls&quot;},{&quot;collection_id&quot;:108,&quot;collection_name&quot;:&quot;5756767&quot;},{&quot;collection_id&quot;:211,&quot;collection_name&quot;:&quot;5ffh1l4k&quot;},{&quot;collection_id&quot;:230,&quot;collection_name&quot;:&quot;5uuxfp0k&quot;},{&quot;collection_id&quot;:159,&quot;collection_name&quot;:&quot;5v2wxwlf&quot;},{&quot;collection_id&quot;:166,&quot;collection_name&quot;:&quot;66wqb1iy&quot;},{&quot;collection_id&quot;:202,&quot;collection_name&quot;:&quot;6eyo1s13&quot;},{&quot;collection_id&quot;:208,&quot;collection_name&quot;:&quot;7e00qe9w&quot;},{&quot;collection_id&quot;:209,&quot;collection_name&quot;:&quot;7yay2p6a&quot;},{&quot;collection_id&quot;:189,&quot;collection_name&quot;:&quot;82c5ripl&quot;},{&quot;collection_id&quot;:160,&quot;collection_name&quot;:&quot;8bmanzln&quot;},{&quot;collection_id&quot;:226,&quot;collection_name&quot;:&quot;8s0djetx&quot;},{&quot;collection_id&quot;:155,&quot;collection_name&quot;:&quot;9lav5y7ap9pkk7wvkf&quot;},{&quot;collection_id&quot;:187,&quot;collection_name&quot;:&quot;a01myilc&quot;},{&quot;collection_id&quot;:29,&quot;collection_name&quot;:&quot;abcd&quot;},{&quot;collection_id&quot;:74,&quot;collection_name&quot;:&quot;Api Collection&quot;},{&quot;collection_id&quot;:75,&quot;collection_name&quot;:&quot;Api Collection 1&quot;},{&quot;collection_id&quot;:123,&quot;collection_name&quot;:&quot;Api Collection02970&quot;},{&quot;collection_id&quot;:83,&quot;collection_name&quot;:&quot;Api Collection03204&quot;},{&quot;collection_id&quot;:139,&quot;collection_name&quot;:&quot;Api Collection06197&quot;},{&quot;collection_id&quot;:134,&quot;collection_name&quot;:&quot;Api Collection08672&quot;},{&quot;collection_id&quot;:106,&quot;collection_name&quot;:&quot;Api Collection09037&quot;},{&quot;collection_id&quot;:133,&quot;collection_name&quot;:&quot;Api Collection12473&quot;},{&quot;collection_id&quot;:117,&quot;collection_name&quot;:&quot;Api Collection13371&quot;},{&quot;collection_id&quot;:120,&quot;collection_name&quot;:&quot;Api Collection17135&quot;},{&quot;collection_id&quot;:125,&quot;collection_name&quot;:&quot;Api Collection20507&quot;},{&quot;collection_id&quot;:149,&quot;collection_name&quot;:&quot;Api Collection21180&quot;},{&quot;collection_id&quot;:147,&quot;collection_name&quot;:&quot;Api Collection22830&quot;},{&quot;collection_id&quot;:80,&quot;collection_name&quot;:&quot;Api Collection25512&quot;},{&quot;collection_id&quot;:116,&quot;collection_name&quot;:&quot;Api Collection27689&quot;},{&quot;collection_id&quot;:128,&quot;collection_name&quot;:&quot;Api Collection29028&quot;},{&quot;collection_id&quot;:118,&quot;collection_name&quot;:&quot;Api Collection30535&quot;},{&quot;collection_id&quot;:77,&quot;collection_name&quot;:&quot;Api Collection30916&quot;},{&quot;collection_id&quot;:140,&quot;collection_name&quot;:&quot;Api Collection31994&quot;},{&quot;collection_id&quot;:124,&quot;collection_name&quot;:&quot;Api Collection34042&quot;},{&quot;collection_id&quot;:115,&quot;collection_name&quot;:&quot;Api Collection40336&quot;},{&quot;collection_id&quot;:127,&quot;collection_name&quot;:&quot;Api Collection40701&quot;},{&quot;collection_id&quot;:81,&quot;collection_name&quot;:&quot;Api Collection41671&quot;},{&quot;collection_id&quot;:76,&quot;collection_name&quot;:&quot;Api Collection42662&quot;},{&quot;collection_id&quot;:79,&quot;collection_name&quot;:&quot;Api Collection43473&quot;},{&quot;collection_id&quot;:86,&quot;collection_name&quot;:&quot;Api Collection48342&quot;},{&quot;collection_id&quot;:148,&quot;collection_name&quot;:&quot;Api Collection51446&quot;},{&quot;collection_id&quot;:114,&quot;collection_name&quot;:&quot;Api Collection55020&quot;},{&quot;collection_id&quot;:130,&quot;collection_name&quot;:&quot;Api Collection60286&quot;},{&quot;collection_id&quot;:113,&quot;collection_name&quot;:&quot;Api Collection60984&quot;},{&quot;collection_id&quot;:84,&quot;collection_name&quot;:&quot;Api Collection61741&quot;},{&quot;collection_id&quot;:126,&quot;collection_name&quot;:&quot;Api Collection62422&quot;},{&quot;collection_id&quot;:138,&quot;collection_name&quot;:&quot;Api Collection66812&quot;},{&quot;collection_id&quot;:78,&quot;collection_name&quot;:&quot;Api Collection69705&quot;},{&quot;collection_id&quot;:121,&quot;collection_name&quot;:&quot;Api Collection79732&quot;},{&quot;collection_id&quot;:85,&quot;collection_name&quot;:&quot;Api Collection81743&quot;},{&quot;collection_id&quot;:82,&quot;collection_name&quot;:&quot;Api Collection83625&quot;},{&quot;collection_id&quot;:129,&quot;collection_name&quot;:&quot;Api Collection83827&quot;},{&quot;collection_id&quot;:99,&quot;collection_name&quot;:&quot;Api Collection92382&quot;},{&quot;collection_id&quot;:119,&quot;collection_name&quot;:&quot;Api Collection92719&quot;},{&quot;collection_id&quot;:122,&quot;collection_name&quot;:&quot;Api Collection98378&quot;},{&quot;collection_id&quot;:73,&quot;collection_name&quot;:&quot;API Report&quot;},{&quot;collection_id&quot;:62,&quot;collection_name&quot;:&quot;asfaf&quot;},{&quot;collection_id&quot;:143,&quot;collection_name&quot;:&quot;ashfgfakghsadhasfgagfgfgfggggggggggggggggggggggggg&quot;},{&quot;collection_id&quot;:161,&quot;collection_name&quot;:&quot;atecgsd5&quot;},{&quot;collection_id&quot;:95,&quot;collection_name&quot;:&quot;automation data&quot;},{&quot;collection_id&quot;:193,&quot;collection_name&quot;:&quot;av4rr47i&quot;},{&quot;collection_id&quot;:40,&quot;collection_name&quot;:&quot;But I must explain to you how all this mistaken id&quot;},{&quot;collection_id&quot;:15,&quot;collection_name&quot;:&quot;collection&quot;},{&quot;collection_id&quot;:238,&quot;collection_name&quot;:&quot;Collection_24062026_105528_6788&quot;},{&quot;collection_id&quot;:239,&quot;collection_name&quot;:&quot;Collection_27062026_065951_6873&quot;},{&quot;collection_id&quot;:240,&quot;collection_name&quot;:&quot;Collection_27062026_070249_7015&quot;},{&quot;collection_id&quot;:241,&quot;collection_name&quot;:&quot;Collection_27062026_091651_894&quot;},{&quot;collection_id&quot;:242,&quot;collection_name&quot;:&quot;Collection_27062026_101015_8636&quot;},{&quot;collection_id&quot;:243,&quot;collection_name&quot;:&quot;Collection_27062026_135000_5689&quot;},{&quot;collection_id&quot;:244,&quot;collection_name&quot;:&quot;Collection_29062026_144230_8256&quot;},{&quot;collection_id&quot;:245,&quot;collection_name&quot;:&quot;Collection_29062026_150221_4038&quot;},{&quot;collection_id&quot;:58,&quot;collection_name&quot;:&quot;collection1&quot;},{&quot;collection_id&quot;:236,&quot;collection_name&quot;:&quot;Collection1_22-june&quot;},{&quot;collection_id&quot;:233,&quot;collection_name&quot;:&quot;Collection1_Testing&quot;},{&quot;collection_id&quot;:237,&quot;collection_name&quot;:&quot;collection9_22-June&quot;},{&quot;collection_id&quot;:27,&quot;collection_name&quot;:&quot;Custom Report 1&quot;},{&quot;collection_id&quot;:28,&quot;collection_name&quot;:&quot;Custom Report 2&quot;},{&quot;collection_id&quot;:212,&quot;collection_name&quot;:&quot;d4ntv96e&quot;},{&quot;collection_id&quot;:152,&quot;collection_name&quot;:&quot;data&quot;},{&quot;collection_id&quot;:47,&quot;collection_name&quot;:&quot;datasample&quot;},{&quot;collection_id&quot;:231,&quot;collection_name&quot;:&quot;dlox2yiv&quot;},{&quot;collection_id&quot;:201,&quot;collection_name&quot;:&quot;ds&quot;},{&quot;collection_id&quot;:190,&quot;collection_name&quot;:&quot;eee&quot;},{&quot;collection_id&quot;:55,&quot;collection_name&quot;:&quot;efefe&quot;},{&quot;collection_id&quot;:204,&quot;collection_name&quot;:&quot;ejd7o1r2&quot;},{&quot;collection_id&quot;:17,&quot;collection_name&quot;:&quot;ert&quot;},{&quot;collection_id&quot;:31,&quot;collection_name&quot;:&quot;ertert&quot;},{&quot;collection_id&quot;:16,&quot;collection_name&quot;:&quot;erwter&quot;},{&quot;collection_id&quot;:30,&quot;collection_name&quot;:&quot;eter&quot;},{&quot;collection_id&quot;:93,&quot;collection_name&quot;:&quot;etert&quot;},{&quot;collection_id&quot;:11,&quot;collection_name&quot;:&quot;eterter&quot;},{&quot;collection_id&quot;:217,&quot;collection_name&quot;:&quot;ewrertert&quot;},{&quot;collection_id&quot;:102,&quot;collection_name&quot;:&quot;ewtrewt&quot;},{&quot;collection_id&quot;:23,&quot;collection_name&quot;:&quot;Final Report&quot;},{&quot;collection_id&quot;:5,&quot;collection_name&quot;:&quot;FSDGDFH&quot;},{&quot;collection_id&quot;:207,&quot;collection_name&quot;:&quot;gr1heehh&quot;},{&quot;collection_id&quot;:183,&quot;collection_name&quot;:&quot;i1pieeraspe8q3aht6&quot;},{&quot;collection_id&quot;:185,&quot;collection_name&quot;:&quot;jasondata&quot;},{&quot;collection_id&quot;:163,&quot;collection_name&quot;:&quot;k0mf191o&quot;},{&quot;collection_id&quot;:229,&quot;collection_name&quot;:&quot;kdsvvf7z&quot;},{&quot;collection_id&quot;:165,&quot;collection_name&quot;:&quot;kwr2n7kc&quot;},{&quot;collection_id&quot;:162,&quot;collection_name&quot;:&quot;loh0wi2a&quot;},{&quot;collection_id&quot;:228,&quot;collection_name&quot;:&quot;m7y5yamz&quot;},{&quot;collection_id&quot;:150,&quot;collection_name&quot;:&quot;menaka collection&quot;},{&quot;collection_id&quot;:205,&quot;collection_name&quot;:&quot;mhuylmaw&quot;},{&quot;collection_id&quot;:54,&quot;collection_name&quot;:&quot;mk&quot;},{&quot;collection_id&quot;:179,&quot;collection_name&quot;:&quot;mu27duvt&quot;},{&quot;collection_id&quot;:195,&quot;collection_name&quot;:&quot;n6i1t3js&quot;},{&quot;collection_id&quot;:37,&quot;collection_name&quot;:&quot;New&quot;},{&quot;collection_id&quot;:57,&quot;collection_name&quot;:&quot;New Collection 1&quot;},{&quot;collection_id&quot;:104,&quot;collection_name&quot;:&quot;new revamp&quot;},{&quot;collection_id&quot;:176,&quot;collection_name&quot;:&quot;new test345&quot;},{&quot;collection_id&quot;:110,&quot;collection_name&quot;:&quot;nfkje euioetoiert oirejtoirejt oir!@#$%^&amp;*()@#$^&amp;*&quot;},{&quot;collection_id&quot;:178,&quot;collection_name&quot;:&quot;oaz4lrak&quot;},{&quot;collection_id&quot;:221,&quot;collection_name&quot;:&quot;pgna51xj&quot;},{&quot;collection_id&quot;:188,&quot;collection_name&quot;:&quot;pooja&quot;},{&quot;collection_id&quot;:154,&quot;collection_name&quot;:&quot;qdntney4&quot;},{&quot;collection_id&quot;:112,&quot;collection_name&quot;:&quot;reports&quot;},{&quot;collection_id&quot;:87,&quot;collection_name&quot;:&quot;retest&quot;},{&quot;collection_id&quot;:101,&quot;collection_name&quot;:&quot;Revamp test123&quot;},{&quot;collection_id&quot;:90,&quot;collection_name&quot;:&quot;reyty&quot;},{&quot;collection_id&quot;:194,&quot;collection_name&quot;:&quot;rhhiwioq&quot;},{&quot;collection_id&quot;:180,&quot;collection_name&quot;:&quot;rlv5925b&quot;},{&quot;collection_id&quot;:224,&quot;collection_name&quot;:&quot;rytryt&quot;},{&quot;collection_id&quot;:227,&quot;collection_name&quot;:&quot;s9wf9nnb&quot;},{&quot;collection_id&quot;:61,&quot;collection_name&quot;:&quot;safsdfsdf&quot;},{&quot;collection_id&quot;:36,&quot;collection_name&quot;:&quot;sample&quot;},{&quot;collection_id&quot;:196,&quot;collection_name&quot;:&quot;sample ds&quot;},{&quot;collection_id&quot;:173,&quot;collection_name&quot;:&quot;sampleQA&quot;},{&quot;collection_id&quot;:51,&quot;collection_name&quot;:&quot;sdewrweet&quot;},{&quot;collection_id&quot;:215,&quot;collection_name&quot;:&quot;smuk7x8z&quot;},{&quot;collection_id&quot;:4,&quot;collection_name&quot;:&quot;ssaSASD&quot;},{&quot;collection_id&quot;:56,&quot;collection_name&quot;:&quot;Syntax report&quot;},{&quot;collection_id&quot;:222,&quot;collection_name&quot;:&quot;t2c8ouyo&quot;},{&quot;collection_id&quot;:96,&quot;collection_name&quot;:&quot;tesdataaa&quot;},{&quot;collection_id&quot;:1,&quot;collection_name&quot;:&quot;test&quot;},{&quot;collection_id&quot;:92,&quot;collection_name&quot;:&quot;Test Collection&quot;},{&quot;collection_id&quot;:192,&quot;collection_name&quot;:&quot;test from dev&quot;},{&quot;collection_id&quot;:24,&quot;collection_name&quot;:&quot;Test Report&quot;},{&quot;collection_id&quot;:10,&quot;collection_name&quot;:&quot;test1&quot;},{&quot;collection_id&quot;:234,&quot;collection_name&quot;:&quot;TestCollection1&quot;},{&quot;collection_id&quot;:45,&quot;collection_name&quot;:&quot;testdataaa&quot;},{&quot;collection_id&quot;:145,&quot;collection_name&quot;:&quot;Tetstst EEWE&quot;},{&quot;collection_id&quot;:135,&quot;collection_name&quot;:&quot;Todays Report 16&quot;},{&quot;collection_id&quot;:13,&quot;collection_name&quot;:&quot;turtut&quot;},{&quot;collection_id&quot;:107,&quot;collection_name&quot;:&quot;tutr&quot;},{&quot;collection_id&quot;:32,&quot;collection_name&quot;:&quot;tuyuyi&quot;},{&quot;collection_id&quot;:181,&quot;collection_name&quot;:&quot;uiou&quot;},{&quot;collection_id&quot;:167,&quot;collection_name&quot;:&quot;umv9orou&quot;},{&quot;collection_id&quot;:14,&quot;collection_name&quot;:&quot;uuu&quot;},{&quot;collection_id&quot;:153,&quot;collection_name&quot;:&quot;vhy9s79vbdb&quot;},{&quot;collection_id&quot;:164,&quot;collection_name&quot;:&quot;vknjuysj&quot;},{&quot;collection_id&quot;:18,&quot;collection_name&quot;:&quot;werew&quot;},{&quot;collection_id&quot;:213,&quot;collection_name&quot;:&quot;wh1voq9x&quot;},{&quot;collection_id&quot;:203,&quot;collection_name&quot;:&quot;wqeqwewqqwqe&quot;},{&quot;collection_id&quot;:35,&quot;collection_name&quot;:&quot;ww&quot;},{&quot;collection_id&quot;:144,&quot;collection_name&quot;:&quot;wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&quot;},{&quot;collection_id&quot;:182,&quot;collection_name&quot;:&quot;xgdnbvsn&quot;},{&quot;collection_id&quot;:141,&quot;collection_name&quot;:&quot;xyz&quot;},{&quot;collection_id&quot;:168,&quot;collection_name&quot;:&quot;yh2f1hum&quot;},{&quot;collection_id&quot;:158,&quot;collection_name&quot;:&quot;ymohv1m5&quot;},{&quot;collection_id&quot;:225,&quot;collection_name&quot;:&quot;z7wmngqa&quot;},{&quot;collection_id&quot;:131,&quot;collection_name&quot;:&quot;Zap&quot;},{&quot;collection_id&quot;:206,&quot;collection_name&quot;:&quot;zpfovzeg&quot;},{&quot;collection_id&quot;:210,&quot;collection_name&quot;:&quot;ztd0binv&quot;}]} 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.23">
+      <div class="step-ref passed">23</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponse = JSON.parse(decryptedResponseStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">103</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print decryptedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">18</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.24">21:00:04.432 [print] {
+  &quot;tableNames&quot;: [
+    {
+      &quot;tableName&quot;: &quot;vw_patient&quot;,
+      &quot;displayTableName&quot;: &quot;Patient Details&quot;
+    }
+  ],
+  &quot;collections&quot;: [
+    {
+      &quot;collection_id&quot;: 60,
+      &quot;collection_name&quot;: &quot;!@#$%^&amp;*&quot;
+    },
+    {
+      &quot;collection_id&quot;: 19,
+      &quot;collection_name&quot;: &quot;!@#$%^&amp;*()&quot;
+    },
+    {
+      &quot;collection_id&quot;: 218,
+      &quot;collection_name&quot;: &quot;0y0ftu29&quot;
+    },
+    {
+      &quot;collection_id&quot;: 219,
+      &quot;collection_name&quot;: &quot;12qh1k0k&quot;
+    },
+    {
+      &quot;collection_id&quot;: 100,
+      &quot;collection_name&quot;: &quot;29/11/2025&quot;
+    },
+    {
+      &quot;collection_id&quot;: 223,
+      &quot;collection_name&quot;: &quot;2h3nxyiv&quot;
+    },
+    {
+      &quot;collection_id&quot;: 220,
+      &quot;collection_name&quot;: &quot;2t65x9w0&quot;
+    },
+    {
+      &quot;collection_id&quot;: 22,
+      &quot;collection_name&quot;: &quot;33434&quot;
+    },
+    {
+      &quot;collection_id&quot;: 156,
+      &quot;collection_name&quot;: &quot;342432&quot;
+    },
+    {
+      &quot;collection_id&quot;: 214,
+      &quot;collection_name&quot;: &quot;388o5qbg&quot;
+    },
+    {
+      &quot;collection_id&quot;: 6,
+      &quot;collection_name&quot;: &quot;43534534&quot;
+    },
+    {
+      &quot;collection_id&quot;: 109,
+      &quot;collection_name&quot;: &quot;45!@#$%^&amp;*()!@#$%^&amp;*(!@#$%^&amp;*()!@#$%^&amp;*(!@#$%^&amp;*!@&quot;
+    },
+    {
+      &quot;collection_id&quot;: 186,
+      &quot;collection_name&quot;: &quot;4cssgpls&quot;
+    },
+    {
+      &quot;collection_id&quot;: 108,
+      &quot;collection_name&quot;: &quot;5756767&quot;
+    },
+    {
+      &quot;collection_id&quot;: 211,
+      &quot;collection_name&quot;: &quot;5ffh1l4k&quot;
+    },
+    {
+      &quot;collection_id&quot;: 230,
+      &quot;collection_name&quot;: &quot;5uuxfp0k&quot;
+    },
+    {
+      &quot;collection_id&quot;: 159,
+      &quot;collection_name&quot;: &quot;5v2wxwlf&quot;
+    },
+    {
+      &quot;collection_id&quot;: 166,
+      &quot;collection_name&quot;: &quot;66wqb1iy&quot;
+    },
+    {
+      &quot;collection_id&quot;: 202,
+      &quot;collection_name&quot;: &quot;6eyo1s13&quot;
+    },
+    {
+      &quot;collection_id&quot;: 208,
+      &quot;collection_name&quot;: &quot;7e00qe9w&quot;
+    },
+    {
+      &quot;collection_id&quot;: 209,
+      &quot;collection_name&quot;: &quot;7yay2p6a&quot;
+    },
+    {
+      &quot;collection_id&quot;: 189,
+      &quot;collection_name&quot;: &quot;82c5ripl&quot;
+    },
+    {
+      &quot;collection_id&quot;: 160,
+      &quot;collection_name&quot;: &quot;8bmanzln&quot;
+    },
+    {
+      &quot;collection_id&quot;: 226,
+      &quot;collection_name&quot;: &quot;8s0djetx&quot;
+    },
+    {
+      &quot;collection_id&quot;: 155,
+      &quot;collection_name&quot;: &quot;9lav5y7ap9pkk7wvkf&quot;
+    },
+    {
+      &quot;collection_id&quot;: 187,
+      &quot;collection_name&quot;: &quot;a01myilc&quot;
+    },
+    {
+      &quot;collection_id&quot;: 29,
+      &quot;collection_name&quot;: &quot;abcd&quot;
+    },
+    {
+      &quot;collection_id&quot;: 74,
+      &quot;collection_name&quot;: &quot;Api Collection&quot;
+    },
+    {
+      &quot;collection_id&quot;: 75,
+      &quot;collection_name&quot;: &quot;Api Collection 1&quot;
+    },
+    {
+      &quot;collection_id&quot;: 123,
+      &quot;collection_name&quot;: &quot;Api Collection02970&quot;
+    },
+    {
+      &quot;collection_id&quot;: 83,
+      &quot;collection_name&quot;: &quot;Api Collection03204&quot;
+    },
+    {
+      &quot;collection_id&quot;: 139,
+      &quot;collection_name&quot;: &quot;Api Collection06197&quot;
+    },
+    {
+      &quot;collection_id&quot;: 134,
+      &quot;collection_name&quot;: &quot;Api Collection08672&quot;
+    },
+    {
+      &quot;collection_id&quot;: 106,
+      &quot;collection_name&quot;: &quot;Api Collection09037&quot;
+    },
+    {
+      &quot;collection_id&quot;: 133,
+      &quot;collection_name&quot;: &quot;Api Collection12473&quot;
+    },
+    {
+      &quot;collection_id&quot;: 117,
+      &quot;collection_name&quot;: &quot;Api Collection13371&quot;
+    },
+    {
+      &quot;collection_id&quot;: 120,
+      &quot;collection_name&quot;: &quot;Api Collection17135&quot;
+    },
+    {
+      &quot;collection_id&quot;: 125,
+      &quot;collection_name&quot;: &quot;Api Collection20507&quot;
+    },
+    {
+      &quot;collection_id&quot;: 149,
+      &quot;collection_name&quot;: &quot;Api Collection21180&quot;
+    },
+    {
+      &quot;collection_id&quot;: 147,
+      &quot;collection_name&quot;: &quot;Api Collection22830&quot;
+    },
+    {
+      &quot;collection_id&quot;: 80,
+      &quot;collection_name&quot;: &quot;Api Collection25512&quot;
+    },
+    {
+      &quot;collection_id&quot;: 116,
+      &quot;collection_name&quot;: &quot;Api Collection27689&quot;
+    },
+    {
+      &quot;collection_id&quot;: 128,
+      &quot;collection_name&quot;: &quot;Api Collection29028&quot;
+    },
+    {
+      &quot;collection_id&quot;: 118,
+      &quot;collection_name&quot;: &quot;Api Collection30535&quot;
+    },
+    {
+      &quot;collection_id&quot;: 77,
+      &quot;collection_name&quot;: &quot;Api Collection30916&quot;
+    },
+    {
+      &quot;collection_id&quot;: 140,
+      &quot;collection_name&quot;: &quot;Api Collection31994&quot;
+    },
+    {
+      &quot;collection_id&quot;: 124,
+      &quot;collection_name&quot;: &quot;Api Collection34042&quot;
+    },
+    {
+      &quot;collection_id&quot;: 115,
+      &quot;collection_name&quot;: &quot;Api Collection40336&quot;
+    },
+    {
+      &quot;collection_id&quot;: 127,
+      &quot;collection_name&quot;: &quot;Api Collection40701&quot;
+    },
+    {
+      &quot;collection_id&quot;: 81,
+      &quot;collection_name&quot;: &quot;Api Collection41671&quot;
+    },
+    {
+      &quot;collection_id&quot;: 76,
+      &quot;collection_name&quot;: &quot;Api Collection42662&quot;
+    },
+    {
+      &quot;collection_id&quot;: 79,
+      &quot;collection_name&quot;: &quot;Api Collection43473&quot;
+    },
+    {
+      &quot;collection_id&quot;: 86,
+      &quot;collection_name&quot;: &quot;Api Collection48342&quot;
+    },
+    {
+      &quot;collection_id&quot;: 148,
+      &quot;collection_name&quot;: &quot;Api Collection51446&quot;
+    },
+    {
+      &quot;collection_id&quot;: 114,
+      &quot;collection_name&quot;: &quot;Api Collection55020&quot;
+    },
+    {
+      &quot;collection_id&quot;: 130,
+      &quot;collection_name&quot;: &quot;Api Collection60286&quot;
+    },
+    {
+      &quot;collection_id&quot;: 113,
+      &quot;collection_name&quot;: &quot;Api Collection60984&quot;
+    },
+    {
+      &quot;collection_id&quot;: 84,
+      &quot;collection_name&quot;: &quot;Api Collection61741&quot;
+    },
+    {
+      &quot;collection_id&quot;: 126,
+      &quot;collection_name&quot;: &quot;Api Collection62422&quot;
+    },
+    {
+      &quot;collection_id&quot;: 138,
+      &quot;collection_name&quot;: &quot;Api Collection66812&quot;
+    },
+    {
+      &quot;collection_id&quot;: 78,
+      &quot;collection_name&quot;: &quot;Api Collection69705&quot;
+    },
+    {
+      &quot;collection_id&quot;: 121,
+      &quot;collection_name&quot;: &quot;Api Collection79732&quot;
+    },
+    {
+      &quot;collection_id&quot;: 85,
+      &quot;collection_name&quot;: &quot;Api Collection81743&quot;
+    },
+    {
+      &quot;collection_id&quot;: 82,
+      &quot;collection_name&quot;: &quot;Api Collection83625&quot;
+    },
+    {
+      &quot;collection_id&quot;: 129,
+      &quot;collection_name&quot;: &quot;Api Collection83827&quot;
+    },
+    {
+      &quot;collection_id&quot;: 99,
+      &quot;collection_name&quot;: &quot;Api Collection92382&quot;
+    },
+    {
+      &quot;collection_id&quot;: 119,
+      &quot;collection_name&quot;: &quot;Api Collection92719&quot;
+    },
+    {
+      &quot;collection_id&quot;: 122,
+      &quot;collection_name&quot;: &quot;Api Collection98378&quot;
+    },
+    {
+      &quot;collection_id&quot;: 73,
+      &quot;collection_name&quot;: &quot;API Report&quot;
+    },
+    {
+      &quot;collection_id&quot;: 62,
+      &quot;collection_name&quot;: &quot;asfaf&quot;
+    },
+    {
+      &quot;collection_id&quot;: 143,
+      &quot;collection_name&quot;: &quot;ashfgfakghsadhasfgagfgfgfggggggggggggggggggggggggg&quot;
+    },
+    {
+      &quot;collection_id&quot;: 161,
+      &quot;collection_name&quot;: &quot;atecgsd5&quot;
+    },
+    {
+      &quot;collection_id&quot;: 95,
+      &quot;collection_name&quot;: &quot;automation data&quot;
+    },
+    {
+      &quot;collection_id&quot;: 193,
+      &quot;collection_name&quot;: &quot;av4rr47i&quot;
+    },
+    {
+      &quot;collection_id&quot;: 40,
+      &quot;collection_name&quot;: &quot;But I must explain to you how all this mistaken id&quot;
+    },
+    {
+      &quot;collection_id&quot;: 15,
+      &quot;collection_name&quot;: &quot;collection&quot;
+    },
+    {
+      &quot;collection_id&quot;: 238,
+      &quot;collection_name&quot;: &quot;Collection_24062026_105528_6788&quot;
+    },
+    {
+      &quot;collection_id&quot;: 239,
+      &quot;collection_name&quot;: &quot;Collection_27062026_065951_6873&quot;
+    },
+    {
+      &quot;collection_id&quot;: 240,
+      &quot;collection_name&quot;: &quot;Collection_27062026_070249_7015&quot;
+    },
+    {
+      &quot;collection_id&quot;: 241,
+      &quot;collection_name&quot;: &quot;Collection_27062026_091651_894&quot;
+    },
+    {
+      &quot;collection_id&quot;: 242,
+      &quot;collection_name&quot;: &quot;Collection_27062026_101015_8636&quot;
+    },
+    {
+      &quot;collection_id&quot;: 243,
+      &quot;collection_name&quot;: &quot;Collection_27062026_135000_5689&quot;
+    },
+    {
+      &quot;collection_id&quot;: 244,
+      &quot;collection_name&quot;: &quot;Collection_29062026_144230_8256&quot;
+    },
+    {
+      &quot;collection_id&quot;: 245,
+      &quot;collection_name&quot;: &quot;Collection_29062026_150221_4038&quot;
+    },
+    {
+      &quot;collection_id&quot;: 58,
+      &quot;collection_name&quot;: &quot;collection1&quot;
+    },
+    {
+      &quot;collection_id&quot;: 236,
+      &quot;collection_name&quot;: &quot;Collection1_22-june&quot;
+    },
+    {
+      &quot;collection_id&quot;: 233,
+      &quot;collection_name&quot;: &quot;Collection1_Testing&quot;
+    },
+    {
+      &quot;collection_id&quot;: 237,
+      &quot;collection_name&quot;: &quot;collection9_22-June&quot;
+    },
+    {
+      &quot;collection_id&quot;: 27,
+      &quot;collection_name&quot;: &quot;Custom Report 1&quot;
+    },
+    {
+      &quot;collection_id&quot;: 28,
+      &quot;collection_name&quot;: &quot;Custom Report 2&quot;
+    },
+    {
+      &quot;collection_id&quot;: 212,
+      &quot;collection_name&quot;: &quot;d4ntv96e&quot;
+    },
+    {
+      &quot;collection_id&quot;: 152,
+      &quot;collection_name&quot;: &quot;data&quot;
+    },
+    {
+      &quot;collection_id&quot;: 47,
+      &quot;collection_name&quot;: &quot;datasample&quot;
+    },
+    {
+      &quot;collection_id&quot;: 231,
+      &quot;collection_name&quot;: &quot;dlox2yiv&quot;
+    },
+    {
+      &quot;collection_id&quot;: 201,
+      &quot;collection_name&quot;: &quot;ds&quot;
+    },
+    {
+      &quot;collection_id&quot;: 190,
+      &quot;collection_name&quot;: &quot;eee&quot;
+    },
+    {
+      &quot;collection_id&quot;: 55,
+      &quot;collection_name&quot;: &quot;efefe&quot;
+    },
+    {
+      &quot;collection_id&quot;: 204,
+      &quot;collection_name&quot;: &quot;ejd7o1r2&quot;
+    },
+    {
+      &quot;collection_id&quot;: 17,
+      &quot;collection_name&quot;: &quot;ert&quot;
+    },
+    {
+      &quot;collection_id&quot;: 31,
+      &quot;collection_name&quot;: &quot;ertert&quot;
+    },
+    {
+      &quot;collection_id&quot;: 16,
+      &quot;collection_name&quot;: &quot;erwter&quot;
+    },
+    {
+      &quot;collection_id&quot;: 30,
+      &quot;collection_name&quot;: &quot;eter&quot;
+    },
+    {
+      &quot;collection_id&quot;: 93,
+      &quot;collection_name&quot;: &quot;etert&quot;
+    },
+    {
+      &quot;collection_id&quot;: 11,
+      &quot;collection_name&quot;: &quot;eterter&quot;
+    },
+    {
+      &quot;collection_id&quot;: 217,
+      &quot;collection_name&quot;: &quot;ewrertert&quot;
+    },
+    {
+      &quot;collection_id&quot;: 102,
+      &quot;collection_name&quot;: &quot;ewtrewt&quot;
+    },
+    {
+      &quot;collection_id&quot;: 23,
+      &quot;collection_name&quot;: &quot;Final Report&quot;
+    },
+    {
+      &quot;collection_id&quot;: 5,
+      &quot;collection_name&quot;: &quot;FSDGDFH&quot;
+    },
+    {
+      &quot;collection_id&quot;: 207,
+      &quot;collection_name&quot;: &quot;gr1heehh&quot;
+    },
+    {
+      &quot;collection_id&quot;: 183,
+      &quot;collection_name&quot;: &quot;i1pieeraspe8q3aht6&quot;
+    },
+    {
+      &quot;collection_id&quot;: 185,
+      &quot;collection_name&quot;: &quot;jasondata&quot;
+    },
+    {
+      &quot;collection_id&quot;: 163,
+      &quot;collection_name&quot;: &quot;k0mf191o&quot;
+    },
+    {
+      &quot;collection_id&quot;: 229,
+      &quot;collection_name&quot;: &quot;kdsvvf7z&quot;
+    },
+    {
+      &quot;collection_id&quot;: 165,
+      &quot;collection_name&quot;: &quot;kwr2n7kc&quot;
+    },
+    {
+      &quot;collection_id&quot;: 162,
+      &quot;collection_name&quot;: &quot;loh0wi2a&quot;
+    },
+    {
+      &quot;collection_id&quot;: 228,
+      &quot;collection_name&quot;: &quot;m7y5yamz&quot;
+    },
+    {
+      &quot;collection_id&quot;: 150,
+      &quot;collection_name&quot;: &quot;menaka collection&quot;
+    },
+    {
+      &quot;collection_id&quot;: 205,
+      &quot;collection_name&quot;: &quot;mhuylmaw&quot;
+    },
+    {
+      &quot;collection_id&quot;: 54,
+      &quot;collection_name&quot;: &quot;mk&quot;
+    },
+    {
+      &quot;collection_id&quot;: 179,
+      &quot;collection_name&quot;: &quot;mu27duvt&quot;
+    },
+    {
+      &quot;collection_id&quot;: 195,
+      &quot;collection_name&quot;: &quot;n6i1t3js&quot;
+    },
+    {
+      &quot;collection_id&quot;: 37,
+      &quot;collection_name&quot;: &quot;New&quot;
+    },
+    {
+      &quot;collection_id&quot;: 57,
+      &quot;collection_name&quot;: &quot;New Collection 1&quot;
+    },
+    {
+      &quot;collection_id&quot;: 104,
+      &quot;collection_name&quot;: &quot;new revamp&quot;
+    },
+    {
+      &quot;collection_id&quot;: 176,
+      &quot;collection_name&quot;: &quot;new test345&quot;
+    },
+    {
+      &quot;collection_id&quot;: 110,
+      &quot;collection_name&quot;: &quot;nfkje euioetoiert oirejtoirejt oir!@#$%^&amp;*()@#$^&amp;*&quot;
+    },
+    {
+      &quot;collection_id&quot;: 178,
+      &quot;collection_name&quot;: &quot;oaz4lrak&quot;
+    },
+    {
+      &quot;collection_id&quot;: 221,
+      &quot;collection_name&quot;: &quot;pgna51xj&quot;
+    },
+    {
+      &quot;collection_id&quot;: 188,
+      &quot;collection_name&quot;: &quot;pooja&quot;
+    },
+    {
+      &quot;collection_id&quot;: 154,
+      &quot;collection_name&quot;: &quot;qdntney4&quot;
+    },
+    {
+      &quot;collection_id&quot;: 112,
+      &quot;collection_name&quot;: &quot;reports&quot;
+    },
+    {
+      &quot;collection_id&quot;: 87,
+      &quot;collection_name&quot;: &quot;retest&quot;
+    },
+    {
+      &quot;collection_id&quot;: 101,
+      &quot;collection_name&quot;: &quot;Revamp test123&quot;
+    },
+    {
+      &quot;collection_id&quot;: 90,
+      &quot;collection_name&quot;: &quot;reyty&quot;
+    },
+    {
+      &quot;collection_id&quot;: 194,
+      &quot;collection_name&quot;: &quot;rhhiwioq&quot;
+    },
+    {
+      &quot;collection_id&quot;: 180,
+      &quot;collection_name&quot;: &quot;rlv5925b&quot;
+    },
+    {
+      &quot;collection_id&quot;: 224,
+      &quot;collection_name&quot;: &quot;rytryt&quot;
+    },
+    {
+      &quot;collection_id&quot;: 227,
+      &quot;collection_name&quot;: &quot;s9wf9nnb&quot;
+    },
+    {
+      &quot;collection_id&quot;: 61,
+      &quot;collection_name&quot;: &quot;safsdfsdf&quot;
+    },
+    {
+      &quot;collection_id&quot;: 36,
+      &quot;collection_name&quot;: &quot;sample&quot;
+    },
+    {
+      &quot;collection_id&quot;: 196,
+      &quot;collection_name&quot;: &quot;sample ds&quot;
+    },
+    {
+      &quot;collection_id&quot;: 173,
+      &quot;collection_name&quot;: &quot;sampleQA&quot;
+    },
+    {
+      &quot;collection_id&quot;: 51,
+      &quot;collection_name&quot;: &quot;sdewrweet&quot;
+    },
+    {
+      &quot;collection_id&quot;: 215,
+      &quot;collection_name&quot;: &quot;smuk7x8z&quot;
+    },
+    {
+      &quot;collection_id&quot;: 4,
+      &quot;collection_name&quot;: &quot;ssaSASD&quot;
+    },
+    {
+      &quot;collection_id&quot;: 56,
+      &quot;collection_name&quot;: &quot;Syntax report&quot;
+    },
+    {
+      &quot;collection_id&quot;: 222,
+      &quot;collection_name&quot;: &quot;t2c8ouyo&quot;
+    },
+    {
+      &quot;collection_id&quot;: 96,
+      &quot;collection_name&quot;: &quot;tesdataaa&quot;
+    },
+    {
+      &quot;collection_id&quot;: 1,
+      &quot;collection_name&quot;: &quot;test&quot;
+    },
+    {
+      &quot;collection_id&quot;: 92,
+      &quot;collection_name&quot;: &quot;Test Collection&quot;
+    },
+    {
+      &quot;collection_id&quot;: 192,
+      &quot;collection_name&quot;: &quot;test from dev&quot;
+    },
+    {
+      &quot;collection_id&quot;: 24,
+      &quot;collection_name&quot;: &quot;Test Report&quot;
+    },
+    {
+      &quot;collection_id&quot;: 10,
+      &quot;collection_name&quot;: &quot;test1&quot;
+    },
+    {
+      &quot;collection_id&quot;: 234,
+      &quot;collection_name&quot;: &quot;TestCollection1&quot;
+    },
+    {
+      &quot;collection_id&quot;: 45,
+      &quot;collection_name&quot;: &quot;testdataaa&quot;
+    },
+    {
+      &quot;collection_id&quot;: 145,
+      &quot;collection_name&quot;: &quot;Tetstst EEWE&quot;
+    },
+    {
+      &quot;collection_id&quot;: 135,
+      &quot;collection_name&quot;: &quot;Todays Report 16&quot;
+    },
+    {
+      &quot;collection_id&quot;: 13,
+      &quot;collection_name&quot;: &quot;turtut&quot;
+    },
+    {
+      &quot;collection_id&quot;: 107,
+      &quot;collection_name&quot;: &quot;tutr&quot;
+    },
+    {
+      &quot;collection_id&quot;: 32,
+      &quot;collection_name&quot;: &quot;tuyuyi&quot;
+    },
+    {
+      &quot;collection_id&quot;: 181,
+      &quot;collection_name&quot;: &quot;uiou&quot;
+    },
+    {
+      &quot;collection_id&quot;: 167,
+      &quot;collection_name&quot;: &quot;umv9orou&quot;
+    },
+    {
+      &quot;collection_id&quot;: 14,
+      &quot;collection_name&quot;: &quot;uuu&quot;
+    },
+    {
+      &quot;collection_id&quot;: 153,
+      &quot;collection_name&quot;: &quot;vhy9s79vbdb&quot;
+    },
+    {
+      &quot;collection_id&quot;: 164,
+      &quot;collection_name&quot;: &quot;vknjuysj&quot;
+    },
+    {
+      &quot;collection_id&quot;: 18,
+      &quot;collection_name&quot;: &quot;werew&quot;
+    },
+    {
+      &quot;collection_id&quot;: 213,
+      &quot;collection_name&quot;: &quot;wh1voq9x&quot;
+    },
+    {
+      &quot;collection_id&quot;: 203,
+      &quot;collection_name&quot;: &quot;wqeqwewqqwqe&quot;
+    },
+    {
+      &quot;collection_id&quot;: 35,
+      &quot;collection_name&quot;: &quot;ww&quot;
+    },
+    {
+      &quot;collection_id&quot;: 144,
+      &quot;collection_name&quot;: &quot;wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&quot;
+    },
+    {
+      &quot;collection_id&quot;: 182,
+      &quot;collection_name&quot;: &quot;xgdnbvsn&quot;
+    },
+    {
+      &quot;collection_id&quot;: 141,
+      &quot;collection_name&quot;: &quot;xyz&quot;
+    },
+    {
+      &quot;collection_id&quot;: 168,
+      &quot;collection_name&quot;: &quot;yh2f1hum&quot;
+    },
+    {
+      &quot;collection_id&quot;: 158,
+      &quot;collection_name&quot;: &quot;ymohv1m5&quot;
+    },
+    {
+      &quot;collection_id&quot;: 225,
+      &quot;collection_name&quot;: &quot;z7wmngqa&quot;
+    },
+    {
+      &quot;collection_id&quot;: 131,
+      &quot;collection_name&quot;: &quot;Zap&quot;
+    },
+    {
+      &quot;collection_id&quot;: 206,
+      &quot;collection_name&quot;: &quot;zpfovzeg&quot;
+    },
+    {
+      &quot;collection_id&quot;: 210,
+      &quot;collection_name&quot;: &quot;ztd0binv&quot;
+    }
+  ]
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Response Validation</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.tableNames == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">94</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.tableNames ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.28">{
+ tableName: &quot;#string&quot;,
+ displayTableName: &quot;#string&quot;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.collections == &#39;#[]&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match each decryptedResponse.collections ==</span>
+      </div>
+    </div>
+    <div class="time-cell passed">135</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.37">{
+  collection_id: &#39;#number&#39;,
+  collection_name: &#39;#string&#39;
+}</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:46]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:46]</span>
+                <span class="scenario-name">405 - method not found</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2194</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:46]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:00:44.882 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...DkAzo51o length: 585 
+21:00:47.234 ECDH Session ID: 6709e59a-2c42-44ad-ada0-1cdb8ec14bb9 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">8</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:46]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">21:00:47.298 [print] Using auth_token cookie: eyJhbGciOiJI...DkAzo51o length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.47">
+      <div class="step-ref passed">47</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/report-service/v3/custom-reports/get-tables&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.48">
+      <div class="step-ref passed">48</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.49">
+      <div class="step-ref passed">49</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.50">
+      <div class="step-ref passed">50</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.51">
+      <div class="step-ref passed">51</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2130</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.52">21:00:47.312 request:
+1 &gt; GET https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/report-service/v3/custom-reports/get-tables
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiI1ODBkZjFiOS02YzUxLTRlOWQtOGU4Zi01OTIzMDBmOGQyZTEiLCJuYmYiOjE3ODI3NDcwMzMsImV4cCI6MTc4Mjc1MDYzMywiaWF0IjoxNzgyNzQ3MDMzLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.Yq4Z60tdqxQ9c5M1m7euzrsWVe_Zv9Z_VQ-DkAzo51o
+1 &gt; X-ECDH-Session: 6709e59a-2c42-44ad-ada0-1cdb8ec14bb9
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:00:49.436 response time in milliseconds: 2123
+1 &lt; 405
+1 &lt; x-amzn-RequestId: a5f53c52-1a09-4bdd-ad6b-dc6037cd5b93
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Allow: POST
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: futmWFcsoAMEjVQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:30:50 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 15:31:14 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 405</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:55]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:55]</span>
+                <span class="scenario-name">404 - url incorrect</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2013</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:55]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:01:32.907 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...S2j5VJqg length: 585 
+21:01:35.156 ECDH Session ID: 05e5df90-b35f-420a-82a5-149139f35515 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:55]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">21:01:35.170 [print] Using auth_token cookie: eyJhbGciOiJI...S2j5VJqg length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.56">
+      <div class="step-ref passed">56</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/report-service/v2/custom-reports/get-tableseee&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.58">
+      <div class="step-ref passed">58</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.59">
+      <div class="step-ref passed">59</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.60">
+      <div class="step-ref passed">60</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.61">
+      <div class="step-ref passed">61</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2001</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.61">21:01:35.174 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/report-service/v2/custom-reports/get-tableseee
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiJjZmM3YmI1Ny0wZTc0LTQ5OGItYTc2Yi1lZDE0NDk0MDVkNTYiLCJuYmYiOjE3ODI3NDcwODAsImV4cCI6MTc4Mjc1MDY4MCwiaWF0IjoxNzgyNzQ3MDgwLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.YwwMxj4wslbhQL4HQKvxVjcFGZnrsWvhk_1S2j5VJqg
+1 &gt; X-ECDH-Session: 05e5df90-b35f-420a-82a5-149139f35515
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:01:37.173 response time in milliseconds: 1998
+1 &lt; 404
+1 &lt; x-amzn-RequestId: 743b3dff-426f-45cf-b27a-248803644520
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: futtzFT0IAMElpQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:31:37 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 15:32:01 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.62">
+      <div class="step-ref passed">62</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:64]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:64]</span>
+                <span class="scenario-name">401 - unauthoriZed</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2344</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:64]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:02:16.526 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...bEH1lX4E length: 585 
+21:02:19.041 ECDH Session ID: e173410f-84ba-495c-8f09-10afc874f4d3 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:64]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">21:02:19.048 [print] Using auth_token cookie: eyJhbGciOiJI...bEH1lX4E length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.65">
+      <div class="step-ref passed">65</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/report-service/v3/custom-reports/get-tables&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#  And header Cookie = &#39;auth_token=&#39; + authCookie</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.67">
+      <div class="step-ref passed">67</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.68">
+      <div class="step-ref passed">68</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.69">
+      <div class="step-ref passed">69</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.70">
+      <div class="step-ref passed">70</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2340</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.70">21:02:19.053 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/report-service/v3/custom-reports/get-tables
+1 &gt; X-ECDH-Session: e173410f-84ba-495c-8f09-10afc874f4d3
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+21:02:21.392 response time in milliseconds: 2338
+1 &lt; 401
+1 &lt; x-amzn-RequestId: 20fb8bb5-f7af-4b6c-a4b8-a060a3d0f9f9
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fut0sF56oAMEiBA=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 15:32:21 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 49
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 15:32:46 GMT
+Authentication failed. A valid token is required.
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.71">
+      <div class="step-ref passed">71</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

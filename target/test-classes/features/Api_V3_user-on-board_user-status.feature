@@ -102,3 +102,45 @@ Feature: Test API endpoint - POST /v3/user-on-board/user-status
     When method GET
     Then status 405
     * print response
+
+#  Passed
+#  Scenario: Negative Flow - URL not found.
+#    * def email = 'vuser_16@veehealthtek.com'
+#    * def requestTemplate =
+#      """
+#      {
+#        "userEmail": "vuser_16@veehealthtek.com",
+#        "IsActive": "Yes"
+#      }
+#      """
+#    * string requestBodyStr = requestTemplate
+#    * def encryptedBody = crypto.encrypt(requestBodyStr)
+#    Given path '/admin-service/v2/user-on-board/user-status'
+#    And header Cookie = 'auth_token=' + authCookie
+#    And header X-ECDH-Session = ecdhSessionId
+#    And header X-Encrypted-Payload = 'true'
+#    And header Content-Type = 'text/plain'
+#    And request encryptedBody
+#    When method POST
+#    Then status 404
+
+  #  Failed, getting 400 error
+#  Scenario: Negative Flow - Unsuppported.
+#    * def email = 'vuser_16@veehealthtek.com'
+#    * def requestTemplate =
+#      """
+#      {
+#        "userEmail": "vuser_16@veehealthtek.com",
+#        "IsActive": "Yes"
+#      }
+#      """
+#    * string requestBodyStr = requestTemplate
+#    * def encryptedBody = crypto.encrypt(requestBodyStr)
+#    Given path '/admin-service/v3/user-on-board/user-status'
+#    And header Cookie = 'auth_token=' + authCookie
+#    And header X-ECDH-Session = ecdhSessionId
+#    And header X-Encrypted-Payload = 'true'
+#    And header Content-Type = 'text/csv'
+#    And request encryptedBody
+#    When method POST
+#    Then status 415

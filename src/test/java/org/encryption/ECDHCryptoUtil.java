@@ -5,12 +5,14 @@ import javax.crypto.KeyAgreement;
 import javax.crypto.Mac;
 import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import javax.net.ssl.*; //newly added
 import java.io.OutputStream;
 import java.math.BigInteger;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
+import java.security.cert.X509Certificate; //newly added
 import java.security.interfaces.ECPublicKey;
 import java.security.spec.*;
 import java.util.Arrays;
@@ -183,11 +185,35 @@ public class ECDHCryptoUtil {
     }
 
     /**
+     * Create a trust-all SSL socket factory (bypasses SSL cert validation for test automation).
+     */
+    private static SSLSocketFactory getTrustAllSocketFactory() throws Exception {
+        TrustManager[] trustAllCerts = new TrustManager[]{
+                new X509TrustManager() {
+                    public X509Certificate[] getAcceptedIssuers() { return new X509Certificate[0]; }
+                    public void checkClientTrusted(X509Certificate[] certs, String authType) {}
+                    public void checkServerTrusted(X509Certificate[] certs, String authType) {}
+                }
+        };
+        SSLContext sc = SSLContext.getInstance("TLS");
+        sc.init(null, trustAllCerts, new SecureRandom());
+        return sc.getSocketFactory();
+    }
+
+    /**
      * Perform ECDH key exchange with server.
      */
     private String performEcdhExchange(String clientPublicKeyJwk) throws Exception {
         URL url = new URL(GATEWAY_BASE_URL + ECDH_EXCHANGE_PATH);
         HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+
+        // Bypass SSL certificate validation (required for test environments with cert issues)
+        if (conn instanceof HttpsURLConnection) {
+            HttpsURLConnection httpsConn = (HttpsURLConnection) conn;
+            httpsConn.setSSLSocketFactory(getTrustAllSocketFactory());
+            httpsConn.setHostnameVerifier((hostname, session) -> true);
+        }
+
         conn.setRequestMethod("POST");
         conn.setRequestProperty("Content-Type", "application/json");
         conn.setRequestProperty("X-ECDH-Session", ecdhSessionId);

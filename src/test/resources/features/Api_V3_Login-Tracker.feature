@@ -10,29 +10,38 @@ Background:
   * print 'Using auth_token cookie:', authCookiePreview, 'length:', authCookie.length
 
 Scenario: Positive Flow
-  * def requestJson = '{}'
-  * def encryptedBody = crypto.encrypt(requestJson)
   Given path '/auth-service/v3/login-tracker'
   And header Cookie = 'auth_token=' + authCookie
   And header X-ECDH-Session = ecdhSessionId
-  And header X-Encrypted-Payload = 'true'
   And header Content-Type = 'text/plain'
-  And request encryptedBody
-  When method post
+  When method POST
   Then status 200
-  * def decryptedResponse = crypto.decrypt(response)
-  * print 'Decrypted Response:', decryptedResponse
+  * def decryptedResponseStr = crypto.decrypt(response)
+  * print 'Decrypted Response:', decryptedResponseStr
+  # converting string to json
+  * def decryptedResponse = JSON.parse(decryptedResponseStr)
+  And match decryptedResponse.message == '#regex Login history tracked successfully\\.'
 
+  Scenario: Negative Flow - 405 Method not found
+    Given path '/auth-service/v3/login-tracker'
+    And header Cookie = 'auth_token=' + authCookie
+    And header X-ECDH-Session = ecdhSessionId
+    And header Content-Type = 'text/plain'
+    When method GET
+    Then status 405
 
-Scenario: Negative Flow - sent request using GET method
-  * def requestJson = '{}'
-  * def encryptedBody = crypto.encrypt(requestJson)
-  Given path '/auth-service/v3/login-tracker'
-  And header Cookie = 'auth_token=' + authCookie
-  And header X-ECDH-Session = ecdhSessionId
-  And header X-Encrypted-Payload = 'true'
-  And header Content-Type = 'text/plain'
-  And request encryptedBody
-  When method get
-  Then status 405
-  * print response
+  Scenario: Negative Flow - 401 Unauthorized
+    Given path '/auth-service/v3/login-tracker'
+#    And header Cookie = 'auth_token=' + authCookie
+    And header X-ECDH-Session = ecdhSessionId
+    And header Content-Type = 'text/plain'
+    When method POST
+    Then status 401
+
+  Scenario: Negative Flow - 404 incorrect url
+    Given path '/auth-service/v2/login-trackerrr'
+    And header Cookie = 'auth_token=' + authCookie
+    And header X-ECDH-Session = ecdhSessionId
+    And header Content-Type = 'text/plain'
+    When method POST
+    Then status 404

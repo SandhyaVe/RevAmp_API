@@ -11,7 +11,7 @@
 [TokenExtractor] auth_token not found on current domain, checking API Gateway domain...
 [TokenExtractor] Opened API Gateway domain | url=https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa | title=
 [TokenExtractor] Cookies on API Gateway domain: count=1
-[TokenExtractor] Cookie name=auth_token, domain=mttd2k3khk.execute-api.us-east-1.amazonaws.com, path=/, httpOnly=true, secure=true, value=eyJhbGciOiJI...ZTiwnC9I
-[TokenExtractor] Extracted auth_token from API Gateway domain: eyJhbGciOiJI...ZTiwnC9I, length=585
-[TokenExtractor] AUTH_COOKIE_RESULT: SUCCESS eyJhbGciOiJI...ZTiwnC9I, length=585
+[TokenExtractor] Cookie name=auth_token, domain=mttd2k3khk.execute-api.us-east-1.amazonaws.com, path=/, httpOnly=true, secure=true, value=eyJhbGciOiJI...UryheXts
+[TokenExtractor] Extracted auth_token from API Gateway domain: eyJhbGciOiJI...UryheXts, length=585
+[TokenExtractor] AUTH_COOKIE_RESULT: SUCCESS eyJhbGciOiJI...UryheXts, length=585
 [TokenExtractor] ========== TokenExtractorUtil finished ==========

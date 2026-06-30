@@ -1,0 +1,3793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"556ac484-f32b-4b42-881a-1fcd4af45733",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.Api_v3_patient-appointments_insert-user-data</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">6</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2026-06-29 10:49:19 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Positive Flow</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2:105]"><span>[2:105]</span> <span>400 - Bad Request</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[3:135]"><span>[3:135]</span> <span>405 - method not found</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[4:219]"><span>[4:219]</span> <span>404 - Incorrect URL</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[5:303]"><span>[5:303]</span> <span>401 - Unauthorized</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:387]"><span>[6:387]</span> <span>415 - Unsupported Media Type</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/Api_v3_patient-appointments_insert-user-data.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Test Api End Point - v3/patient-appointments/insert-user-data</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Positive Flow</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2990</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:45:42.010 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...0K0hvIiM length: 585 
+22:45:44.517 ECDH Session ID: 1652e954-82e5-48f2-be81-bfe5436a78aa 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:45:44.521 [print] Using auth_token cookie: eyJhbGciOiJI...0K0hvIiM length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.13">
+      <div class="step-ref passed">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.13">[
+ {
+  &quot;moduleId&quot;:1,
+  &quot;processId&quot;:1,
+  &quot;taskListId&quot;:17376,
+  &quot;workqueueId&quot;:1404,
+  &quot;appointmentId&quot;:70936,
+  &quot;deductibleTotal&quot;:null,
+  &quot;deductibleRemaining&quot;:null,
+  &quot;moopTotal&quot;:null,
+  &quot;moopRemaining&quot;:null,
+  &quot;coInsurance&quot;:null,
+  &quot;coPay&quot;:null,
+  &quot;totalVisits&quot;:null,
+  &quot;remainingVisits&quot;:null,
+  &quot;policyNotes&quot;:&quot;&quot;,
+  &quot;otherComments&quot;:&quot;&quot;,
+  &quot;isCalendarYearPlan&quot;:false,
+  &quot;isRequiresAuthorization&quot;:false,
+  &quot;yearEndPlan&quot;:null,
+  &quot;createdBy&quot;:0,
+  &quot;lastModifiedBy&quot;:0,
+  &quot;startTime&quot;:&quot;2026-06-23T13:35:39.283&quot;,
+  &quot;environmentId&quot;:&quot;&quot;,
+  &quot;actionIfany&quot;:&quot;Do Not verify&quot;,
+  &quot;individualDd&quot;:null,
+  &quot;individualDdRem&quot;:null,
+  &quot;familyDd&quot;:null,
+  &quot;familyDdRem&quot;:null,
+  &quot;individualOop&quot;:null,
+  &quot;individualOopRem&quot;:null,
+  &quot;familyOop&quot;:null,
+  &quot;familyOopRem&quot;:null,
+  &quot;isRequiresPcp&quot;:false,
+  &quot;hra&quot;:&quot;&quot;,
+  &quot;hraRem&quot;:null,
+  &quot;nonCoveredCptCodes&quot;:&quot;&quot;,
+  &quot;followUpDate&quot;:null,
+  &quot;submissionType&quot;:&quot;SUBMIT&quot;,
+  &quot;qmb&quot;:&quot;&quot;,
+  &quot;isUnlimitedVisits&quot;:false,
+  &quot;ptYear&quot;:&quot;&quot;,
+  &quot;ptThresholdRemaining&quot;:null,
+  &quot;ptLastVisitDate&quot;:null,
+  &quot;otYear&quot;:&quot;&quot;,
+  &quot;otThresholdRemaining&quot;:null,
+  &quot;otLastVisitDate&quot;:null,
+  &quot;networkType&quot;:&quot;In&quot;,
+  &quot;caseNote&quot;:&quot;&quot;,
+  &quot;oopMet&quot;:false,
+  &quot;effectiveDate&quot;:null,
+  &quot;nextVisitScheduledDate&quot;:null,
+  &quot;veestatId&quot;:10517,
+  &quot;insuranceType&quot;:&quot;S&quot;,
+  &quot;patientInsuranceId&quot;:74130,
+  &quot;inventoryTrackingId&quot;:24457,
+  &quot;modeMasterId&quot;:1,
+  &quot;originalFileName&quot;:[
+  ],
+  &quot;fileName&quot;:[
+  ],
+  &quot;filePath&quot;:[
+  ]
+ }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.84">
+      <div class="step-ref passed">84</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.85">
+      <div class="step-ref passed">85</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.87">
+      <div class="step-ref passed">87</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/evbv-service/v3/patient-appointments/insert-user-data&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.88">
+      <div class="step-ref passed">88</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.89">
+      <div class="step-ref passed">89</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.90">
+      <div class="step-ref passed">90</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.91">
+      <div class="step-ref passed">91</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.92">
+      <div class="step-ref passed">92</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.93">
+      <div class="step-ref passed">93</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2952</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.93">22:45:44.526 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/evbv-service/v3/patient-appointments/insert-user-data
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiJjNGFkMWExYS04MTBhLTRhNzEtYjUyOS02NGUwNGIxYjgyNDQiLCJuYmYiOjE3ODI3NTMzMzEsImV4cCI6MTc4Mjc1NjkzMSwiaWF0IjoxNzgyNzUzMzMxLCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.te4IfnyG-O-c6RqWYAbL5zYNTFyJFqu8nOQ0K0hvIiM
+1 &gt; X-ECDH-Session: 1652e954-82e5-48f2-be81-bfe5436a78aa
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 1612
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+pWz0M9zP0oahPkc4CtvTr8VnDzNj56mNY2UK5cQkY9kRMR7nOeGovgrVvJQXNyczBe9DXWbz7J56ardMIpAijS22fDCbPD3T3Je782T36Vfkrub7INOqIOKl1-K8S4ySGFFbBncD91wCOzLBv2xgQs7wBrd7HbQ_wRYZlvo84xNhUMPDBuj3OG1qJoAilyd49HIKVNSIDv7kiKX0nSLEeezymnC681UabO0s_VUf6Splr6SFvQtMXRGBWlDoJBbBrqnBmW3L9EsXOkCv6b-aM_ifT0-mX8LYhPAlUR6TUp90vAgT2WHJJlbPdnOhaiWe8d40Yjl2f1AsftUjy8iRArZElzxgMO2o_PyBFz99Fnt_ibBQAq_1SZz_R9J8var2RceAJSttvE-umle2r2OtD23-kFKia1KfhlTN8HudXBzmGD8DhifHct2d10KvK-2ZdnxU1LBURId4H0dl1-2DBjNZ0HV_8RQmYyYyfJ180U4xQTzU1VteslARtwsFyFl59mFHzM3aKg05VdPgW-w4X_DHPvdZhDa0ejDJatCEzRVUkMtQJ-y531OGgcF38qHPBMLnrBIiBX5P_FlXrzMSRwusu5v1hi_mXTqY8EIIWXy1USNl_IHOS0tbm1eB3hw9eiykdT4Y5Xu1gQTr2oDElaNQ8i12ydJuNzZ04tYVsX8LWzmd_MTsfoG24DrN7R_NF0oBRmfbdC37cz16-mmHaHmsBnWB_9klWxSdnnaMZGTQrLuzXy-xQyVb41wWQPstCxmWVcnccH-x8Vmt7VSOlvsBhyckGvVGeN3aLrp68ZnE6Pz7uBYKjBA1FhKF21ASOTsIpyFucmT1gdPfAfPyYKsCcbWeEOjIEGwbQVsonYqu01ZEUebQK-hlCr06XwmsGW7bqRQFYPH_7a_U0HUY8i8kS5YqRHSo8ZqQuy0SUYBBeeH-Iq55dB9O82yoZV9x2zTWAAJHdZg9mViMXECHbMmKmtdFH5EfuLcpTTxpVT8OfMEjttcGrI-c4ZUfQFohEQ4QfoM3N-Y8lN9N9xcx64B0C1HF85MsV0D9jRB-pGghQYF5zpnGssp-oZg-FVDC7zN6PeMes7Xw105QBiBb0V_NFvYA_m8WskAEKnEFqU_m2_PTOgzmASjX6B4tFtcEko3YWi7GW0C-8AhIUNcELSMv6ynV-QO-OHToyfAwlID2S4WWKg9LS4WrqFmEK-NkrzpUJYN7Bw6ryvvpPR4kg7DctMAecEJfJH0NtJ6DpGGRYjwNmMgZeePMrRdIB5xLg6n0XCU3ay2Varbt0MIkvgrIb-v17qF8XBiap7_DV49Fq5DgrxTW6WKJ0tpTv67WLmQuzq7Qu0qDLflP0RTOvXPIf6pE0zl4HLiYdTlqIxib6SYTNfzkjZJ_Nw2IZ2QZOdNxRthwA-Os42CgSp2NroVBlI4fvkFcXyLYCqo2rZtcYjVej47PDqdd0ztwruM062HKS6cGvWwaPouD_NLkpn_jUJIvOI1x7cVwrk6Ko2lc5jelfM8zr3SOlIbIqXCO_9v8Qwd6GwxFKtzqobccBdqmFIQHgA1TOq4ULVx_YKAEtJCYdQ9lgb5lajAPnDpn263f_ZNwvUq-
+
+22:45:47.478 response time in milliseconds: 2952
+1 &lt; 200
+1 &lt; x-amzn-RequestId: 6826e126-4a24-42aa-bf09-f0fe83eef44a
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu8-TGL7IAMERZQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 17:15:47 GMT
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Content-Length: 99
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 17:16:12 GMT
+o7_BVk_tFzseJA_waR9l7IKvmrx3ti39ii4lRtF8p2o-_b0_i8cviIU0LisdjnlTKjhVptXa17DkQmukTmosVLKDpSA8EY6OFjs
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.94">
+      <div class="step-ref passed">94</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.95">
+      <div class="step-ref passed">95</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponseStr = crypto.decrypt(response)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.96">
+      <div class="step-ref passed">96</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Decrypted Response:&#39;, decryptedResponseStr</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.96">22:45:47.481 [print] Decrypted Response: {&quot;message&quot;:&quot;User data inserted successfully.&quot;} 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.98">
+      <div class="step-ref passed">98</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def decryptedResponse = JSON.parse(decryptedResponseStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.99">
+      <div class="step-ref passed">99</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print decryptedResponse</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.99">22:45:47.481 [print] {
+  &quot;message&quot;: &quot;User data inserted successfully.&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Response validation</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.102">
+      <div class="step-ref passed">102</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>match decryptedResponse.message == &#39;#regex User data inserted successfully\\.&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">25</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:105]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:105]</span>
+                <span class="scenario-name">400 - Bad Request</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2273</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:105]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:46:24.619 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...JJNt_P0Y length: 585 
+22:46:27.025 ECDH Session ID: bd231547-b368-4117-a710-8e1f9048b0a7 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:105]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:46:27.041 [print] Using auth_token cookie: eyJhbGciOiJI...JJNt_P0Y length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.106">
+      <div class="step-ref passed">106</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.106">[
+ {
+  &quot;moduleId22222&quot;:&quot;test&quot;,
+  &quot;originalFileName&quot;:[
+  ],
+  &quot;fileName&quot;:[
+  ],
+  &quot;filePath&quot;:[
+  ]
+ }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.123">
+      <div class="step-ref passed">123</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.124">
+      <div class="step-ref passed">124</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.126">
+      <div class="step-ref passed">126</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/evbv-service/v3/patient-appointments/insert-user-data&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.127">
+      <div class="step-ref passed">127</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.128">
+      <div class="step-ref passed">128</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.129">
+      <div class="step-ref passed">129</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.130">
+      <div class="step-ref passed">130</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.131">
+      <div class="step-ref passed">131</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.132">
+      <div class="step-ref passed">132</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2263</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.132">22:46:27.047 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/evbv-service/v3/patient-appointments/insert-user-data
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiI1OTRkMzgxMS04NjZmLTQ3NDItOWZjYy03NzkyNjI4Y2U4ZTEiLCJuYmYiOjE3ODI3NTMzNzQsImV4cCI6MTc4Mjc1Njk3NCwiaWF0IjoxNzgyNzUzMzc0LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.H6myDZJCzShu6UujtF3G3XjQ796Pff1cItaJJNt_P0Y
+1 &gt; X-ECDH-Session: bd231547-b368-4117-a710-8e1f9048b0a7
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 139
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+9iKAlUxEUrOPAa8upc_4bhHxnvDbb9oC7GIKXczjLjQAwBYbhxW6485uwO-ytmBK6TVmcK9OBCFzoj9HdllJKKefa0zLijNmP04BVlxMv8RIngnvFFhTAeVnOhizeF4TmSBW7HkZ2JY
+
+22:46:29.308 response time in milliseconds: 2261
+1 &lt; 400
+1 &lt; x-amzn-RequestId: 6705186d-f0aa-4c71-91fd-5d094598cca7
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu9E8EZIoAMEdaQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 17:16:29 GMT
+1 &lt; Content-Type: text/plain; charset=utf-8
+1 &lt; Content-Length: 64
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 17:16:54 GMT
+Invalid work queue ID, appointment ID, or task list ID provided.
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.133">
+      <div class="step-ref passed">133</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 400</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3:135]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3:135]</span>
+                <span class="scenario-name">405 - method not found</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2163</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3:135]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:47:06.039 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...4qwROMZk length: 585 
+22:47:08.593 ECDH Session ID: 4b0a9062-4e16-4601-bf0a-dc886251d2b3 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3:135]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:47:08.596 [print] Using auth_token cookie: eyJhbGciOiJI...4qwROMZk length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.136">
+      <div class="step-ref passed">136</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.136">[
+ {
+  &quot;moduleId&quot;:1,
+  &quot;processId&quot;:1,
+  &quot;taskListId&quot;:17376,
+  &quot;workqueueId&quot;:1404,
+  &quot;appointmentId&quot;:70936,
+  &quot;deductibleTotal&quot;:null,
+  &quot;deductibleRemaining&quot;:null,
+  &quot;moopTotal&quot;:null,
+  &quot;moopRemaining&quot;:null,
+  &quot;coInsurance&quot;:null,
+  &quot;coPay&quot;:null,
+  &quot;totalVisits&quot;:null,
+  &quot;remainingVisits&quot;:null,
+  &quot;policyNotes&quot;:&quot;&quot;,
+  &quot;otherComments&quot;:&quot;&quot;,
+  &quot;isCalendarYearPlan&quot;:false,
+  &quot;isRequiresAuthorization&quot;:false,
+  &quot;yearEndPlan&quot;:null,
+  &quot;createdBy&quot;:0,
+  &quot;lastModifiedBy&quot;:0,
+  &quot;startTime&quot;:&quot;2026-06-23T13:35:39.283&quot;,
+  &quot;environmentId&quot;:&quot;&quot;,
+  &quot;actionIfany&quot;:&quot;Do Not verify&quot;,
+  &quot;individualDd&quot;:null,
+  &quot;individualDdRem&quot;:null,
+  &quot;familyDd&quot;:null,
+  &quot;familyDdRem&quot;:null,
+  &quot;individualOop&quot;:null,
+  &quot;individualOopRem&quot;:null,
+  &quot;familyOop&quot;:null,
+  &quot;familyOopRem&quot;:null,
+  &quot;isRequiresPcp&quot;:false,
+  &quot;hra&quot;:&quot;&quot;,
+  &quot;hraRem&quot;:null,
+  &quot;nonCoveredCptCodes&quot;:&quot;&quot;,
+  &quot;followUpDate&quot;:null,
+  &quot;submissionType&quot;:&quot;SUBMIT&quot;,
+  &quot;qmb&quot;:&quot;&quot;,
+  &quot;isUnlimitedVisits&quot;:false,
+  &quot;ptYear&quot;:&quot;&quot;,
+  &quot;ptThresholdRemaining&quot;:null,
+  &quot;ptLastVisitDate&quot;:null,
+  &quot;otYear&quot;:&quot;&quot;,
+  &quot;otThresholdRemaining&quot;:null,
+  &quot;otLastVisitDate&quot;:null,
+  &quot;networkType&quot;:&quot;In&quot;,
+  &quot;caseNote&quot;:&quot;&quot;,
+  &quot;oopMet&quot;:false,
+  &quot;effectiveDate&quot;:null,
+  &quot;nextVisitScheduledDate&quot;:null,
+  &quot;veestatId&quot;:10517,
+  &quot;insuranceType&quot;:&quot;S&quot;,
+  &quot;patientInsuranceId&quot;:74130,
+  &quot;inventoryTrackingId&quot;:24457,
+  &quot;modeMasterId&quot;:1,
+  &quot;originalFileName&quot;:[
+  ],
+  &quot;fileName&quot;:[
+  ],
+  &quot;filePath&quot;:[
+  ]
+ }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.207">
+      <div class="step-ref passed">207</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.208">
+      <div class="step-ref passed">208</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.210">
+      <div class="step-ref passed">210</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/evbv-service/v3/patient-appointments/insert-user-data&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.211">
+      <div class="step-ref passed">211</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.212">
+      <div class="step-ref passed">212</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.213">
+      <div class="step-ref passed">213</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.214">
+      <div class="step-ref passed">214</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.215">
+      <div class="step-ref passed">215</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.216">
+      <div class="step-ref passed">216</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2158</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.216">22:47:08.597 request:
+1 &gt; GET https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/evbv-service/v3/patient-appointments/insert-user-data
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4yNTIiLCJzZXNzaW9uaWQiOiIxMTA2ZTJkMC1mYmU2LTQxNTUtODY2OC01NjE5MDVkMTkxY2UiLCJuYmYiOjE3ODI3NTM0MTUsImV4cCI6MTc4Mjc1NzAxNSwiaWF0IjoxNzgyNzUzNDE1LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.2IU0U3nyE2mANjq72n1OpRsiea5y99zrMoC4qwROMZk
+1 &gt; X-ECDH-Session: 4b0a9062-4e16-4601-bf0a-dc886251d2b3
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 1612
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+mXROVZ896m7GV2DOWQASHs6xIJbqpWtVHW3jXrTeoDuGffiXLdiYQqLRk8xe-8f15hF3y7OW-YKd-cv8DC2Gq67r3jzpTGc6oCSSZl42RSaDC35zX0VLqp4aZWH5XQ86KouSr5ccz2XEkKb2TwnboqrZ40T7wduc04okAvHYecnctRC3RhLBga9h7lu8FyHlx4NGoUPSg-W3j29aw-qkAUqrP2jwLg9nEgM43Hipqf1Vbster8iCPkv1hViGyrpA0-QJnAJhT4aTnMgMO8R1mPqHP0P_wXcwU1LEHOrRxHrrdtskwCbjv1iYNw_7OZpoLwuFXL3F8JNjcBBa6y1ti27nwF55z2oVAU0dm5lfLJy7tvqOFYfahGOVVKaD2fwjXS3ZMTFA17BMacPFa8ugToPZlS_VM4y_MObx-yoP0UyY80w5nH1_vh5-3ZqRySaGv-R9Y-3DWsWSKPL-LRArDIsZAWKs7ApZmjsdijKbM2bVdZ6_TQgZGe5t55ptYd7iVlQMTqDM7gNI-f5EtqDST1STWYxVS0OBKIkXmYj7GSUbviOI39dNS0qmSCEzXRkOUbcYW6WMlrc2htlbG0lbrNd0ArCQpLLKt2d4FbcC18jim8tjUmTQKHyZEURPjmdqaJ4rF53t5glK91HJJHpVvf7DktbHGJ7-jsNJnnNwPHui53VjuTFWyetyUG28gqTE6B8mG1Bib6mFykHLgyiF3vROaDd6P0GHIgtZsXjjqMzRhteG66-BsS2l-1q-NjMCkMzFYcWrE6mv8se8H3gc0Y46TM9wtfTEnLIBFrX25AQ9zEVI1x6Z2m0Zo978gfaNIPOvk2Y0ppwI-nQ6JuusK0FpzQ_JdiUxzECXHJkUmjNaXdzUuHCNyNVaGZ6Age-Yn6I_uF_-L9uzE-GYFhpeXPSDIYuxqrN6net9rrppvoDdf9n1fCQ4ek2dREivWv8oLD90R-Jm7vG8ImjZb31w42KOUAOw2dXtawrGkjy1BLTGl5TBqfHwoZabqViYv9z0MjID42hxhvuRcuEIOu9MOH1vGSE7AOF9ut2OydJcgAUoFhZDOT1ZQHK5IuLmZpH-iOuW1WJbghqbozf10mH-80G5OXwrCd6lUHSPIConSge0JQwALNZX2PnjyKt2i0eKkmEawANohPAyEH18c7BdmcDV-pfs1iVw-SXLMedsreG8It0nvA_0d65RQKb7f7XynvT7eLM1jRFf6R7IahF0OZohguQZFjO4_IaQhwgOwxoTZZWqHDDQ4zrkMwq86hIhI9YWpUvY4ENVryVqGTdZ5cZWQxzY241aq6N3haEV3ZZyYkP9DglAyh9EOIaYk0lEaV6j_YCp889pgJQggwoQvXHUNbs6q9Ud72-lPLdfydpPOFrl7ISI77ADMpaJ1sUFCit5gycZsqvQgjEJste4PnEk048YJNg6ojs3QBlgaXrqHpIboodVMbbKR63D37PCX2UrdNDqugSjOK3NVchwadY8ya5DbVLTot8847YPsG8f4xcQVgqzIqrplrE3LxANiBXNxyFdXLGIdwwOQBaLnc0Chj6t6GSdfi7_SQFW6t9XSfKQxhUtC6hctf_BzEmnI9MZa2vTMrG6
+
+22:47:10.758 response time in milliseconds: 2152
+1 &lt; 405
+1 &lt; x-amzn-RequestId: 45577a7a-b3a1-488d-8a81-b677364c4d94
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; Allow: POST
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu9LdFMcoAMEZ9g=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 17:17:11 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: close
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 17:17:36 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.217">
+      <div class="step-ref passed">217</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 405</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[4:219]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[4:219]</span>
+                <span class="scenario-name">404 - Incorrect URL</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2426</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[4:219]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[4:219]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:47:49.022 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...Apkq93kA length: 585 
+22:47:50.798 ECDH Session ID: 1bafc619-6460-4d1d-a9d3-060211b78a4a 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:219]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:219]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:219]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:219]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:219]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[4:219]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:47:50.798 [print] Using auth_token cookie: eyJhbGciOiJI...Apkq93kA length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.220">
+      <div class="step-ref passed">220</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.220">[
+ {
+  &quot;moduleId&quot;:1,
+  &quot;processId&quot;:1,
+  &quot;taskListId&quot;:17376,
+  &quot;workqueueId&quot;:1404,
+  &quot;appointmentId&quot;:70936,
+  &quot;deductibleTotal&quot;:null,
+  &quot;deductibleRemaining&quot;:null,
+  &quot;moopTotal&quot;:null,
+  &quot;moopRemaining&quot;:null,
+  &quot;coInsurance&quot;:null,
+  &quot;coPay&quot;:null,
+  &quot;totalVisits&quot;:null,
+  &quot;remainingVisits&quot;:null,
+  &quot;policyNotes&quot;:&quot;&quot;,
+  &quot;otherComments&quot;:&quot;&quot;,
+  &quot;isCalendarYearPlan&quot;:false,
+  &quot;isRequiresAuthorization&quot;:false,
+  &quot;yearEndPlan&quot;:null,
+  &quot;createdBy&quot;:0,
+  &quot;lastModifiedBy&quot;:0,
+  &quot;startTime&quot;:&quot;2026-06-23T13:35:39.283&quot;,
+  &quot;environmentId&quot;:&quot;&quot;,
+  &quot;actionIfany&quot;:&quot;Do Not verify&quot;,
+  &quot;individualDd&quot;:null,
+  &quot;individualDdRem&quot;:null,
+  &quot;familyDd&quot;:null,
+  &quot;familyDdRem&quot;:null,
+  &quot;individualOop&quot;:null,
+  &quot;individualOopRem&quot;:null,
+  &quot;familyOop&quot;:null,
+  &quot;familyOopRem&quot;:null,
+  &quot;isRequiresPcp&quot;:false,
+  &quot;hra&quot;:&quot;&quot;,
+  &quot;hraRem&quot;:null,
+  &quot;nonCoveredCptCodes&quot;:&quot;&quot;,
+  &quot;followUpDate&quot;:null,
+  &quot;submissionType&quot;:&quot;SUBMIT&quot;,
+  &quot;qmb&quot;:&quot;&quot;,
+  &quot;isUnlimitedVisits&quot;:false,
+  &quot;ptYear&quot;:&quot;&quot;,
+  &quot;ptThresholdRemaining&quot;:null,
+  &quot;ptLastVisitDate&quot;:null,
+  &quot;otYear&quot;:&quot;&quot;,
+  &quot;otThresholdRemaining&quot;:null,
+  &quot;otLastVisitDate&quot;:null,
+  &quot;networkType&quot;:&quot;In&quot;,
+  &quot;caseNote&quot;:&quot;&quot;,
+  &quot;oopMet&quot;:false,
+  &quot;effectiveDate&quot;:null,
+  &quot;nextVisitScheduledDate&quot;:null,
+  &quot;veestatId&quot;:10517,
+  &quot;insuranceType&quot;:&quot;S&quot;,
+  &quot;patientInsuranceId&quot;:74130,
+  &quot;inventoryTrackingId&quot;:24457,
+  &quot;modeMasterId&quot;:1,
+  &quot;originalFileName&quot;:[
+  ],
+  &quot;fileName&quot;:[
+  ],
+  &quot;filePath&quot;:[
+  ]
+ }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.291">
+      <div class="step-ref passed">291</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.292">
+      <div class="step-ref passed">292</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.294">
+      <div class="step-ref passed">294</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/evbv-service/v2/patient-appointments/insert-user-datadddd&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.295">
+      <div class="step-ref passed">295</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.296">
+      <div class="step-ref passed">296</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.297">
+      <div class="step-ref passed">297</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.298">
+      <div class="step-ref passed">298</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.299">
+      <div class="step-ref passed">299</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.300">
+      <div class="step-ref passed">300</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2417</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.300">22:47:50.809 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/evbv-service/v2/patient-appointments/insert-user-datadddd
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiJmYjU1ZjQxZC1hMjg2LTRjNjMtYTBiYi0xMTY3MDRkYzk5MzgiLCJuYmYiOjE3ODI3NTM0NTgsImV4cCI6MTc4Mjc1NzA1OCwiaWF0IjoxNzgyNzUzNDU4LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.sStYgq2sY_3wjCZm9Fkt_HE5IVH-eguGUM5Apkq93kA
+1 &gt; X-ECDH-Session: 1bafc619-6460-4d1d-a9d3-060211b78a4a
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 1612
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+t4NB3bRB7iUl9lVYGmqswfHzkKctY7lTGGACJn7SJHXw2xKDqTbbNglk9froxnKRzz3LTIHq4z-czvV-q7k7W-xmdB1ERekAO9vi4EkrymB0O0XeDlVIYMNgB4ZcdLLdyjuDmnQT9g17e8fWe6mAtUyFEDIEy1HanOmNZQDztmnSI5ExJ1u9RhjuZ2XqgdwKBvj_TUVqoyQIMOez2VCTYZzfUBtTTaMHlgahee2L-Pd8DbEqA8FgT99XC9n6wlbXGBZzOElAwg6hUJOkw7b7lGB1Nlv2s2sz6z98Z0zUAJ59wy2vs_PTAk7OmEN0B_DNo6HKHq8KWzCxmMafirEgH6YR3I4uyQutI7PPDkWyi94bPQo1mf8_F3jTB1IPEKMsoxDRjfiWjLULyXB2RScjSfeGTf-lbDpyQHFGBNJLqVaOjwmNJoND94PcmU2lj6fyoPr2u93Su6czNUxIGDhbEG7nrN6cclgag0djbDZevBBn1V2Bt9reWoApCTX1Zvcy_iqwhnFXlqMY_6ytXSwZ5s60xwGo68Cpe_4P8L2JzqpcFv-GELvLdn2U07L87NkOGA1hKGtec3LMfotvC4DLUjDzn2KOFipj-mxLYsHjdpkYKyj_KFI9mmGWfbbBba7FrJe3ven1m8Aiuz9rkr_Mil60PoBeMq-n9uq7hspeRr90Ikukl42GcTi7PnlEN1GCjmW71-MonroaTxsNp3-2qGIHFGlC5DgPDOtE5JtGba8QubDIHQaoZeabdDKaqdW4QG01smrEqBQrH7glFkg9Ihcg31WGizgUlZq9o9weTWvngPESysl2CjjiA7XVAvv-qf_ENimhATpLzxcRuXNip6bqLCCavKaZYDC3pUTpHy0758J7-yESiaqQX_GPJWhai6h85H0TCoUQUdbiEeAjAKqPU9-J0pNeTDXnce2V_5o8I-1WPRsdllzYDRZI5o7Vgqne4-aBeHfQRaJkBTlWMLz7Iz7YjKdR3p9UaPmaMB5iI51n_N_CFeW5bxQwrVTvi_ulCuWByyubk4Tmzb3q2HWhaz3mL89Jn1cthj22X0NN9ZCOW2DvJs4qWLhMfSWwgaxfcsVk0Q6rme7uheLkJCdFpUSKZiSOoYWXjwQAo-AOvFLB9rPexHPejLSyGogWQyO6YWmwQGlAfOgYBxBFZPxHJIycaiTd2xHnYu9zExosTADKeMc4KFabZ6ND85PztosbPvEGK0Dy4VP5OC-ul7ZXZMCcE4ELxsENhPNaU2tS2UERWzX6GFFaXzyuxR73u9XCDmeuNSN7f7S8h_cSFH5hpn5vWRBcX7n26XwUfRyldT_1mfetFMCwLn6PHDu2WPsTv91TM5H_KyZ35qd5XRYfFvOwWdHJQPby9F4qPNb1wFQ-dJ_f3-NDRBq5SAbbPTS3xN7ma8Rf9w3dRPnOpSqWuQUvIalN8Dcsw9Ji3BaD_yjn5HNbt7LHPwPvw0x0zUHyQZMbzDqLVpU8isf-qMj3JuuAC3b9pBb4WGdngDJOH9jzNXk3ClLXZDRm5JF9gtnezBAWdVQSh3eJZSvdez3Esf-GiZYi5pzCepY2i68pU-5Ha3nwAh72EKQiKCk57sWEosA9ubrt
+
+22:47:53.224 response time in milliseconds: 2415
+1 &lt; 404
+1 &lt; x-amzn-RequestId: 4175ace6-2f03-45c0-b652-4542654fde15
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu9SDGgFoAMEZPA=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 17:17:53 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Connection: Keep-Alive
+1 &lt; Content-Length: 0
+1 &lt; Date: Mon, 29 Jun 2026 17:18:18 GMT
+
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.301">
+      <div class="step-ref passed">301</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[5:303]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[5:303]</span>
+                <span class="scenario-name">401 - Unauthorized</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2443</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[5:303]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[5:303]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:48:31.283 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...9LjmBO9E length: 585 
+22:48:33.589 ECDH Session ID: 95442845-235b-4c3c-a24d-b3758d2dc293 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:303]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:303]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:303]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:303]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:303]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[5:303]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:48:33.596 [print] Using auth_token cookie: eyJhbGciOiJI...9LjmBO9E length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.304">
+      <div class="step-ref passed">304</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def requestBody =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.304">[
+ {
+  &quot;moduleId&quot;:1,
+  &quot;processId&quot;:1,
+  &quot;taskListId&quot;:17376,
+  &quot;workqueueId&quot;:1404,
+  &quot;appointmentId&quot;:70936,
+  &quot;deductibleTotal&quot;:null,
+  &quot;deductibleRemaining&quot;:null,
+  &quot;moopTotal&quot;:null,
+  &quot;moopRemaining&quot;:null,
+  &quot;coInsurance&quot;:null,
+  &quot;coPay&quot;:null,
+  &quot;totalVisits&quot;:null,
+  &quot;remainingVisits&quot;:null,
+  &quot;policyNotes&quot;:&quot;&quot;,
+  &quot;otherComments&quot;:&quot;&quot;,
+  &quot;isCalendarYearPlan&quot;:false,
+  &quot;isRequiresAuthorization&quot;:false,
+  &quot;yearEndPlan&quot;:null,
+  &quot;createdBy&quot;:0,
+  &quot;lastModifiedBy&quot;:0,
+  &quot;startTime&quot;:&quot;2026-06-23T13:35:39.283&quot;,
+  &quot;environmentId&quot;:&quot;&quot;,
+  &quot;actionIfany&quot;:&quot;Do Not verify&quot;,
+  &quot;individualDd&quot;:null,
+  &quot;individualDdRem&quot;:null,
+  &quot;familyDd&quot;:null,
+  &quot;familyDdRem&quot;:null,
+  &quot;individualOop&quot;:null,
+  &quot;individualOopRem&quot;:null,
+  &quot;familyOop&quot;:null,
+  &quot;familyOopRem&quot;:null,
+  &quot;isRequiresPcp&quot;:false,
+  &quot;hra&quot;:&quot;&quot;,
+  &quot;hraRem&quot;:null,
+  &quot;nonCoveredCptCodes&quot;:&quot;&quot;,
+  &quot;followUpDate&quot;:null,
+  &quot;submissionType&quot;:&quot;SUBMIT&quot;,
+  &quot;qmb&quot;:&quot;&quot;,
+  &quot;isUnlimitedVisits&quot;:false,
+  &quot;ptYear&quot;:&quot;&quot;,
+  &quot;ptThresholdRemaining&quot;:null,
+  &quot;ptLastVisitDate&quot;:null,
+  &quot;otYear&quot;:&quot;&quot;,
+  &quot;otThresholdRemaining&quot;:null,
+  &quot;otLastVisitDate&quot;:null,
+  &quot;networkType&quot;:&quot;In&quot;,
+  &quot;caseNote&quot;:&quot;&quot;,
+  &quot;oopMet&quot;:false,
+  &quot;effectiveDate&quot;:null,
+  &quot;nextVisitScheduledDate&quot;:null,
+  &quot;veestatId&quot;:10517,
+  &quot;insuranceType&quot;:&quot;S&quot;,
+  &quot;patientInsuranceId&quot;:74130,
+  &quot;inventoryTrackingId&quot;:24457,
+  &quot;modeMasterId&quot;:1,
+  &quot;originalFileName&quot;:[
+  ],
+  &quot;fileName&quot;:[
+  ],
+  &quot;filePath&quot;:[
+  ]
+ }
+]</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.375">
+      <div class="step-ref passed">375</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>string requestBodyStr = karate.toJson(requestBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.376">
+      <div class="step-ref passed">376</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def encryptedBody = crypto.encrypt(requestBodyStr)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.378">
+      <div class="step-ref passed">378</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/evbv-service/v3/patient-appointments/insert-user-data&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#  And header Cookie = &#39;auth_token=&#39; + authCookie</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.380">
+      <div class="step-ref passed">380</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.381">
+      <div class="step-ref passed">381</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;true&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.382">
+      <div class="step-ref passed">382</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;text/plain&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.383">
+      <div class="step-ref passed">383</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request encryptedBody</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.384">
+      <div class="step-ref passed">384</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2439</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.384">22:48:33.601 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/evbv-service/v3/patient-appointments/insert-user-data
+1 &gt; X-ECDH-Session: 95442845-235b-4c3c-a24d-b3758d2dc293
+1 &gt; X-Encrypted-Payload: true
+1 &gt; Content-Type: text/plain; charset=UTF-8
+1 &gt; Content-Length: 1612
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+nrOjaDV8QsTWXKbuyanj6nxD4ylqokHoxdjhAFu6BJniSZTs23qR1pbsF1q-91g5gHS0W_slGZI-LdnpoIlDo9jCUDs5iqUSOhhE6zhv0xOZF3a5RWNwXcCSfRFm80SZ-VQLe41fmNGonOFXHW2RFIsUKXnj-OdURpgjhYJbpCRlpBlfEQQouSgk7nnyRv9RaS-Gqs5hfrBYi-uVfSWHG3RmZED7lNUjx8R9RhYSrAm3N6_UpX9STZFrdAML3LylkziQFcP_aBAaac-ukrnrBtdZCC7yxaykzfTvQkp-VyAZRXjriO-thXQUzyAcDJY68LJamVlcFHelLoO9xLbPXM5sQFlOPxFnUvG6hNUtU8yKl7CIMz7NNPQPe8TqlTGGMwqdwOKJn_E8Pe6wCDkcb4cSX8B_PAHOzed8i8g3nLsFxT9q5XOfmKpUwzcpGoKWIk81gifquewPyu1CWtJcKhhK8Mr0fnptlUnRpF5NJAVi_E407iWu3AvbLMD2iPG8LXj3pfZ_131OeYLQHmXb4OgTAsJmHaZwhoSLfvGOhtxyyalwq8IqNwmgbO-hk8ds0bMpd0HafRYykhXQVqgtrhKsfAM7P3XdEgaurgCy_FHynpZqDm8HswNcK8J5vzumYYkPOxz1DC-gTj8qA5LkAEzt7Rf_vfIO4axJqr2ZXcJxLv9qOoTfcTeoqUiBADmgE1Pdavmj4Y4bhvMZ23eDt32SbLTXTh1wrq5892mGq0iEwevBlO87LXNLjdsjtBHqDxBG9olUuOAGOllLyd9tzbRrDWz-gMbyMZ-RyD2kIAimFKsbAojowEhYaZ0nCftMTfQn-ULPvjaeV5yitEGLavlMfYISLyUgBUWI2zEGrtLjavsonMY8l_vV-oU5hYFjEA0Cyf5--dqSubzMyP51WnKfJ_pZMfxqrcnx0PwB52xfRZ8tMZbPfTjCvmO6hYlKTsqs_R_hPY1WTnl40ppZ_CDrReVHiHdcwtYBrIPYF4Canu1a-hw1RxTzt0f5GaVDTp2HS1cdX2zJj6QXMlx2h_l_-veCsNHMsVAho9iRxm9cTmFpn5Erzpc1QlyDCL-3V5i-lW5J0jhG6bqDUAX_x0GSO8rUL8-Rnq1YrEy_OcVrlX5znXjlNQOB3WmVQxG4_9nFrvKMY6Yv9D4hop39qy_xBfbNnucAhSF2zywd9MysWlH5FWnKh79A14I1ipCXh4OF5U-grfL58zW448VNPz4I1psSgs0jbWn8n2QXi4PsFZ3afy-6HmP6mzOC08JgUiMfKOSHX9Df2DQ5Zsn6LZtMtcf6yb2Xh8EnQ8cFnOm33in55Lbdr3IQDh_VRBfSMnGlUv8010X0T4_iZ2ZScrcU5W3TY3akGR5UFnjYrldKaMzzqk7EAar60H_eSmrD9fpip65eqldU9uEDZrbNyxjcnLsCrnrJVUBle8tVZLg43MOPJ2MprwT13IPnwZomg3C9vKQ_kCezKpnMBnBEu_Ekpp1Gtliu9PY6_29aYFwNDXBZo96SfJD3KmwFzZmj2TVWbrpljNvv7jPNlpwDislUrb22XqcCNJ6ljSzh-25nsYYcfQGe0qO53ZF5d5lj8xBlWRr5qnSJ
+
+22:48:36.038 response time in milliseconds: 2432
+1 &lt; 401
+1 &lt; x-amzn-RequestId: 58453ab9-e765-4bce-9646-0574a50b7b6d
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu9YvFzVoAMEYHQ=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 17:18:36 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Content-Length: 49
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 17:19:00 GMT
+Authentication failed. A valid token is required.
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.385">
+      <div class="step-ref passed">385</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 401</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:387]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:387]</span>
+                <span class="scenario-name">415 - Unsupported Media Type</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>2261</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:387]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:387]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url gatewayBaseUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">22:49:14.746 AUTH_COOKIE_EXTRACTED: eyJhbGciOiJI...UryheXts length: 585 
+22:49:17.300 ECDH Session ID: 2fd8982f-aa9d-479c-a169-bbad9e57503a 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:387]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def crypto = karate.get(&#39;crypto&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:387]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def ecdhSessionId = karate.get(&#39;ecdhSessionId&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:387]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookie = karate.get(&#39;authCookie&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:387]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>if (authCookie == null || authCookie == &#39;&#39;) karate.fail(&#39;authCookie is null/empty. Check target/token-extractor-debug.log and the Karate log line AUTH_COOKIE_MISSING.&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:387]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authCookiePreview = authCookie.substring(0, 12) + &#39;...&#39; + authCookie.substring(authCookie.length - 8)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[6:387]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Using auth_token cookie:&#39;, authCookiePreview, &#39;length:&#39;, authCookie.length</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.10">22:49:17.300 [print] Using auth_token cookie: eyJhbGciOiJI...UryheXts length: 585 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.388">
+      <div class="step-ref passed">388</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;/evbv-service/v3/patient-appointments/insert-user-data&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.389">
+      <div class="step-ref passed">389</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Cookie = &#39;auth_token=&#39; + authCookie</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.390">
+      <div class="step-ref passed">390</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-ECDH-Session = ecdhSessionId</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.391">
+      <div class="step-ref passed">391</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header X-Encrypted-Payload = &#39;false&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.392">
+      <div class="step-ref passed">392</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/x-www-form-urlencoded&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.393">
+      <div class="step-ref passed">393</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request &#39;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.394">
+      <div class="step-ref passed">394</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2258</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.394">22:49:17.300 request:
+1 &gt; POST https://mttd2k3khk.execute-api.us-east-1.amazonaws.com/qa/evbv-service/v3/patient-appointments/insert-user-data
+1 &gt; Cookie: auth_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0MyIsImVtYWlsIjoiVnVzZXJfMkB2ZWVoZWFsdGh0ZWsuY29tIiwicm9sZSI6IjEiLCJ1c2VyYWdlbnQiOiJNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBIZWFkbGVzc0Nocm9tZS8xNDkuMC4wLjAgU2FmYXJpLzUzNy4zNiIsImNsaWVudGlwIjoiMTAuNy4xMC4xNTUiLCJzZXNzaW9uaWQiOiI2N2NhZmVmMS0yZTJkLTRhOGQtODVlMS0xNTA4YTc0M2UyNzUiLCJuYmYiOjE3ODI3NTM1NDQsImV4cCI6MTc4Mjc1NzE0NCwiaWF0IjoxNzgyNzUzNTQ0LCJpc3MiOiJMb2dpblRlc3RBcGlJc3N1ZXIiLCJhdWQiOiJMb2dpblRlc3RBcGlBdWRpZW5jZSJ9.Lkdg3WqJA9oLugyQdNEDYUkfmrPfc-yQJQOUryheXts
+1 &gt; X-ECDH-Session: 2fd8982f-aa9d-479c-a169-bbad9e57503a
+1 &gt; X-Encrypted-Payload: false
+1 &gt; Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+1 &gt; Content-Length: 0
+1 &gt; Host: mttd2k3khk.execute-api.us-east-1.amazonaws.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/20.0.2)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+22:49:19.562 response time in milliseconds: 2262
+1 &lt; 415
+1 &lt; x-amzn-RequestId: 1b5ea595-1cc1-4a0f-8066-bdcbf3637658
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+1 &lt; X-Frame-Options: DENY
+1 &lt; Content-Security-Policy: default-src &#39;none&#39;; script-src &#39;self&#39;; style-src &#39;self&#39;; img-src &#39;self&#39; data:; font-src &#39;self&#39;; object-src &#39;none&#39;; connect-src https:; base-uri &#39;self&#39;; form-action &#39;self&#39;; frame-ancestors &#39;none&#39;;
+1 &lt; x-amz-apigw-id: fu9flF-GIAMEh_g=
+1 &lt; x-amzn-Remapped-Server: Microsoft-IIS/10.0
+1 &lt; Cache-Control: no-cache, no-store, must-revalidate
+1 &lt; Expires: 0
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Powered-By: ASP.NET
+1 &lt; Pragma: no-cache
+1 &lt; x-amzn-Remapped-Date: Mon, 29 Jun 2026 17:19:20 GMT
+1 &lt; Content-Type: application/problem+json; charset=utf-8
+1 &lt; Content-Length: 176
+1 &lt; Connection: Keep-Alive
+1 &lt; Date: Mon, 29 Jun 2026 17:19:44 GMT
+{&quot;type&quot;:&quot;https://tools.ietf.org/html/rfc9110#section-15.5.16&quot;,&quot;title&quot;:&quot;Unsupported Media Type&quot;,&quot;status&quot;:415,&quot;traceId&quot;:&quot;00-2ffbba296ba89aca08fe2b35542775ac-c4425045e70ae755-00&quot;}
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.395">
+      <div class="step-ref passed">395</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 415</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
